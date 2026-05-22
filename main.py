@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import hashlib
 import os
+from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import Optional
 
@@ -22,8 +23,20 @@ from prometheus_fastapi_instrumentator import Instrumentator
 from sqlalchemy import select
 
 from models import Game, Scan, get_db, get_game_by_slug, monthly_scan_rank, top_games
+from scripts.render_bootstrap import bootstrap
 
 load_dotenv()
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Render free tier has no preDeployCommand — init DB on startup instead
+    try:
+        bootstrap()
+    except Exception as exc:
+        print(f"DB bootstrap warning: {exc}")
+    yield
+
 
 # Permanent QR: on Render, RENDER_EXTERNAL_URL is the stable public HTTPS URL
 BASE_URL = (
@@ -34,7 +47,7 @@ BASE_URL = (
 QRCODE_DIR = Path(__file__).parent / "qrcodes"
 QRCODE_DIR.mkdir(exist_ok=True)
 
-app = FastAPI(title="QR Café Tracking", version="0.2.0")
+app = FastAPI(title="QR Café Tracking", version="0.2.0", lifespan=lifespan)
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 

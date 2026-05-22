@@ -117,7 +117,7 @@ Gør dette **før** du printer QR, hvis du vil have et pænt navn.
 | Problem | Løsning |
 |---------|---------|
 | Deploy fejler | **Logs** → build; tjek `requirements.txt` |
-| 500 på /scan | **Logs** → release; `render_bootstrap.py` kører schema+seed |
+| 500 på /scan | **Logs** → startup; app kører `bootstrap()` automatisk (gratis tier har ikke preDeploy) |
 | Database | **qr-db** skal være **Available** og linket til web service |
 | Cold start | Normal på gratis plan — vent 30 sek |
 
