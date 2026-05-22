@@ -29,9 +29,8 @@ def bootstrap() -> None:
 
     cur.execute((ROOT / "schema-render.sql").read_text(encoding="utf-8"))
 
-    cur.execute("SELECT COUNT(*) FROM games")
-    if cur.fetchone()[0] == 0:
-        cur.execute((ROOT / "seed.sql").read_text(encoding="utf-8"))
+    # Upsert all games (keeps existing scans)
+    cur.execute((ROOT / "seed.sql").read_text(encoding="utf-8"))
 
     for slug, url in WIKIPEDIA_BY_SLUG.items():
         cur.execute(
