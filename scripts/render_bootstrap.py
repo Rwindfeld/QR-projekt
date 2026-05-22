@@ -9,6 +9,8 @@ from pathlib import Path
 
 import psycopg2
 
+from wiki_urls import WIKIPEDIA_BY_SLUG
+
 ROOT = Path(__file__).resolve().parent.parent
 
 
@@ -30,6 +32,12 @@ def bootstrap() -> None:
     cur.execute("SELECT COUNT(*) FROM games")
     if cur.fetchone()[0] == 0:
         cur.execute((ROOT / "seed.sql").read_text(encoding="utf-8"))
+
+    for slug, url in WIKIPEDIA_BY_SLUG.items():
+        cur.execute(
+            "UPDATE games SET wikipedia_url = %s WHERE slug = %s",
+            (url, slug),
+        )
 
     conn.close()
 

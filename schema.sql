@@ -13,8 +13,11 @@ CREATE TABLE IF NOT EXISTS games (
     year_published  SMALLINT,
     awards          TEXT,
     fun_fact        TEXT NOT NULL,
+    wikipedia_url   TEXT,
     created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
+
+ALTER TABLE games ADD COLUMN IF NOT EXISTS wikipedia_url TEXT;
 
 CREATE TABLE IF NOT EXISTS scans (
     id              BIGSERIAL PRIMARY KEY,

@@ -23,6 +23,7 @@ from prometheus_fastapi_instrumentator import Instrumentator
 from sqlalchemy import select
 
 from models import Game, Scan, get_db, get_game_by_slug, monthly_scan_rank, top_games
+from wiki_urls import wikipedia_url_for_slug
 from scripts.render_bootstrap import bootstrap
 
 load_dotenv()
@@ -145,7 +146,8 @@ def scan_game(request: Request, slug: str, table_location: Optional[str] = None)
     with get_db() as db:
         top5 = top_games(db, days=7, limit=5)
 
-    wiki_slug = game.name.replace(" ", "_")
+    wiki_url = game.wikipedia_url or wikipedia_url_for_slug(game.slug)
+    wiki_note = " (engelsk)" if "en.wikipedia.org" in wiki_url else ""
     return templates.TemplateResponse(
         request,
         "thanks.html",
@@ -153,7 +155,8 @@ def scan_game(request: Request, slug: str, table_location: Optional[str] = None)
             "game": game,
             "rank": rank,
             "top5": top5,
-            "wiki_url": f"https://da.wikipedia.org/wiki/{wiki_slug}",
+            "wiki_url": wiki_url,
+            "wiki_note": wiki_note,
         },
     )
 

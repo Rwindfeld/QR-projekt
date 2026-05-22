@@ -53,6 +53,7 @@ class Game(Base):
     year_published: Mapped[Optional[int]] = mapped_column(SmallInteger)
     awards: Mapped[Optional[str]] = mapped_column(Text)
     fun_fact: Mapped[str] = mapped_column(Text, nullable=False)
+    wikipedia_url: Mapped[Optional[str]] = mapped_column(Text)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now()
     )
