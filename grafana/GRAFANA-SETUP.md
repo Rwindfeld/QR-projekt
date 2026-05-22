@@ -131,6 +131,25 @@ Anbefalede paneler:
 
 ---
 
+## Testdata (6 måneders scanninger)
+
+Kør lokalt mod Render-databasen (sæt `RENDER_DATABASE_URL` i `.env`):
+
+```powershell
+cd "c:\Users\windf\OneDrive\Documents\QR"
+.\scripts\generate-test-scans.cmd
+```
+
+Eller med custom antal:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\generate_test_scans.py --months 6 --count 2000
+```
+
+Tilføjer **kun** nye rækker — sletter ikke dine rigtige scans. I Grafana: vælg **Last 6 months**.
+
+---
+
 ## Hurtig checklist
 
 - [ ] Render **qr-db** → External URL kopieret
