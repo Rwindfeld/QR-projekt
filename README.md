@@ -119,7 +119,7 @@ cloudflared tunnel --url tcp://localhost:5432
 
 ## Permanent URL til trykte QR-koder (Render)
 
-Print QR med **Render** — fast `https://qr-cafe.onrender.com` (ændres ikke).  
+Print QR med **Render** — fast `https://qr-spilcafe.onrender.com` (ændres ikke).  
 Følg **[DEPLOY.md](DEPLOY.md)** (GitHub → Render Blueprint → `/admin/qrcodes` → print).
 
 ## Sikkerhed

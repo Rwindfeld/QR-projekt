@@ -8,8 +8,9 @@ databases:
     plan: free
 
 services:
+  # Unikt navn — "qr-cafe" var allerede en anden app på Render (404 på /scan)
   - type: web
-    name: qr-cafe
+    name: qr-spilcafe
     runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt

@@ -2,7 +2,7 @@
 cd /d "%~dp0.."
 if "%RENDER_APP_URL%"=="" (
   echo Sæt først din permanente Render-URL:
-  echo   set RENDER_APP_URL=https://qr-cafe.onrender.com
+  echo   set RENDER_APP_URL=https://qr-spilcafe.onrender.com
   exit /b 1
 )
 powershell -NoProfile -ExecutionPolicy Bypass -Command ^

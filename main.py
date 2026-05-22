@@ -66,6 +66,16 @@ scan_errors_total = Counter(
 Instrumentator().instrument(app).expose(app, endpoint="/metrics", include_in_schema=False)
 
 
+@app.get("/")
+def root():
+    return {
+        "app": "QR Spilcafé Tracking",
+        "health": "/healthz",
+        "example_scan": "/scan/catan",
+        "qrcodes": "/admin/qrcodes",
+    }
+
+
 @app.get("/healthz")
 def healthz():
     return {"status": "ok"}

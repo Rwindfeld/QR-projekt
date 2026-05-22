@@ -1,5 +1,5 @@
 // Kør LOKALT — scraper Render-app og pusher til Grafana Cloud
-// Sæt: $env:RENDER_APP_URL="https://qr-cafe.onrender.com"
+// Sæt: $env:RENDER_APP_URL="https://qr-spilcafe.onrender.com"
 
 prometheus.remote_write "grafana_cloud" {
   endpoint {
@@ -16,7 +16,7 @@ prometheus.remote_write "grafana_cloud" {
   }
 }
 
-// RENDER_METRICS_HOST = qr-cafe.onrender.com (uden https://)
+// RENDER_METRICS_HOST = qr-spilcafe.onrender.com (uden https://)
 prometheus.scrape "render_app" {
   targets = [
     {"__address__" = sys.env("RENDER_METRICS_HOST")},

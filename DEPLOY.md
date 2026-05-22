@@ -3,7 +3,7 @@
 Efter deploy får du en **fast adresse** som:
 
 ```text
-https://qr-cafe.onrender.com
+https://qr-spilcafe.onrender.com
 ```
 
 Den ændres ikke. Print QR **én gang** efter deploy.
@@ -38,14 +38,14 @@ git push -u origin main
 3. Forbind GitHub og vælg dit `qr-cafe` repo.
 4. Render læser `render.yaml` og opretter:
    - **qr-db** (PostgreSQL, gratis)
-   - **qr-cafe** (web service, gratis)
+   - **qr-spilcafe** (web service, gratis)
 5. Klik **Apply** og vent på deploy (5–10 min første gang).
 
 ---
 
 ## 3. Grafana-miljøvariabler på Render
 
-Når web servicen er oppe: **qr-cafe** → **Environment** → tilføj (fra din lokale `.env`):
+Når web servicen er oppe: **qr-spilcafe** → **Environment** → tilføj (fra din lokale `.env`):
 
 | Key | Value |
 |-----|--------|
@@ -61,7 +61,7 @@ Klik **Save** → ny deploy.
 
 ## 4. Test den permanente URL
 
-Din URL står under **qr-cafe** → øverst (fx `https://qr-cafe-xxxx.onrender.com`).
+Din URL står under **qr-spilcafe** → øverst (fx `https://qr-spilcafe.onrender.com`).
 
 Test i mobilbrowser på **4G** (ikke kun Wi‑Fi):
 
@@ -104,11 +104,7 @@ set RENDER_APP_URL=https://DIN-RENDER-URL.onrender.com
 
 ## 7. Omdøb service (valgfrit)
 
-I Render → **qr-cafe** → **Settings** → **Name** → fx `qr-spilcafe` giver URL:
-
-`https://qr-spilcafe.onrender.com`
-
-Gør dette **før** du printer QR, hvis du vil have et pænt navn.
+Brug servicen **qr-spilcafe** — ikke den gamle **qr-cafe** (det var en anden app).
 
 ---
 
