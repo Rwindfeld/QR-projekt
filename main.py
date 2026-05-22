@@ -14,7 +14,7 @@ from typing import Optional
 import qrcode
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from prometheus_client import Counter
@@ -66,14 +66,23 @@ scan_errors_total = Counter(
 Instrumentator().instrument(app).expose(app, endpoint="/metrics", include_in_schema=False)
 
 
-@app.get("/")
+@app.get("/", response_class=HTMLResponse)
 def root():
-    return {
-        "app": "QR Spilcafé Tracking",
-        "health": "/healthz",
-        "example_scan": "/scan/catan",
-        "qrcodes": "/admin/qrcodes",
-    }
+    return f"""<!DOCTYPE html>
+<html lang="da"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QR Spilcafé</title>
+<link rel="stylesheet" href="/static/style.css"></head>
+<body><main class="container">
+<h1>QR Spilcafé — tracking</h1>
+<p>Appen kører. Prøv en scanning:</p>
+<ul>
+<li><a href="/scan/catan">Scan Catan (demo)</a></li>
+<li><a href="/admin/qrcodes">Print QR-koder</a></li>
+<li><a href="/healthz">Health check (JSON)</a></li>
+</ul>
+<p class="lead">Permanent URL til trykte QR: <strong>{BASE_URL}/scan/&lt;spil&gt;</strong></p>
+</main></body></html>"""
 
 
 @app.get("/healthz")
