@@ -66,7 +66,9 @@ TABLES = [f"B{i}" for i in range(1, 13)] + [f"T{i}" for i in range(1, 9)] + [Non
 def _db_url() -> str:
     url = os.getenv("RENDER_DATABASE_URL") or os.getenv("DATABASE_URL")
     if not url:
-        raise SystemExit("Set DATABASE_URL or RENDER_DATABASE_URL in .env")
+        raise SystemExit("Set RENDER_DATABASE_URL in .env (Grafana bruger Render Postgres)")
+    if "localhost" in url and not os.getenv("RENDER_DATABASE_URL"):
+        print("ADVARSEL: Bruger localhost — Grafana ser Render. Tilføj RENDER_DATABASE_URL i .env.")
     if "render.com" in url and "sslmode=" not in url:
         url += "&sslmode=require" if "?" in url else "?sslmode=require"
     return url

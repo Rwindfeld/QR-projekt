@@ -184,7 +184,7 @@
       }
     ]
   },
-  "time": { "from": "now-24h", "to": "now" },
+  "time": { "from": "now-180d", "to": "now" },
   "timepicker": {},
   "timezone": "browser",
   "title": "QR Spilcafé — tracking & infrastruktur",
