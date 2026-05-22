@@ -1,0 +1,38 @@
+# Grafana Cloud Prometheus panels (metrics pushed by Alloy)
+# Data source: grafanacloud-rfwjensen-prom (or your stack Prometheus)
+# External labels from Alloy: stack="qr-projekt", env="prototype"
+
+# ---------------------------------------------------------------------------
+# Panel 9: Stat — "PgBouncer aktive forbindelser"
+# Metric from prometheus.exporter.pgbouncer
+# ---------------------------------------------------------------------------
+sum(pgbouncer_pools_client_active_connections{stack="qr-projekt"})
+
+# ---------------------------------------------------------------------------
+# Panel 10: Time series — "PgBouncer query rate"
+# ---------------------------------------------------------------------------
+sum(rate(pgbouncer_stats_queries_pooled_total{stack="qr-projekt"}[5m]))
+
+# If your exporter uses slightly different names, try in Explore:
+#   {__name__=~"pgbouncer_.*", stack="qr-projekt"}
+
+# ---------------------------------------------------------------------------
+# Panel 11: Stat — "App scan-rate (sidste 5 min)"
+# Custom counter from FastAPI (main.py)
+# ---------------------------------------------------------------------------
+sum(rate(scans_total{stack="qr-projekt"}[5m]))
+
+# Per-game breakdown (optional second query):
+# sum by (game) (rate(scans_total{stack="qr-projekt"}[5m]))
+
+# ---------------------------------------------------------------------------
+# Panel 12: Time series — "FastAPI request latency p95"
+# From prometheus-fastapi-instrumentator (histogram)
+# ---------------------------------------------------------------------------
+histogram_quantile(
+  0.95,
+  sum(rate(http_request_duration_seconds_bucket{job="qr-app", stack="qr-projekt"}[5m])) by (le)
+)
+
+# Alternative if job label differs:
+# histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket{stack="qr-projekt"}[5m])) by (le))

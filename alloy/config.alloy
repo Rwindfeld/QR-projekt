@@ -1,0 +1,42 @@
+// Grafana Alloy — PgBouncer + FastAPI metrics → Grafana Cloud Prometheus
+// PgBouncer integration: https://grafana.com/docs/alloy/latest/reference/components/prometheus/prometheus.exporter.pgbouncer/
+// Remote write: https://grafana.com/docs/grafana-cloud/send-data/metrics/metrics-prometheus/
+
+prometheus.remote_write "grafana_cloud" {
+  endpoint {
+    url = sys.env("GRAFANA_CLOUD_PROM_URL")
+
+    basic_auth {
+      username = sys.env("GRAFANA_CLOUD_PROM_USER")
+      password = sys.env("GRAFANA_ALLOY_TOKEN")
+    }
+  }
+
+  external_labels = {
+    stack  = "qr-projekt",
+    env    = "prototype",
+    region = "eu-central-1",
+  }
+}
+
+// Scrape PgBouncer pool/query stats via admin database "pgbouncer"
+prometheus.exporter.pgbouncer "local" {
+  connection_string = "postgresql://pgbouncer_stats:pgbouncer_stats_secret@pgbouncer:6432/pgbouncer?sslmode=disable"
+}
+
+prometheus.scrape "pgbouncer" {
+  targets    = prometheus.exporter.pgbouncer.local.targets
+  forward_to = [prometheus.remote_write.grafana_cloud.receiver]
+  scrape_interval = "30s"
+  job_name        = "pgbouncer"
+}
+
+// FastAPI app metrics (/metrics includes scans_total, http_* from instrumentator)
+prometheus.scrape "fastapi" {
+  targets = [
+    {"__address__" = "app:8000", "__metrics_path__" = "/metrics"},
+  ]
+  forward_to      = [prometheus.remote_write.grafana_cloud.receiver]
+  scrape_interval = "30s"
+  job_name          = "qr-app"
+}

@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Tak — {{ game.name }}{% endblock %}
+{% block content %}
+<article class="thanks-card">
+  <p class="eyebrow">Spilcafé</p>
+  <h1>Tak fordi du scannede <strong>{{ game.name }}</strong> ind!</h1>
+  <p class="lead">
+    Det hjælper os med at holde overblik over hvad I gæster elsker at spille,
+    og gør vores indkøb bedre!
+  </p>
+
+  <p class="counter">
+    Du er den <strong>{{ rank }}. spiller</strong> der har scannet
+    {{ game.name }} i denne måned.
+  </p>
+
+  <section class="fun-fact">
+    <h2>Vidste du?</h2>
+    <p>{{ game.fun_fact }}</p>
+    {% if game.awards %}
+    <p class="awards"><span>Priser:</span> {{ game.awards }}</p>
+    {% endif %}
+    <p>
+      <a class="wiki-link" href="{{ wiki_url }}" target="_blank" rel="noopener">
+        Læs mere på Wikipedia →
+      </a>
+    </p>
+  </section>
+
+  <section class="top-games">
+    <h2>Top 5 spil lige nu</h2>
+    <p class="sub">Seneste 7 dage</p>
+    {% if top5 %}
+    <ol>
+      {% for name, count in top5 %}
+      <li><span class="game-name">{{ name }}</span> <span class="badge">{{ count }}</span></li>
+      {% endfor %}
+    </ol>
+    {% else %}
+    <p>Ingen scanninger endnu — vær den første!</p>
+    {% endif %}
+  </section>
+</article>
+{% endblock %}

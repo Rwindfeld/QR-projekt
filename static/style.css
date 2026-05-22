@@ -1,0 +1,189 @@
+/* Mobile-first café styling */
+:root {
+  --cream: #fbf6ee;
+  --text: #2c2416;
+  --muted: #6b5e4f;
+  --accent: #ff8c42;
+  --accent-dark: #e6732f;
+  --card: #fffdf8;
+  --border: #e8dfd0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.container {
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 3rem;
+}
+
+.thanks-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.5rem 1.25rem;
+  box-shadow: 0 4px 24px rgba(44, 36, 22, 0.06);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: var(--accent-dark);
+  margin: 0 0 0.5rem;
+}
+
+h1 {
+  font-size: 1.45rem;
+  margin: 0 0 1rem;
+  line-height: 1.3;
+}
+
+h1 strong {
+  color: var(--accent-dark);
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+.counter {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+  color: #fff;
+  padding: 1rem 1.1rem;
+  border-radius: 0.75rem;
+  margin: 1.25rem 0;
+  font-size: 1.05rem;
+}
+
+.fun-fact h2,
+.top-games h2 {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.awards span {
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+
+.wiki-link {
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
+.top-games .sub {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: -0.25rem 0 0.75rem;
+}
+
+.top-games ol {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.top-games li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.badge {
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* Admin / print QR grid */
+.print-header {
+  margin-bottom: 1.5rem;
+}
+
+.print-header h1 {
+  font-size: 1.75rem;
+}
+
+.btn-print {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.75rem;
+}
+
+.qr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.qr-tile {
+  margin: 0;
+  text-align: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.qr-tile figcaption {
+  margin-top: 0.75rem;
+}
+
+.qr-tile .slug {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted);
+  word-break: break-all;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .btn-print,
+  .footer {
+    display: none;
+  }
+
+  .qr-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 480px) {
+  .container {
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+}

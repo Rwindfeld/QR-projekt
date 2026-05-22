@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}QR-koder — admin{% endblock %}
+{% block content %}
+<header class="print-header">
+  <h1>Brætspil — QR-koder</h1>
+  <p>Print denne side og klip koderne ud. Base URL: <code>{{ base_url }}</code></p>
+  <button type="button" class="btn-print" onclick="window.print()">Udskriv</button>
+</header>
+
+<div class="qr-grid">
+  {% for game in games %}
+  <figure class="qr-tile">
+    <img src="/qrcodes/{{ game.slug }}.png" alt="QR for {{ game.name }}" width="180" height="180">
+    <figcaption>
+      <strong>{{ game.name }}</strong>
+      <span class="slug">/scan/{{ game.slug }}</span>
+    </figcaption>
+  </figure>
+  {% endfor %}
+</div>
+{% endblock %}

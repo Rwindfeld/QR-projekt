@@ -1,0 +1,194 @@
+{
+  "annotations": { "list": [] },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "fixed", "fixedColor": "#FF8C42" } } },
+      "gridPos": { "h": 4, "w": 6, "x": 0, "y": 0 },
+      "id": 1,
+      "options": { "colorMode": "value", "graphMode": "none", "reduceOptions": { "calcs": ["lastNotNull"] } },
+      "targets": [{
+        "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+        "format": "table",
+        "rawSql": "SELECT COUNT(*)::bigint AS value FROM scans WHERE scanned_at >= date_trunc('day', NOW() AT TIME ZONE 'Europe/Copenhagen');",
+        "refId": "A"
+      }],
+      "title": "Scanninger i dag",
+      "type": "stat"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "fieldConfig": { "defaults": { "color": { "mode": "fixed", "fixedColor": "#FF8C42" } } },
+      "gridPos": { "h": 4, "w": 6, "x": 6, "y": 0 },
+      "id": 2,
+      "options": { "colorMode": "value", "graphMode": "none", "reduceOptions": { "calcs": ["lastNotNull"] } },
+      "targets": [{
+        "rawSql": "SELECT COUNT(*)::bigint AS value FROM scans WHERE scanned_at >= date_trunc('week', NOW() AT TIME ZONE 'Europe/Copenhagen');",
+        "format": "table",
+        "refId": "A"
+      }],
+      "title": "Scanninger denne uge",
+      "type": "stat"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "id": 3,
+      "options": { "orientation": "horizontal", "xTickLabelRotation": 0, "legend": { "displayMode": "list" } },
+      "targets": [{
+        "rawSql": "SELECT g.name AS name, COUNT(*)::bigint AS scans FROM scans s JOIN games g ON g.id = s.game_id WHERE s.scanned_at >= NOW() - INTERVAL '7 days' GROUP BY g.id, g.name ORDER BY scans DESC LIMIT 10;",
+        "format": "table",
+        "refId": "A"
+      }],
+      "title": "Top 10 spil denne uge",
+      "type": "barchart"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 4 },
+      "id": 4,
+      "options": { "legend": { "displayMode": "table" }, "tooltip": { "mode": "multi" } },
+      "targets": [{
+        "rawSql": "WITH top5 AS (SELECT s.game_id FROM scans s WHERE s.scanned_at >= NOW() - INTERVAL '24 hours' GROUP BY s.game_id ORDER BY COUNT(*) DESC LIMIT 5) SELECT date_trunc('hour', s.scanned_at AT TIME ZONE 'Europe/Copenhagen') AS time, g.name AS metric, COUNT(*)::bigint AS value FROM scans s JOIN games g ON g.id = s.game_id WHERE s.scanned_at >= NOW() - INTERVAL '24 hours' AND s.game_id IN (SELECT game_id FROM top5) GROUP BY 1, 2 ORDER BY 1;",
+        "format": "time_series",
+        "refId": "A"
+      }],
+      "title": "Scanninger pr. time (sidste 24t)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 8 },
+      "id": 5,
+      "targets": [{
+        "rawSql": "SELECT date_trunc('day', scanned_at AT TIME ZONE 'Europe/Copenhagen') AS time, COUNT(*)::bigint AS value FROM scans WHERE scanned_at >= NOW() - INTERVAL '30 days' GROUP BY 1 ORDER BY 1;",
+        "format": "time_series",
+        "refId": "A"
+      }],
+      "title": "Scanninger pr. dag (sidste 30 dage)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "gridPos": { "h": 8, "w": 8, "x": 0, "y": 12 },
+      "id": 6,
+      "options": { "pieType": "pie", "legend": { "displayMode": "table", "placement": "right" } },
+      "targets": [{
+        "rawSql": "SELECT g.name AS metric, COUNT(*)::bigint AS value FROM scans s JOIN games g ON g.id = s.game_id WHERE s.scanned_at >= date_trunc('month', NOW() AT TIME ZONE 'Europe/Copenhagen') GROUP BY g.id, g.name ORDER BY value DESC;",
+        "format": "table",
+        "refId": "A"
+      }],
+      "title": "Spilfordeling denne måned",
+      "type": "piechart"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "gridPos": { "h": 8, "w": 16, "x": 8, "y": 12 },
+      "id": 7,
+      "targets": [{
+        "rawSql": "SELECT s.scanned_at AS \"Tidspunkt\", g.name AS \"Spil\", COALESCE(s.table_location, '—') AS \"Bord\", LEFT(COALESCE(s.user_agent, '—'), 48) AS \"User-Agent\" FROM scans s JOIN games g ON g.id = s.game_id ORDER BY s.scanned_at DESC LIMIT 50;",
+        "format": "table",
+        "refId": "A"
+      }],
+      "title": "Seneste 50 scanninger",
+      "type": "table"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 20 },
+      "id": 8,
+      "options": { "calculate": false, "cellGap": 2, "color": { "scheme": "Oranges" } },
+      "targets": [{
+        "rawSql": "SELECT EXTRACT(HOUR FROM scanned_at AT TIME ZONE 'Europe/Copenhagen')::int AS hour, TRIM(TO_CHAR(scanned_at AT TIME ZONE 'Europe/Copenhagen', 'Day')) AS weekday, COUNT(*)::bigint AS scans FROM scans WHERE scanned_at >= NOW() - INTERVAL '30 days' GROUP BY 1, 2;",
+        "format": "table",
+        "refId": "A"
+      }],
+      "title": "Aktivitet: time × ugedag",
+      "type": "heatmap"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "fixedColor": "#FF8C42", "mode": "fixed" } } },
+      "gridPos": { "h": 4, "w": 6, "x": 0, "y": 28 },
+      "id": 9,
+      "targets": [{ "expr": "sum(pgbouncer_pools_client_active_connections{stack=\"qr-projekt\"})", "refId": "A" }],
+      "title": "PgBouncer aktive forbindelser",
+      "type": "stat"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "gridPos": { "h": 8, "w": 12, "x": 6, "y": 28 },
+      "id": 10,
+      "fieldConfig": { "defaults": { "color": { "fixedColor": "#FF8C42", "mode": "fixed" } } },
+      "targets": [{ "expr": "sum(rate(pgbouncer_stats_queries_pooled_total{stack=\"qr-projekt\"}[5m]))", "legendFormat": "queries/s", "refId": "A" }],
+      "title": "PgBouncer query rate",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "fixedColor": "#FF8C42", "mode": "fixed" } } },
+      "gridPos": { "h": 4, "w": 6, "x": 18, "y": 28 },
+      "id": 11,
+      "targets": [{ "expr": "sum(rate(scans_total{stack=\"qr-projekt\"}[5m]))", "refId": "A" }],
+      "title": "App scan-rate (sidste 5 min)",
+      "type": "stat"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 32 },
+      "id": 12,
+      "targets": [{
+        "expr": "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket{job=\"qr-app\", stack=\"qr-projekt\"}[5m])) by (le))",
+        "legendFormat": "p95",
+        "refId": "A"
+      }],
+      "title": "FastAPI request latency p95",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "30s",
+  "schemaVersion": 39,
+  "style": "dark",
+  "tags": ["qr", "spilcafe", "prototype"],
+  "templating": {
+    "list": [
+      {
+        "current": {},
+        "hide": 0,
+        "includeAll": false,
+        "label": "Postgres",
+        "name": "DS_POSTGRES",
+        "options": [],
+        "query": "postgres",
+        "refresh": 1,
+        "regex": "",
+        "type": "datasource"
+      },
+      {
+        "current": {},
+        "hide": 0,
+        "includeAll": false,
+        "label": "Prometheus",
+        "name": "DS_PROMETHEUS",
+        "options": [],
+        "query": "prometheus",
+        "refresh": 1,
+        "regex": "",
+        "type": "datasource"
+      }
+    ]
+  },
+  "time": { "from": "now-24h", "to": "now" },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "QR Spilcafé — tracking & infrastruktur",
+  "uid": "qr-cafe-prototype",
+  "version": 1,
+  "weekStart": "monday"
+}

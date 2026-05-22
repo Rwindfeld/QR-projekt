@@ -1,0 +1,6 @@
+; Format: "username" "password_or_md5_hash"
+; Generate md5: echo -n 'passwordusername' | md5sum  (prepend md5 prefix in file: md5<hash>)
+;
+; Docker compose uses plain text for simplicity in prototype — replace with md5 for production.
+"postgres" "1590"
+"pgbouncer_stats" "pgbouncer_stats_secret"

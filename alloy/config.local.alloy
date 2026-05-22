@@ -1,0 +1,26 @@
+// Lokal Alloy — FastAPI metrics → Grafana Cloud
+// PgBouncer-exporter findes ikke i alle Alloy-builds; tilføj senere eller brug Grafana Agent integration.
+
+prometheus.remote_write "grafana_cloud" {
+  endpoint {
+    url = sys.env("GRAFANA_CLOUD_PROM_URL")
+    basic_auth {
+      username = sys.env("GRAFANA_CLOUD_PROM_USER")
+      password = sys.env("GRAFANA_ALLOY_TOKEN")
+    }
+  }
+  external_labels = {
+    stack  = "qr-projekt",
+    env    = "prototype",
+    region = "eu-central-1",
+  }
+}
+
+prometheus.scrape "fastapi" {
+  targets = [
+    {"__address__" = "127.0.0.1:8000", "__metrics_path__" = "/metrics"},
+  ]
+  forward_to      = [prometheus.remote_write.grafana_cloud.receiver]
+  scrape_interval = "30s"
+  job_name        = "qr-app"
+}
