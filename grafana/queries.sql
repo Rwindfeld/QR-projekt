@@ -1,98 +1,47 @@
--- Grafana Cloud Postgres panels — copy into panel SQL editor
--- Data source: your Grafana Cloud Postgres (via cloudflared tunnel or PDC)
--- Database: QR
+-- Grafana Postgres panels — bruger dashboardets tidsvælger via $__timeFilter / $__timeGroupAlias
+-- Vælg interval øverst (fx Last 7 days, Last 6 months) — alle paneler følger med
 
--- ---------------------------------------------------------------------------
--- Panel 1: Stat — "Scanninger i dag"
--- ---------------------------------------------------------------------------
-SELECT COUNT(*)::bigint AS value
-FROM scans
-WHERE scanned_at >= date_trunc('day', NOW() AT TIME ZONE 'Europe/Copenhagen');
+-- Panel: Scanninger i perioden
+SELECT COUNT(*)::bigint AS value FROM scans WHERE $__timeFilter(scanned_at);
 
--- ---------------------------------------------------------------------------
--- Panel 2: Stat — "Scanninger denne uge" (ISO week, Copenhagen TZ)
--- ---------------------------------------------------------------------------
-SELECT COUNT(*)::bigint AS value
-FROM scans
-WHERE scanned_at >= date_trunc('week', NOW() AT TIME ZONE 'Europe/Copenhagen');
+-- Panel: Forskellige spil i perioden
+SELECT COUNT(DISTINCT s.game_id)::bigint AS value FROM scans s WHERE $__timeFilter(s.scanned_at);
 
--- ---------------------------------------------------------------------------
--- Panel 3: Bar chart — "Top 10 spil denne uge"
--- Format: table → Bar chart (X=name, Y=scans)
--- ---------------------------------------------------------------------------
+-- Panel: Top 10 spil i perioden
 SELECT g.name AS name, COUNT(*)::bigint AS scans
-FROM scans s
-JOIN games g ON g.id = s.game_id
-WHERE s.scanned_at >= NOW() - INTERVAL '7 days'
-GROUP BY g.id, g.name
-ORDER BY scans DESC
-LIMIT 10;
+FROM scans s JOIN games g ON g.id = s.game_id
+WHERE $__timeFilter(s.scanned_at)
+GROUP BY g.id, g.name ORDER BY scans DESC LIMIT 10;
 
--- ---------------------------------------------------------------------------
--- Panel 4: Time series — "Scanninger pr. time (sidste 24t)" stacked top 5 games
--- Grafana: Format time series, Group by game name
--- ---------------------------------------------------------------------------
+-- Panel: Scanninger pr. time
 WITH top5 AS (
-  SELECT s.game_id
-  FROM scans s
-  WHERE s.scanned_at >= NOW() - INTERVAL '24 hours'
-  GROUP BY s.game_id
-  ORDER BY COUNT(*) DESC
-  LIMIT 5
+  SELECT s.game_id FROM scans s WHERE $__timeFilter(s.scanned_at)
+  GROUP BY s.game_id ORDER BY COUNT(*) DESC LIMIT 5
 )
-SELECT
-  date_trunc('hour', s.scanned_at AT TIME ZONE 'Europe/Copenhagen') AS time,
-  g.name AS metric,
-  COUNT(*)::bigint AS value
-FROM scans s
-JOIN games g ON g.id = s.game_id
-WHERE s.scanned_at >= NOW() - INTERVAL '24 hours'
-  AND s.game_id IN (SELECT game_id FROM top5)
-GROUP BY 1, 2
-ORDER BY 1;
+SELECT $__timeGroupAlias(s.scanned_at,'1h'), g.name AS metric, COUNT(*)::bigint AS value
+FROM scans s JOIN games g ON g.id = s.game_id
+WHERE $__timeFilter(s.scanned_at) AND s.game_id IN (SELECT game_id FROM top5)
+GROUP BY 1, 2 ORDER BY 1;
 
--- ---------------------------------------------------------------------------
--- Panel 5: Time series — "Scanninger pr. dag (sidste 30 dage)"
--- ---------------------------------------------------------------------------
-SELECT
-  date_trunc('day', scanned_at AT TIME ZONE 'Europe/Copenhagen') AS time,
-  COUNT(*)::bigint AS value
-FROM scans
-WHERE scanned_at >= NOW() - INTERVAL '30 days'
-GROUP BY 1
-ORDER BY 1;
+-- Panel: Scanninger pr. dag
+SELECT $__timeGroupAlias(scanned_at,'1d'), COUNT(*)::bigint AS value
+FROM scans WHERE $__timeFilter(scanned_at) GROUP BY 1 ORDER BY 1;
 
--- ---------------------------------------------------------------------------
--- Panel 6: Pie chart — "Spilfordeling denne måned"
--- ---------------------------------------------------------------------------
+-- Panel: Spilfordeling i perioden
 SELECT g.name AS metric, COUNT(*)::bigint AS value
-FROM scans s
-JOIN games g ON g.id = s.game_id
-WHERE s.scanned_at >= date_trunc('month', NOW() AT TIME ZONE 'Europe/Copenhagen')
-GROUP BY g.id, g.name
-ORDER BY value DESC;
+FROM scans s JOIN games g ON g.id = s.game_id
+WHERE $__timeFilter(s.scanned_at) GROUP BY g.id, g.name ORDER BY value DESC;
 
--- ---------------------------------------------------------------------------
--- Panel 7: Table — "Seneste 50 scanninger"
--- ---------------------------------------------------------------------------
-SELECT
-  s.scanned_at AS "Tidspunkt",
-  g.name AS "Spil",
+-- Panel: Seneste 50 scanninger i perioden
+SELECT s.scanned_at AS "Tidspunkt", g.name AS "Spil",
   COALESCE(s.table_location, '—') AS "Bord",
   LEFT(COALESCE(s.user_agent, '—'), 48) AS "User-Agent"
-FROM scans s
-JOIN games g ON g.id = s.game_id
-ORDER BY s.scanned_at DESC
-LIMIT 50;
+FROM scans s JOIN games g ON g.id = s.game_id
+WHERE $__timeFilter(s.scanned_at) ORDER BY s.scanned_at DESC LIMIT 50;
 
--- ---------------------------------------------------------------------------
--- Panel 8: Heatmap — "Aktivitet: time × ugedag"
--- Grafana heatmap: X = hour, Y = weekday label, Z = count
--- ---------------------------------------------------------------------------
+-- Panel: Aktivitet time × ugedag
 SELECT
   EXTRACT(HOUR FROM scanned_at AT TIME ZONE 'Europe/Copenhagen')::int AS hour,
   TRIM(TO_CHAR(scanned_at AT TIME ZONE 'Europe/Copenhagen', 'Day')) AS weekday,
   COUNT(*)::bigint AS scans
-FROM scans
-WHERE scanned_at >= NOW() - INTERVAL '30 days'
-GROUP BY 1, 2;
+FROM scans WHERE $__timeFilter(scanned_at) GROUP BY 1, 2;
