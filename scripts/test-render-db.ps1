@@ -15,6 +15,8 @@ if (-not $url) {
     exit 1
 }
 
+[Environment]::SetEnvironmentVariable("RENDER_DATABASE_URL", $url, "Process")
+
 .\.venv\Scripts\python.exe -c @"
 import os, sys
 import psycopg2
