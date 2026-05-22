@@ -120,7 +120,8 @@ cloudflared tunnel --url tcp://localhost:5432
 ## Permanent URL til trykte QR-koder (Render)
 
 Print QR med **Render** — fast `https://qr-spilcafe.onrender.com` (ændres ikke).  
-Følg **[DEPLOY.md](DEPLOY.md)** (GitHub → Render Blueprint → `/admin/qrcodes` → print).
+Følg **[DEPLOY.md](DEPLOY.md)** (GitHub → Render Blueprint → `/admin/qrcodes` → print).  
+**Grafana Cloud:** **[grafana/GRAFANA-SETUP.md](grafana/GRAFANA-SETUP.md)**
 
 ## Sikkerhed
 

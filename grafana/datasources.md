@@ -5,9 +5,19 @@ Region: `prod-eu-west-2` (EU Germany)
 
 ## 1. Postgres (applikationsdata: scans, top spil)
 
-Grafana Cloud kan ikke nå din lokale Postgres direkte. Vælg **én** metode til demoen:
+### Anbefalet: Render Postgres (din nuværende setup)
 
-### A) Hurtigste til demo: Cloudflare Tunnel
+Database `qr-db` på Render — se **[GRAFANA-SETUP.md](GRAFANA-SETUP.md)** for trin-for-trin.
+
+Kort: Render → **qr-db** → **External Database URL** → Grafana Cloud → Add **PostgreSQL** (SSL: require).
+
+Test lokalt: `.\scripts\test-render-db.cmd` (kræver `RENDER_DATABASE_URL` i `.env`).
+
+---
+
+### Alternativ: Lokal Postgres (kun hvis du kører DB på pc)
+
+### A) Cloudflare Tunnel
 
 1. Installer [cloudflared](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/).
 2. Start tunnel (erstatter ikke din firewall permanent — kun mens du demoer):
