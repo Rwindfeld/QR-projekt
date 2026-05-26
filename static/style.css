@@ -177,6 +177,13 @@ h1 strong {
   align-items: center;
 }
 
+.print-tip {
+  flex: 1 1 100%;
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
 .btn-nav {
   display: inline-block;
   padding: 0.55rem 1rem;
