@@ -40,5 +40,40 @@
     <p>Ingen scanninger endnu — vær den første!</p>
     {% endif %}
   </section>
+
+  {% if server_ms is defined %}
+  <p class="timing-hint">
+    Server: {{ server_ms }} ms (database {{ db_ms }} ms).
+    Klient-tid sendes automatisk når siden er loaded.
+  </p>
+  {% endif %}
 </article>
+{% endblock %}
+
+{% block scripts %}
+<script>
+(function () {
+  const scanId = {{ scan_id }};
+  function reportClientLoad() {
+    let ms = null;
+    const nav = performance.getEntriesByType("navigation")[0];
+    if (nav && nav.loadEventEnd > 0) {
+      ms = Math.round(nav.loadEventEnd - nav.startTime);
+    } else if (performance.timing && performance.timing.loadEventEnd) {
+      ms = Math.round(
+        performance.timing.loadEventEnd - performance.timing.navigationStart
+      );
+    }
+    if (ms === null || ms < 0) return;
+    fetch("/api/scan-timing/" + scanId, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ client_load_ms: ms }),
+      keepalive: true,
+    }).catch(function () {});
+  }
+  if (document.readyState === "complete") reportClientLoad();
+  else window.addEventListener("load", reportClientLoad);
+})();
+</script>
 {% endblock %}

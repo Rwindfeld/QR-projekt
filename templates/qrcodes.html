@@ -1,16 +1,63 @@
 {% extends "base.html" %}
-{% block title %}QR-koder — admin{% endblock %}
+{% block title %}QR-koder{% if is_search %} — søgning: {{ q }}{% else %} — side {{ page }}{% endif %}{% endblock %}
 {% block content %}
 <header class="print-header">
   <h1>Brætspil — QR-koder</h1>
-  <p>Print denne side og klip koderne ud. Base URL: <code>{{ base_url }}</code></p>
-  <button type="button" class="btn-print" onclick="window.print()">Udskriv</button>
+  <p>Base URL: <code>{{ base_url }}</code></p>
+
+  <form class="no-print search-form" method="get" action="/admin/qrcodes">
+    <label for="q">Søg spil</label>
+    <input
+      id="q"
+      name="q"
+      value="{{ q }}"
+      placeholder="fx catan, ticket, kr. ... "
+      autocomplete="off"
+    >
+    <button class="btn-nav" type="submit">Søg</button>
+    {% if is_search %}
+      <a class="btn-nav" href="/admin/qrcodes" style="margin-left:0.5rem;">Vis alle</a>
+    {% endif %}
+  </form>
+
+  <p class="print-summary">
+    {% if is_search %}
+      Matcher: {{ total_games }} — viser første {{ per_page }}
+    {% else %}
+      {{ total_games }} spil i alt. Side {{ page }} af {{ total_pages }}
+      ({{ per_page }} pr. side)
+    {% endif %}
+  </p>
+
+  <div class="print-actions">
+    <button type="button" class="btn-print" onclick="window.print()">Udskriv</button>
+  </div>
+
+  {% if not is_search and page > 1 %}
+    <div class="no-print" style="margin-top:0.75rem;">
+      <a class="btn-nav" href="/admin/qrcodes?page={{ page - 1 }}">← Forrige</a>
+      {% if page < total_pages %}
+        <a class="btn-nav" href="/admin/qrcodes?page={{ page + 1 }}" style="margin-left:0.75rem;">Næste →</a>
+      {% endif %}
+    </div>
+  {% elif not is_search and page < total_pages %}
+    <div class="no-print" style="margin-top:0.75rem;">
+      <a class="btn-nav" href="/admin/qrcodes?page={{ page + 1 }}">Næste →</a>
+    </div>
+  {% endif %}
 </header>
 
 <div class="qr-grid">
   {% for game in games %}
   <figure class="qr-tile">
-    <img src="/qrcodes/{{ game.slug }}.png" alt="QR for {{ game.name }}" width="180" height="180">
+    <img
+      src="/qrcodes/{{ game.slug }}.png"
+      alt="QR for {{ game.name }}"
+      width="160"
+      height="160"
+      loading="lazy"
+      decoding="async"
+    >
     <figcaption>
       <strong>{{ game.name }}</strong>
       <span class="slug">/scan/{{ game.slug }}</span>
@@ -18,4 +65,10 @@
   </figure>
   {% endfor %}
 </div>
+
+{% if not is_search and total_pages > 1 %}
+  <nav class="no-print qr-pagination" aria-label="Sider">
+    <span>Side {{ page }} / {{ total_pages }}</span>
+  </nav>
+{% endif %}
 {% endblock %}

@@ -36,3 +36,10 @@ histogram_quantile(
 
 # Alternative if job label differs:
 # histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket{stack="qr-projekt"}[5m])) by (le))
+
+# ---------------------------------------------------------------------------
+# Ydeevne — custom histograms (main.py)
+# ---------------------------------------------------------------------------
+histogram_quantile(0.95, sum(rate(scan_server_duration_seconds_bucket{job="qr-app"}[5m])) by (le))
+histogram_quantile(0.95, sum(rate(scan_db_duration_seconds_bucket{job="qr-app"}[5m])) by (le))
+histogram_quantile(0.95, sum(rate(scan_client_load_seconds_bucket{job="qr-app"}[5m])) by (le))

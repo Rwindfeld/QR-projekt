@@ -72,6 +72,9 @@ class Scan(Base):
     table_location: Mapped[Optional[str]] = mapped_column(String(32))
     user_agent: Mapped[Optional[str]] = mapped_column(Text)
     ip_hash: Mapped[Optional[str]] = mapped_column(String(64))
+    server_duration_ms: Mapped[Optional[int]] = mapped_column(Integer)
+    db_duration_ms: Mapped[Optional[int]] = mapped_column(Integer)
+    client_load_ms: Mapped[Optional[int]] = mapped_column(Integer)
 
     game: Mapped["Game"] = relationship(back_populates="scans")
 

@@ -10,6 +10,8 @@ build/
 venv/
 qrcodes/*.png
 !qrcodes/.gitkeep
+static/qrcodes/*.png
+!static/qrcodes/.gitkeep
 .pytest_cache/
 .mypy_cache/
 .DS_Store

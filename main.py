@@ -6,21 +6,24 @@ Connects via PgBouncer (port 6432). Exposes /metrics for Grafana Alloy.
 from __future__ import annotations
 
 import hashlib
+import re
 import os
+import time
 from contextlib import asynccontextmanager
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
 import qrcode
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
+from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from prometheus_client import Counter
+from prometheus_client import Counter, Histogram
 from prometheus_fastapi_instrumentator import Instrumentator
-
-from sqlalchemy import select
+from pydantic import BaseModel, Field
+from sqlalchemy import func, or_, select, update
 
 from models import Game, Scan, get_db, get_game_by_slug, monthly_scan_rank, top_games
 from wiki_urls import wikipedia_url_for_slug
@@ -31,7 +34,6 @@ load_dotenv()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Render free tier has no preDeployCommand — init DB on startup instead
     try:
         bootstrap()
     except Exception as exc:
@@ -39,20 +41,20 @@ async def lifespan(app: FastAPI):
     yield
 
 
-# Permanent QR: on Render, RENDER_EXTERNAL_URL is the stable public HTTPS URL
 BASE_URL = (
     os.getenv("BASE_URL")
     or os.getenv("RENDER_EXTERNAL_URL")
     or "http://localhost:8000"
 ).rstrip("/")
-QRCODE_DIR = Path(__file__).parent / "qrcodes"
-QRCODE_DIR.mkdir(exist_ok=True)
+QRCODE_DIR = Path(__file__).parent / "static" / "qrcodes"
+QRCODE_DIR.mkdir(parents=True, exist_ok=True)
+QRCODES_PER_PAGE = 48
+QRCODES_PER_SEARCH = 24
 
-app = FastAPI(title="QR Café Tracking", version="0.2.0", lifespan=lifespan)
+app = FastAPI(title="QR Café Tracking", version="0.3.0", lifespan=lifespan)
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# Custom Prometheus metrics (scraped by Alloy → Grafana Cloud)
 scans_total = Counter(
     "scans_total",
     "Total successful QR scans logged",
@@ -63,8 +65,27 @@ scan_errors_total = Counter(
     "Scan attempts that failed (unknown slug, DB error, etc.)",
     ["reason"],
 )
+scan_server_duration_seconds = Histogram(
+    "scan_server_duration_seconds",
+    "Server time for full /scan request (DB + HTML)",
+    buckets=(0.05, 0.1, 0.25, 0.5, 1.0, 2.0, 5.0, 10.0),
+)
+scan_db_duration_seconds = Histogram(
+    "scan_db_duration_seconds",
+    "Database time to save scan and compute rank",
+    buckets=(0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1.0, 2.0),
+)
+scan_client_load_seconds = Histogram(
+    "scan_client_load_seconds",
+    "Browser page load time reported from thanks page",
+    buckets=(0.25, 0.5, 1.0, 2.0, 3.0, 5.0, 10.0, 30.0),
+)
 
 Instrumentator().instrument(app).expose(app, endpoint="/metrics", include_in_schema=False)
+
+
+class ScanTimingBody(BaseModel):
+    client_load_ms: int = Field(ge=0, le=120_000)
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -106,12 +127,9 @@ def _client_ip(request: Request) -> Optional[str]:
     return None
 
 
-def _record_scan(
-    request: Request,
-    slug: str,
-    table_location: Optional[str] = None,
-) -> tuple[Game, int]:
-    """Insert scan and return game + monthly rank."""
+def _record_scan(request: Request, slug: str) -> tuple[Game, int, int, int]:
+    """Insert scan; return game, monthly rank, scan_id, db_duration_ms."""
+    db_start = time.perf_counter()
     with get_db() as db:
         game = get_game_by_slug(db, slug)
         if not game:
@@ -120,23 +138,32 @@ def _record_scan(
 
         scan = Scan(
             game_id=game.id,
-            table_location=table_location,
             user_agent=request.headers.get("user-agent"),
             ip_hash=_hash_ip(_client_ip(request)),
         )
         db.add(scan)
         db.flush()
+        scan_id = int(scan.id)
         rank = monthly_scan_rank(db, game.id)
+        db_ms = int((time.perf_counter() - db_start) * 1000)
+        scan.db_duration_ms = db_ms
         scans_total.labels(game=game.slug).inc()
-        db.expunge(game)  # safe to use after session closes
-        return game, rank
+        db.expunge(game)
+        return game, rank, scan_id, db_ms
+
+
+def _save_server_duration(scan_id: int, server_ms: int) -> None:
+    with get_db() as db:
+        db.execute(
+            update(Scan).where(Scan.id == scan_id).values(server_duration_ms=server_ms)
+        )
 
 
 @app.get("/scan/{slug}")
-@app.get("/scan/{slug}/{table_location}")
-def scan_game(request: Request, slug: str, table_location: Optional[str] = None):
+def scan_game(request: Request, slug: str):
+    t0 = time.perf_counter()
     try:
-        game, rank = _record_scan(request, slug, table_location)
+        game, rank, scan_id, db_ms = _record_scan(request, slug)
     except HTTPException:
         raise
     except Exception:
@@ -145,6 +172,11 @@ def scan_game(request: Request, slug: str, table_location: Optional[str] = None)
 
     with get_db() as db:
         top5 = top_games(db, days=7, limit=5)
+
+    server_ms = int((time.perf_counter() - t0) * 1000)
+    _save_server_duration(scan_id, server_ms)
+    scan_db_duration_seconds.observe(db_ms / 1000.0)
+    scan_server_duration_seconds.observe(server_ms / 1000.0)
 
     wiki_url = game.wikipedia_url or wikipedia_url_for_slug(game.slug)
     wiki_note = " (engelsk)" if "en.wikipedia.org" in wiki_url else ""
@@ -157,8 +189,30 @@ def scan_game(request: Request, slug: str, table_location: Optional[str] = None)
             "top5": top5,
             "wiki_url": wiki_url,
             "wiki_note": wiki_note,
+            "scan_id": scan_id,
+            "server_ms": server_ms,
+            "db_ms": db_ms,
         },
     )
+
+
+@app.post("/api/scan-timing/{scan_id}")
+def report_scan_timing(scan_id: int, body: ScanTimingBody):
+    """Browser reports page load time after thanks.html loads."""
+    with get_db() as db:
+        scan = db.get(Scan, scan_id)
+        if not scan:
+            raise HTTPException(status_code=404, detail="Scan ikke fundet")
+        scanned = scan.scanned_at
+        if scanned.tzinfo is None:
+            scanned = scanned.replace(tzinfo=timezone.utc)
+        age_sec = (datetime.now(timezone.utc) - scanned.astimezone(timezone.utc)).total_seconds()
+        if age_sec > 600:
+            raise HTTPException(status_code=410, detail="Scan for gammel til timing")
+        scan.client_load_ms = body.client_load_ms
+
+    scan_client_load_seconds.observe(body.client_load_ms / 1000.0)
+    return {"ok": True, "scan_id": scan_id, "client_load_ms": body.client_load_ms}
 
 
 @app.get("/api/stats/top-games")
@@ -173,30 +227,75 @@ def api_top_games(days: int = 7):
     }
 
 
+def _ensure_qrcode(slug: str) -> Path:
+    """Lazy fallback if a new game was added after deploy build."""
+    path = QRCODE_DIR / f"{slug}.png"
+    if path.is_file():
+        return path
+    url = f"{BASE_URL}/scan/{slug}"
+    img = qrcode.make(url, box_size=6, border=2)
+    img.save(path, optimize=True)
+    return path
+
+
 @app.get("/admin/qrcodes")
-def admin_qrcodes(request: Request):
-    """Generate PNG QR codes and render printable grid."""
+def admin_qrcodes(request: Request, q: str = "", page: int = 1):
+    """
+    Prototype-print side:
+    - Uden søgning: paginate hele kataloget.
+    - Med søgning: vis kun første side af matches (ingen pagination) for at gøre det hurtigt.
+    """
+    q = (q or "").strip()
+    page = max(1, page)
+
+    is_search = bool(q)
+    per_page = QRCODES_PER_SEARCH if is_search else QRCODES_PER_PAGE
+    offset = 0 if is_search else (page - 1) * QRCODES_PER_PAGE
+
+    where_clause = None
+    if is_search:
+        pat = f"%{q}%"
+        where_clause = or_(Game.name.ilike(pat), Game.slug.ilike(pat))
+
     with get_db() as db:
-        games = list(db.scalars(select(Game).order_by(Game.name)).all())
+        total_stmt = select(func.count()).select_from(Game)
+        games_stmt = select(Game).order_by(Game.name)
+
+        if where_clause is not None:
+            total_stmt = total_stmt.where(where_clause)
+            games_stmt = games_stmt.where(where_clause)
+
+        total = db.scalar(total_stmt) or 0
+
+        games_stmt = games_stmt.offset(offset).limit(per_page)
+        games = list(db.scalars(games_stmt).all())
         for game in games:
             db.expunge(game)
 
-    for game in games:
-        url = f"{BASE_URL}/scan/{game.slug}"
-        img = qrcode.make(url, box_size=8, border=2)
-        out = QRCODE_DIR / f"{game.slug}.png"
-        img.save(out)
+    # Ingen pagination ved søgning (for hastighed)
+    total_pages = 1 if is_search else max(1, (total + QRCODES_PER_PAGE - 1) // QRCODES_PER_PAGE)
+    if not is_search and page > total_pages:
+        page = total_pages
 
     return templates.TemplateResponse(
         request,
         "qrcodes.html",
-        {"games": games, "base_url": BASE_URL},
+        {
+            "games": games,
+            "base_url": BASE_URL,
+            "q": q,
+            "is_search": is_search,
+            "page": page,
+            "total_pages": total_pages,
+            "total_games": total,
+            "per_page": per_page,
+        },
     )
 
 
 @app.get("/qrcodes/{slug}.png")
 def serve_qrcode(slug: str):
-    path = QRCODE_DIR / f"{slug}.png"
-    if not path.is_file():
-        raise HTTPException(status_code=404, detail="QR ikke genereret endnu")
-    return FileResponse(path, media_type="image/png")
+    if not re.fullmatch(r"[a-z0-9-]+", slug):
+        raise HTTPException(status_code=400, detail="Ugyldigt spil")
+    path = _ensure_qrcode(slug)
+    return FileResponse(path, media_type="image/png", headers={"Cache-Control": "public, max-age=86400"})

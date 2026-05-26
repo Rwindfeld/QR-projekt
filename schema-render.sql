@@ -14,13 +14,20 @@ CREATE TABLE IF NOT EXISTS games (
 ALTER TABLE games ADD COLUMN IF NOT EXISTS wikipedia_url TEXT;
 
 CREATE TABLE IF NOT EXISTS scans (
-    id              BIGSERIAL PRIMARY KEY,
-    game_id         INTEGER NOT NULL REFERENCES games(id) ON DELETE CASCADE,
-    scanned_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    table_location  VARCHAR(32),
-    user_agent      TEXT,
-    ip_hash         CHAR(64)
+    id                  BIGSERIAL PRIMARY KEY,
+    game_id             INTEGER NOT NULL REFERENCES games(id) ON DELETE CASCADE,
+    scanned_at          TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    table_location      VARCHAR(32),
+    user_agent          TEXT,
+    ip_hash             CHAR(64),
+    server_duration_ms  INTEGER,
+    db_duration_ms      INTEGER,
+    client_load_ms      INTEGER
 );
+
+ALTER TABLE scans ADD COLUMN IF NOT EXISTS server_duration_ms INTEGER;
+ALTER TABLE scans ADD COLUMN IF NOT EXISTS db_duration_ms INTEGER;
+ALTER TABLE scans ADD COLUMN IF NOT EXISTS client_load_ms INTEGER;
 
 CREATE INDEX IF NOT EXISTS idx_scans_scanned_at ON scans (scanned_at DESC);
 CREATE INDEX IF NOT EXISTS idx_scans_game_id ON scans (game_id);

@@ -9,10 +9,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY main.py models.py ./
+COPY main.py models.py wiki_urls.py schema-render.sql schema-timing.sql seed.sql ./
+COPY scripts/ scripts/
 COPY templates/ templates/
 COPY static/ static/
-RUN mkdir -p qrcodes
+RUN python scripts/build_qrcodes.py
 
 EXPOSE 8000
 

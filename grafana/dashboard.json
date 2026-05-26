@@ -8,9 +8,31 @@
   "liveNow": false,
   "panels": [
     {
+      "gridPos": { "h": 3, "w": 24, "x": 0, "y": 0 },
+      "id": 100,
+      "options": {
+        "code": { "language": "plaintext", "showLineNumbers": false },
+        "content": "**Prototype — efterspørgsel ved hylden**\n\nHvert scan = en gæst har taget (eller kigget på) et spil fra hylden. **Klik på KPI-tallene** for at hoppe til detaljelister. Brug dropdown *Maks. scanninger (lav)* til at styre listen med spil, der overvejes til udskiftning.",
+        "mode": "markdown"
+      },
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
       "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
-      "fieldConfig": { "defaults": { "color": { "mode": "fixed", "fixedColor": "#FF8C42" } } },
-      "gridPos": { "h": 4, "w": 6, "x": 0, "y": 0 },
+      "description": "Klik på tallet for seneste scanninger",
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "fixed", "fixedColor": "#FF8C42" },
+          "links": [{
+            "title": "Se seneste scanninger",
+            "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__url_time_range}&viewPanel=8",
+            "targetBlank": false
+          }]
+        }
+      },
+      "gridPos": { "h": 4, "w": 6, "x": 0, "y": 3 },
       "id": 1,
       "options": { "colorMode": "value", "graphMode": "none", "reduceOptions": { "calcs": ["lastNotNull"] } },
       "targets": [{
@@ -24,8 +46,18 @@
     },
     {
       "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
-      "fieldConfig": { "defaults": { "color": { "mode": "fixed", "fixedColor": "#FF8C42" } } },
-      "gridPos": { "h": 4, "w": 6, "x": 6, "y": 0 },
+      "description": "Klik på tallet for top 15 spil",
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "fixed", "fixedColor": "#FF8C42" },
+          "links": [{
+            "title": "Se top 15 spil",
+            "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__url_time_range}&viewPanel=5",
+            "targetBlank": false
+          }]
+        }
+      },
+      "gridPos": { "h": 4, "w": 6, "x": 6, "y": 3 },
       "id": 2,
       "options": { "colorMode": "value", "graphMode": "none", "reduceOptions": { "calcs": ["lastNotNull"] } },
       "targets": [{
@@ -33,131 +65,342 @@
         "format": "table",
         "refId": "A"
       }],
-      "title": "Forskellige spil i perioden",
+      "title": "Spil med mindst 1 scan",
       "type": "stat"
     },
     {
       "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
-      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "description": "Klik på tallet for spil med lave scanninger",
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "fixed", "fixedColor": "#73BF69" },
+          "unit": "percent",
+          "links": [{
+            "title": "Se spil med lave scanninger",
+            "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__url_time_range}&viewPanel=7&var-max_lav_scans=${max_lav_scans}",
+            "targetBlank": false
+          }]
+        }
+      },
+      "gridPos": { "h": 4, "w": 6, "x": 12, "y": 3 },
       "id": 3,
-      "options": { "orientation": "horizontal", "xTickLabelRotation": 0, "legend": { "displayMode": "list" } },
+      "options": { "colorMode": "value", "graphMode": "none", "reduceOptions": { "calcs": ["lastNotNull"] } },
       "targets": [{
-        "rawSql": "SELECT g.name AS name, COUNT(*)::bigint AS scans FROM scans s JOIN games g ON g.id = s.game_id WHERE $__timeFilter(s.scanned_at) GROUP BY g.id, g.name ORDER BY scans DESC LIMIT 10",
+        "rawSql": "SELECT ROUND(100.0 * COUNT(DISTINCT s.game_id) / NULLIF((SELECT COUNT(*)::numeric FROM games), 0), 1) AS value FROM scans s WHERE $__timeFilter(s.scanned_at)",
         "format": "table",
         "refId": "A"
       }],
-      "title": "Top 10 spil i perioden",
+      "title": "Andel af kataloget i brug",
+      "type": "stat"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "description": "Klik på tallet for fuld liste (0–${max_lav_scans} scanninger)",
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "fixed", "fixedColor": "#E02F44" },
+          "links": [{
+            "title": "Se spil med lave scanninger",
+            "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__url_time_range}&viewPanel=7&var-max_lav_scans=${max_lav_scans}",
+            "targetBlank": false
+          }]
+        }
+      },
+      "gridPos": { "h": 4, "w": 6, "x": 18, "y": 3 },
+      "id": 4,
+      "options": { "colorMode": "value", "graphMode": "none", "reduceOptions": { "calcs": ["lastNotNull"] } },
+      "targets": [{
+        "rawSql": "SELECT COUNT(*)::bigint AS value FROM games g LEFT JOIN (SELECT s.game_id, COUNT(*)::bigint AS scans FROM scans s WHERE $__timeFilter(s.scanned_at) GROUP BY s.game_id) cnt ON cnt.game_id = g.id WHERE COALESCE(cnt.scans, 0) <= ${max_lav_scans}",
+        "format": "table",
+        "refId": "A"
+      }],
+      "title": "Spil med lave scanninger (≤ ${max_lav_scans})",
+      "type": "stat"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "description": "Klik på en søjle for at åbne spillets QR-side (ny fane)",
+      "fieldConfig": {
+        "defaults": {
+          "links": [{
+            "title": "Åbn spil-side (QR)",
+            "url": "https://qr-spilcafe.onrender.com/scan/${__data.fields[\"slug\"]}",
+            "targetBlank": true
+          }]
+        }
+      },
+      "gridPos": { "h": 9, "w": 14, "x": 0, "y": 7 },
+      "id": 5,
+      "options": { "orientation": "horizontal", "xTickLabelRotation": 0, "legend": { "displayMode": "list" } },
+      "transformations": [
+        { "id": "organize", "options": { "excludeByName": { "slug": true }, "indexByName": {}, "renameByName": {} } }
+      ],
+      "targets": [{
+        "rawSql": "SELECT g.name AS name, g.slug AS slug, COUNT(*)::bigint AS scans FROM scans s JOIN games g ON g.id = s.game_id WHERE $__timeFilter(s.scanned_at) GROUP BY g.id, g.name, g.slug ORDER BY scans DESC LIMIT 15",
+        "format": "table",
+        "refId": "A"
+      }],
+      "title": "Top 15 — højest efterspørgsel (køb/flere eksemplarer)",
       "type": "barchart"
     },
     {
       "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
-      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 4 },
-      "id": 4,
-      "options": { "legend": { "displayMode": "table" }, "tooltip": { "mode": "multi" } },
-      "targets": [{
-        "rawSql": "WITH top5 AS (SELECT s.game_id FROM scans s WHERE $__timeFilter(s.scanned_at) GROUP BY s.game_id ORDER BY COUNT(*) DESC LIMIT 5) SELECT $__timeGroupAlias(s.scanned_at,'1h'), g.name AS metric, COUNT(*)::bigint AS value FROM scans s JOIN games g ON g.id = s.game_id WHERE $__timeFilter(s.scanned_at) AND s.game_id IN (SELECT game_id FROM top5) GROUP BY 1, 2 ORDER BY 1",
-        "format": "time_series",
-        "refId": "A"
-      }],
-      "title": "Scanninger pr. time",
-      "type": "timeseries"
-    },
-    {
-      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
-      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 8 },
-      "id": 5,
+      "gridPos": { "h": 9, "w": 10, "x": 14, "y": 7 },
+      "id": 6,
       "targets": [{
         "rawSql": "SELECT $__timeGroupAlias(scanned_at,'1d'), COUNT(*)::bigint AS value FROM scans WHERE $__timeFilter(scanned_at) GROUP BY 1 ORDER BY 1",
         "format": "time_series",
         "refId": "A"
       }],
-      "title": "Scanninger pr. dag",
+      "title": "Scanninger pr. dag (trend)",
       "type": "timeseries"
     },
     {
       "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
-      "gridPos": { "h": 8, "w": 8, "x": 0, "y": 12 },
-      "id": 6,
-      "options": { "pieType": "pie", "legend": { "displayMode": "table", "placement": "right" } },
-      "targets": [{
-        "rawSql": "SELECT g.name AS metric, COUNT(*)::bigint AS value FROM scans s JOIN games g ON g.id = s.game_id WHERE $__timeFilter(s.scanned_at) GROUP BY g.id, g.name ORDER BY value DESC",
-        "format": "table",
-        "refId": "A"
-      }],
-      "title": "Spilfordeling i perioden",
-      "type": "piechart"
-    },
-    {
-      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
-      "gridPos": { "h": 8, "w": 16, "x": 8, "y": 12 },
+      "description": "Klik på Slug for at åbne spillets QR-side",
+      "fieldConfig": {
+        "overrides": [{
+          "matcher": { "id": "byName", "options": "Slug" },
+          "properties": [{
+            "id": "links",
+            "value": [{
+              "title": "Åbn QR-side",
+              "url": "https://qr-spilcafe.onrender.com/scan/${__value.raw}",
+              "targetBlank": true
+            }]
+          }]
+        }]
+      },
+      "gridPos": { "h": 10, "w": 12, "x": 0, "y": 16 },
       "id": 7,
       "targets": [{
-        "rawSql": "SELECT s.scanned_at AS \"Tidspunkt\", g.name AS \"Spil\", COALESCE(s.table_location, '—') AS \"Bord\", LEFT(COALESCE(s.user_agent, '—'), 48) AS \"User-Agent\" FROM scans s JOIN games g ON g.id = s.game_id WHERE $__timeFilter(s.scanned_at) ORDER BY s.scanned_at DESC LIMIT 50",
+        "rawSql": "SELECT g.name AS \"Spil\", g.slug AS \"Slug\", COALESCE(g.year_published::text, '—') AS \"År\", COALESCE(cnt.scans, 0)::bigint AS \"Scanninger\" FROM games g LEFT JOIN (SELECT s.game_id, COUNT(*)::bigint AS scans FROM scans s WHERE $__timeFilter(s.scanned_at) GROUP BY s.game_id) cnt ON cnt.game_id = g.id WHERE COALESCE(cnt.scans, 0) <= ${max_lav_scans} ORDER BY COALESCE(cnt.scans, 0) ASC, g.name",
         "format": "table",
         "refId": "A"
       }],
-      "title": "Seneste 50 scanninger i perioden",
+      "title": "Spil med lave scanninger - Overvej udskiftning",
       "type": "table"
     },
     {
       "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
-      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 20 },
+      "description": "Klik på Slug for at åbne spillets QR-side",
+      "fieldConfig": {
+        "overrides": [{
+          "matcher": { "id": "byName", "options": "Slug" },
+          "properties": [{
+            "id": "links",
+            "value": [{
+              "title": "Åbn QR-side",
+              "url": "https://qr-spilcafe.onrender.com/scan/${__value.raw}",
+              "targetBlank": true
+            }]
+          }]
+        }]
+      },
+      "gridPos": { "h": 10, "w": 12, "x": 12, "y": 16 },
       "id": 8,
-      "options": { "calculate": false, "cellGap": 2, "color": { "scheme": "Oranges" } },
       "targets": [{
-        "rawSql": "SELECT EXTRACT(HOUR FROM scanned_at AT TIME ZONE 'Europe/Copenhagen')::int AS hour, TRIM(TO_CHAR(scanned_at AT TIME ZONE 'Europe/Copenhagen', 'Day')) AS weekday, COUNT(*)::bigint AS scans FROM scans WHERE $__timeFilter(scanned_at) GROUP BY 1, 2",
+        "rawSql": "SELECT s.scanned_at AS \"Tidspunkt\", g.name AS \"Spil\", g.slug AS \"Slug\" FROM scans s JOIN games g ON g.id = s.game_id WHERE $__timeFilter(s.scanned_at) ORDER BY s.scanned_at DESC LIMIT 50",
         "format": "table",
         "refId": "A"
       }],
-      "title": "Aktivitet: time × ugedag",
-      "type": "heatmap"
+      "title": "Seneste 50 scanninger",
+      "type": "table"
     },
     {
-      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
-      "fieldConfig": { "defaults": { "color": { "fixedColor": "#FF8C42", "mode": "fixed" } } },
-      "gridPos": { "h": 4, "w": 6, "x": 0, "y": 28 },
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "description": "Antal scanninger fordelt på ugedag (dansk tid, mandag foerst)",
+      "fieldConfig": { "defaults": { "color": { "mode": "fixed", "fixedColor": "#FF8C42" } } },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 26 },
       "id": 9,
-      "targets": [{ "expr": "sum(pgbouncer_pools_client_active_connections{stack=\"qr-projekt\"})", "refId": "A" }],
-      "title": "PgBouncer aktive forbindelser",
-      "type": "stat"
-    },
-    {
-      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
-      "gridPos": { "h": 8, "w": 12, "x": 6, "y": 28 },
-      "id": 10,
-      "fieldConfig": { "defaults": { "color": { "fixedColor": "#FF8C42", "mode": "fixed" } } },
-      "targets": [{ "expr": "sum(rate(pgbouncer_stats_queries_pooled_total{stack=\"qr-projekt\"}[5m]))", "legendFormat": "queries/s", "refId": "A" }],
-      "title": "PgBouncer query rate",
-      "type": "timeseries"
-    },
-    {
-      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
-      "fieldConfig": { "defaults": { "color": { "fixedColor": "#FF8C42", "mode": "fixed" } } },
-      "gridPos": { "h": 4, "w": 6, "x": 18, "y": 28 },
-      "id": 11,
-      "targets": [{ "expr": "sum(rate(scans_total{stack=\"qr-projekt\"}[5m]))", "refId": "A" }],
-      "title": "App scan-rate (sidste 5 min)",
-      "type": "stat"
-    },
-    {
-      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
-      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 32 },
-      "id": 12,
+      "options": {
+        "legend": { "displayMode": "list" },
+        "orientation": "horizontal",
+        "showValue": "auto",
+        "xTickLabelRotation": 0
+      },
       "targets": [{
-        "expr": "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket{job=\"qr-app\", stack=\"qr-projekt\"}[5m])) by (le))",
-        "legendFormat": "p95",
+        "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+        "format": "table",
+        "rawSql": "WITH t AS (SELECT EXTRACT(ISODOW FROM scanned_at AT TIME ZONE 'Europe/Copenhagen')::int AS dow FROM scans WHERE $__timeFilter(scanned_at)) SELECT CASE dow WHEN 1 THEN 'Mandag' WHEN 2 THEN 'Tirsdag' WHEN 3 THEN 'Onsdag' WHEN 4 THEN 'Torsdag' WHEN 5 THEN 'Fredag' WHEN 6 THEN 'Loerdag' WHEN 7 THEN 'Soendag' END AS name, COUNT(*)::bigint AS scans FROM t GROUP BY dow ORDER BY dow",
         "refId": "A"
       }],
-      "title": "FastAPI request latency p95",
+      "title": "Hvornår tages spil fra hylden — per ugedag",
+      "type": "barchart"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "description": "Antal scanninger fordelt på tidspunkt (dansk tid)",
+      "fieldConfig": { "defaults": { "color": { "mode": "fixed", "fixedColor": "#FFB347" } } },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 26 },
+      "id": 10,
+      "options": {
+        "legend": { "displayMode": "list" },
+        "orientation": "horizontal",
+        "showValue": "auto",
+        "xTickLabelRotation": 0
+      },
+      "targets": [{
+        "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+        "format": "table",
+        "rawSql": "WITH t AS (SELECT EXTRACT(HOUR FROM scanned_at AT TIME ZONE 'Europe/Copenhagen')::int AS h FROM scans WHERE $__timeFilter(scanned_at)), b AS (SELECT CASE WHEN h BETWEEN 10 AND 13 THEN 1 WHEN h BETWEEN 14 AND 16 THEN 2 WHEN h BETWEEN 17 AND 21 THEN 3 WHEN h < 10 THEN 4 ELSE 5 END AS s, CASE WHEN h BETWEEN 10 AND 13 THEN '10-14 Formiddag' WHEN h BETWEEN 14 AND 16 THEN '14-17 Eftermiddag' WHEN h BETWEEN 17 AND 21 THEN '17-22 Aften' WHEN h < 10 THEN 'Foer aabning' ELSE 'Sent / andet' END AS name FROM t) SELECT name, COUNT(*)::bigint AS scans FROM b GROUP BY s, name ORDER BY s",
+        "refId": "A"
+      }],
+      "title": "Hvornår tages spil fra hylden — per tid på dagen",
+      "type": "barchart"
+    },
+    {
+      "gridPos": { "h": 2, "w": 24, "x": 0, "y": 34 },
+      "id": 20,
+      "options": {
+        "content": "**Ydeevne — hvad måles?**\n- **Server ms:** tid fra scan-request til HTML er klar (inkl. database).\n- **DB ms:** tid til at gemme scan i Postgres.\n- **Klient ms:** tid i gæstens browser (QR → færdig tak-side). Sendes automatisk efter load.\n- **Grafana:** data er i Postgres med det samme; dashboard opdateres ca. hvert 30. sek.",
+        "mode": "markdown"
+      },
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "fieldConfig": { "defaults": { "color": { "fixedColor": "#5794F2", "mode": "fixed" }, "unit": "ms" } },
+      "gridPos": { "h": 4, "w": 6, "x": 0, "y": 36 },
+      "id": 21,
+      "options": { "colorMode": "value", "graphMode": "area", "reduceOptions": { "calcs": ["lastNotNull"] } },
+      "targets": [{
+        "rawSql": "SELECT ROUND(AVG(server_duration_ms))::bigint AS value FROM scans WHERE $__timeFilter(scanned_at) AND server_duration_ms IS NOT NULL",
+        "format": "table",
+        "refId": "A"
+      }],
+      "title": "Gns. server-tid (scan → side klar)",
+      "type": "stat"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "fieldConfig": { "defaults": { "color": { "fixedColor": "#73BF69", "mode": "fixed" }, "unit": "ms" } },
+      "gridPos": { "h": 4, "w": 6, "x": 6, "y": 36 },
+      "id": 22,
+      "options": { "colorMode": "value", "graphMode": "area", "reduceOptions": { "calcs": ["lastNotNull"] } },
+      "targets": [{
+        "rawSql": "SELECT ROUND(AVG(db_duration_ms))::bigint AS value FROM scans WHERE $__timeFilter(scanned_at) AND db_duration_ms IS NOT NULL",
+        "format": "table",
+        "refId": "A"
+      }],
+      "title": "Gns. database-tid",
+      "type": "stat"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "fieldConfig": { "defaults": { "color": { "fixedColor": "#B877D9", "mode": "fixed" }, "unit": "ms" } },
+      "gridPos": { "h": 4, "w": 6, "x": 12, "y": 36 },
+      "id": 23,
+      "options": { "colorMode": "value", "graphMode": "area", "reduceOptions": { "calcs": ["lastNotNull"] } },
+      "targets": [{
+        "rawSql": "SELECT ROUND(AVG(client_load_ms))::bigint AS value FROM scans WHERE $__timeFilter(scanned_at) AND client_load_ms IS NOT NULL",
+        "format": "table",
+        "refId": "A"
+      }],
+      "title": "Gns. klient load (browser)",
+      "type": "stat"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "fieldConfig": { "defaults": { "color": { "fixedColor": "#FF9830", "mode": "fixed" }, "unit": "ms" } },
+      "gridPos": { "h": 4, "w": 6, "x": 18, "y": 36 },
+      "id": 24,
+      "options": { "colorMode": "value", "graphMode": "none", "reduceOptions": { "calcs": ["lastNotNull"] } },
+      "targets": [{
+        "rawSql": "SELECT PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY server_duration_ms)::bigint AS value FROM scans WHERE $__timeFilter(scanned_at) AND server_duration_ms IS NOT NULL",
+        "format": "table",
+        "refId": "A"
+      }],
+      "title": "p95 server-tid",
+      "type": "stat"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 40 },
+      "id": 25,
+      "fieldConfig": { "defaults": { "unit": "ms" } },
+      "targets": [{
+        "rawSql": "SELECT $__timeGroupAlias(scanned_at,'1d'), ROUND(AVG(server_duration_ms))::bigint AS \"Server ms\", ROUND(AVG(client_load_ms))::bigint AS \"Klient ms\" FROM scans WHERE $__timeFilter(scanned_at) AND server_duration_ms IS NOT NULL GROUP BY 1 ORDER BY 1",
+        "format": "time_series",
+        "refId": "A"
+      }],
+      "title": "Gns. responstid over tid",
       "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "postgres", "uid": "${DS_POSTGRES}" },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 40 },
+      "id": 26,
+      "targets": [{
+        "rawSql": "SELECT s.scanned_at AS \"Tidspunkt\", g.name AS \"Spil\", s.server_duration_ms AS \"Server ms\", s.db_duration_ms AS \"DB ms\", s.client_load_ms AS \"Klient ms\" FROM scans s JOIN games g ON g.id = s.game_id WHERE $__timeFilter(s.scanned_at) ORDER BY s.scanned_at DESC LIMIT 30",
+        "format": "table",
+        "refId": "A"
+      }],
+      "title": "Seneste scanninger med tider",
+      "type": "table"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "fixedColor": "#5794F2", "mode": "fixed" }, "unit": "s" } },
+      "gridPos": { "h": 4, "w": 8, "x": 0, "y": 48 },
+      "id": 27,
+      "targets": [{
+        "expr": "histogram_quantile(0.95, sum(rate(scan_server_duration_seconds_bucket{job=\"qr-app\"}[5m])) by (le))",
+        "legendFormat": "p95 server",
+        "refId": "A"
+      }],
+      "title": "Prometheus: p95 server (live)",
+      "type": "stat"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": { "defaults": { "color": { "fixedColor": "#B877D9", "mode": "fixed" }, "unit": "s" } },
+      "gridPos": { "h": 4, "w": 8, "x": 8, "y": 48 },
+      "id": 28,
+      "targets": [{
+        "expr": "histogram_quantile(0.95, sum(rate(scan_client_load_seconds_bucket{job=\"qr-app\"}[5m])) by (le))",
+        "legendFormat": "p95 klient",
+        "refId": "A"
+      }],
+      "title": "Prometheus: p95 klient load",
+      "type": "stat"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "gridPos": { "h": 4, "w": 8, "x": 16, "y": 48 },
+      "id": 29,
+      "targets": [{
+        "expr": "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket{job=\"qr-app\",handler=\"/scan/{slug}\"}[5m])) by (le))",
+        "legendFormat": "p95 /scan",
+        "refId": "A"
+      }],
+      "title": "Prometheus: p95 HTTP /scan",
+      "type": "stat"
     }
   ],
   "refresh": "30s",
   "schemaVersion": 39,
   "style": "dark",
-  "tags": ["qr", "spilcafe", "prototype"],
+  "tags": ["qr", "spilcafe", "eftersporgsel"],
   "templating": {
     "list": [
+      {
+        "current": { "selected": true, "text": "5", "value": "5" },
+        "hide": 0,
+        "includeAll": false,
+        "label": "Maks. scanninger (lav)",
+        "name": "max_lav_scans",
+        "options": [
+          { "selected": true, "text": "5", "value": "5" },
+          { "selected": false, "text": "10", "value": "10" },
+          { "selected": false, "text": "15", "value": "15" },
+          { "selected": false, "text": "20", "value": "20" }
+        ],
+        "query": "5,10,15,20",
+        "type": "custom"
+      },
       {
         "current": {},
         "hide": 0,
@@ -187,8 +430,8 @@
   "time": { "from": "now-180d", "to": "now" },
   "timepicker": {},
   "timezone": "browser",
-  "title": "QR Spilcafé — tracking & infrastruktur",
+  "title": "QR Spilcafé — efterspørgsel & indkøb",
   "uid": "qr-cafe-prototype",
-  "version": 2,
+  "version": 8,
   "weekStart": "monday"
 }
