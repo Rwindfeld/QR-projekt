@@ -150,6 +150,43 @@ Tilføjer **kun** nye rækker — sletter ikke dine rigtige scans. I Grafana: v�
 
 ---
 
+## Del 4: Del dashboard offentligt (med live data)
+
+Grafana viser advarslen **"Template variables are not supported"** — derfor virker det **ikke** med `dashboard.json` (den bruger `DS_POSTGRES` og `max_lav_scans`).
+
+### Trin 1 — Find Postgres datasource UID
+
+1. Grafana → **Connections** → klik din Postgres (`QR-Render-Postgres`)
+2. I URL eller **Settings** → find **UID** (fx `grafanacloud-abc123` eller `postgres-xyz`)
+3. Kopiér UID
+
+### Trin 2 — Byg public-dashboard (valgfrit, hvis UID skal ændres)
+
+```powershell
+cd "c:\Users\windf\OneDrive\Documents\QR"
+$env:GRAFANA_POSTGRES_UID="DIN-UID-HER"
+.\.venv\Scripts\python.exe scripts\build_public_dashboard.py
+```
+
+### Trin 3 — Import public-dashboard
+
+1. **Dashboards** → **New** → **Import**
+2. Upload **`grafana/dashboard-public.json`**
+3. Vælg **samme Postgres** som datakilde (UID skal matche)
+4. **Import**
+
+### Trin 4 — Aktivér public link
+
+1. Åbn det importerede dashboard
+2. **Share** → **Public dashboard** / **Share externally**
+3. Slå **Enable** til
+4. **Enable time range** + **30s refresh**
+5. **Copy external link** → test i privat/incognito
+
+> **Vigtigt:** Brug **ikke** det normale dashboard-link. Kun **Public dashboard**-linket viser data for gæster uden login.
+
+---
+
 ## Hurtig checklist
 
 - [ ] Render **qr-db** → External URL kopieret
@@ -176,7 +213,8 @@ Render Postgres ─────────────────────�
 
 | Fil | Indhold |
 |-----|---------|
-| `grafana/dashboard.json` | Importér i Grafana UI |
+| `grafana/dashboard.json` | Privat dashboard (med variabler) |
+| `grafana/dashboard-public.json` | **Offentlig deling** — ingen variabler |
 | `grafana/queries.sql` | SQL til paneler (reference) |
 | `grafana/queries.promql` | PromQL (reference) |
 | `alloy/config.render.alloy` | Alloy mod Render |
