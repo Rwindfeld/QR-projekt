@@ -2,8 +2,8 @@
 {% block title %}QR-koder{% if is_search %} — søgning: {{ q }}{% else %} — side {{ page }}{% endif %}{% endblock %}
 {% block content %}
 <header class="print-header">
-  <h1>Brætspil — QR-koder</h1>
-  <p>Base URL: <code>{{ base_url }}</code></p>
+  <h1 class="no-print">Brætspil — QR-koder</h1>
+  <p class="no-print">Base URL: <code>{{ base_url }}</code></p>
 
   <form class="no-print search-form" method="get" action="/admin/qrcodes">
     <label for="q">Søg spil</label>
@@ -11,16 +11,16 @@
       id="q"
       name="q"
       value="{{ q }}"
-      placeholder="fx catan, ticket, kr. ... "
+      placeholder="fx catan, ticket, kr. ..."
       autocomplete="off"
     >
     <button class="btn-nav" type="submit">Søg</button>
     {% if is_search %}
-      <a class="btn-nav" href="/admin/qrcodes" style="margin-left:0.5rem;">Vis alle</a>
+      <a class="btn-nav" href="/admin/qrcodes">Vis alle</a>
     {% endif %}
   </form>
 
-  <p class="print-summary">
+  <p class="no-print print-summary">
     {% if is_search %}
       Matcher: {{ total_games }} — viser første {{ per_page }}
     {% else %}
@@ -29,25 +29,25 @@
     {% endif %}
   </p>
 
-  <div class="print-actions">
-    <button type="button" class="btn-print" onclick="window.print()">Udskriv</button>
+  <div class="print-actions no-print">
+    <button type="button" class="btn-print" onclick="window.print()">Udskriv QR</button>
   </div>
 
   {% if not is_search and page > 1 %}
-    <div class="no-print" style="margin-top:0.75rem;">
+    <div class="no-print page-nav">
       <a class="btn-nav" href="/admin/qrcodes?page={{ page - 1 }}">← Forrige</a>
       {% if page < total_pages %}
-        <a class="btn-nav" href="/admin/qrcodes?page={{ page + 1 }}" style="margin-left:0.75rem;">Næste →</a>
+        <a class="btn-nav" href="/admin/qrcodes?page={{ page + 1 }}">Næste →</a>
       {% endif %}
     </div>
   {% elif not is_search and page < total_pages %}
-    <div class="no-print" style="margin-top:0.75rem;">
+    <div class="no-print page-nav">
       <a class="btn-nav" href="/admin/qrcodes?page={{ page + 1 }}">Næste →</a>
     </div>
   {% endif %}
 </header>
 
-<div class="qr-grid">
+<div class="qr-grid{% if games|length == 1 %} qr-grid--single{% endif %}">
   {% for game in games %}
   <figure class="qr-tile">
     <img
@@ -58,7 +58,7 @@
       loading="lazy"
       decoding="async"
     >
-    <figcaption>
+    <figcaption class="no-print">
       <strong>{{ game.name }}</strong>
       <span class="slug">/scan/{{ game.slug }}</span>
     </figcaption>

@@ -142,6 +142,33 @@ h1 strong {
   cursor: pointer;
 }
 
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.search-form label {
+  font-weight: 600;
+}
+
+.search-form input {
+  flex: 1 1 12rem;
+  min-width: 10rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.page-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
 .print-actions {
   display: flex;
   flex-wrap: wrap;
@@ -203,19 +230,71 @@ h1 strong {
 @media print {
   body {
     background: #fff;
+    margin: 0;
   }
 
-  .btn-print,
-  .footer {
-    display: none;
-  }
-
+  .footer,
   .no-print {
-    display: none;
+    display: none !important;
+  }
+
+  .container {
+    max-width: none;
+    padding: 0;
+    margin: 0;
   }
 
   .qr-grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .qr-tile {
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 auto;
+    page-break-inside: avoid;
+    box-shadow: none;
+  }
+
+  .qr-tile figcaption {
+    display: none !important;
+  }
+
+  .qr-tile img {
+    display: block;
+    width: 72mm;
+    height: 72mm;
+    margin: 0 auto;
+  }
+
+  /* Én QR ved søgning: centreret på arket */
+  .qr-grid--single .qr-tile {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .qr-grid--single .qr-tile img {
+    width: 80mm;
+    height: 80mm;
+  }
+
+  /* Flere QR (sidevisning): kun billeder, ét pr. række */
+  .qr-grid:not(.qr-grid--single) .qr-tile {
+    page-break-after: always;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .qr-grid:not(.qr-grid--single) .qr-tile:last-child {
+    page-break-after: auto;
   }
 }
 
