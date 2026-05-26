@@ -20,11 +20,13 @@
     {% if game.awards %}
     <p class="awards"><span>Priser:</span> {{ game.awards }}</p>
     {% endif %}
+    {% if wiki_url %}
     <p>
       <a class="wiki-link" href="{{ wiki_url }}" target="_blank" rel="noopener">
         Læs mere på Wikipedia{{ wiki_note }} →
       </a>
     </p>
+    {% endif %}
   </section>
 
   <section class="top-games">

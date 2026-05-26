@@ -728,7 +728,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2019,
     'Party; skala og gæt',
     'Én spiller kender et hemmeligt punkt på en skala — resten diskuterer sig frem.',
-    'https://en.wikipedia.org/wiki/Wavelength_(party_game)'
+    'https://en.wikipedia.org/wiki/Wavelength_(game)'
 ),
 (
     'cartographers',
@@ -768,7 +768,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2020,
     'LCG kooperativt; Fantasy Flight',
     'Spil som helte mod skurke — mange café-gæster vælger deres favorit-Marvel-figur.',
-    'https://en.wikipedia.org/wiki/Marvel_Champions'
+    'https://en.wikipedia.org/wiki/Marvel_Champions:_The_Card_Game'
 ),
 (
     'flip-7',
@@ -776,7 +776,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2024,
     'Party; push your luck med kort',
     'Saml unikke tal uden at buste — ny hit der ofte kommer på “hvad er det der grønne spil?”-hylden.',
-    'https://en.wikipedia.org/wiki/Flip_7'
+    NULL
 ),
 (
     'calico',
@@ -808,7 +808,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2022,
     'Nyhed i sortimentet',
     'Mange café-besøgende opdager Obsidian Crown først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Crown+board+game'
+    NULL
 ),
 (
     'velvet-convoy-legends-c002',
@@ -816,7 +816,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2022,
     'Populært hos gæster',
     'Ejer-notat: Velvet Convoy Legends er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Velvet+Convoy+Legends+board+game'
+    NULL
 ),
 (
     'baltic-colony-ii-c003',
@@ -824,7 +824,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1989,
     'Café-katalog',
     'Ejer-notat: Baltic Colony II er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Colony+II+board+game'
+    NULL
 ),
 (
     'primal-echo-junior-c004',
@@ -832,7 +832,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2001,
     'Klassiker på hylden',
     'Hylden med Primal Echo Junior bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Primal+Echo+Junior+board+game'
+    NULL
 ),
 (
     'arctic-junction-remix-c005',
@@ -840,7 +840,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1985,
     'Strategi for entusiaster',
     'Arctic Junction Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Junction+Remix+board+game'
+    NULL
 ),
 (
     'mystic-yard-remix-c006',
@@ -848,7 +848,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1996,
     'Populært hos gæster',
     'Mystic Yard Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Mystic+Yard+Remix+board+game'
+    NULL
 ),
 (
     'timber-quarry-deluxe-c007',
@@ -856,7 +856,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2013,
     'Nyhed i sortimentet',
     'Timber Quarry Deluxe ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Timber+Quarry+Deluxe+board+game'
+    NULL
 ),
 (
     'distant-tribe-c008',
@@ -864,7 +864,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1999,
     'Populært hos gæster',
     'Ejer-notat: Distant Tribe er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Distant+Tribe+board+game'
+    NULL
 ),
 (
     'obsidian-workshop-remix-c009',
@@ -872,7 +872,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1998,
     'Klassiker på hylden',
     'Gæster scanner ofte Obsidian Workshop Remix for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Workshop+Remix+board+game'
+    NULL
 ),
 (
     'quiet-guild-remix-c010',
@@ -880,7 +880,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1993,
     'Populært hos gæster',
     'Quiet Guild Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Guild+Remix+board+game'
+    NULL
 ),
 (
     'frozen-republic-deluxe-c011',
@@ -888,7 +888,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2004,
     'Familievenligt',
     'Mange café-besøgende opdager Frozen Republic Deluxe først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Frozen+Republic+Deluxe+board+game'
+    NULL
 ),
 (
     'mystic-circuit-deluxe-c012',
@@ -896,7 +896,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2019,
     'Populært hos gæster',
     'Ejer-notat: Mystic Circuit Deluxe er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Mystic+Circuit+Deluxe+board+game'
+    NULL
 ),
 (
     'ivory-garden-ii-c013',
@@ -904,7 +904,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1985,
     'Hurtigt party-spil',
     'Hylden med Ivory Garden II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Garden+II+board+game'
+    NULL
 ),
 (
     'obsidian-echo-junior-c014',
@@ -912,7 +912,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1989,
     'Familievenligt',
     'Obsidian Echo Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Echo+Junior+board+game'
+    NULL
 ),
 (
     'crystal-guild-remix-c015',
@@ -920,7 +920,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1977,
     'Familievenligt',
     'Hylden med Crystal Guild Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Guild+Remix+board+game'
+    NULL
 ),
 (
     'mystic-union-junior-c016',
@@ -928,7 +928,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2020,
     'Familievenligt',
     'Mange café-besøgende opdager Mystic Union Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Mystic+Union+Junior+board+game'
+    NULL
 ),
 (
     'wild-summit-legends-c017',
@@ -936,7 +936,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2004,
     'Niche-titel',
     'Wild Summit Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Wild+Summit+Legends+board+game'
+    NULL
 ),
 (
     'velvet-valley-junior-c018',
@@ -944,7 +944,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1991,
     'Strategi for entusiaster',
     'Ejer-notat: Velvet Valley Junior er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Velvet+Valley+Junior+board+game'
+    NULL
 ),
 (
     'nordic-dynasty-junior-c019',
@@ -952,7 +952,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2006,
     'Populært hos gæster',
     'Nordic Dynasty Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Dynasty+Junior+board+game'
+    NULL
 ),
 (
     'golden-empire-legends-c020',
@@ -960,7 +960,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1985,
     'Strategi for entusiaster',
     'Ejer-notat: Golden Empire Legends er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Golden+Empire+Legends+board+game'
+    NULL
 ),
 (
     'viking-wilds-express-c021',
@@ -968,7 +968,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2008,
     'Nyhed i sortimentet',
     'Ejer-notat: Viking Wilds Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Viking+Wilds+Express+board+game'
+    NULL
 ),
 (
     'arctic-delta-legends-c022',
@@ -976,7 +976,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1982,
     'Nyhed i sortimentet',
     'Arctic Delta Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Delta+Legends+board+game'
+    NULL
 ),
 (
     'golden-kingdom-express-c023',
@@ -984,7 +984,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1985,
     'Hurtigt party-spil',
     'Golden Kingdom Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Golden+Kingdom+Express+board+game'
+    NULL
 ),
 (
     'umber-horizon-junior-c024',
@@ -992,7 +992,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2023,
     'Niche-titel',
     'Ejer-notat: Umber Horizon Junior er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Horizon+Junior+board+game'
+    NULL
 ),
 (
     'obsidian-legacy-remix-c025',
@@ -1000,7 +1000,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2015,
     'Klassiker på hylden',
     'Mange café-besøgende opdager Obsidian Legacy Remix først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Legacy+Remix+board+game'
+    NULL
 ),
 (
     'jade-tribe-remix-c026',
@@ -1008,7 +1008,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2008,
     'Café-katalog',
     'Ejer-notat: Jade Tribe Remix er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jade+Tribe+Remix+board+game'
+    NULL
 ),
 (
     'baltic-crown-deluxe-c027',
@@ -1016,7 +1016,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1994,
     'Klassiker på hylden',
     'Baltic Crown Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Crown+Deluxe+board+game'
+    NULL
 ),
 (
     'knightly-wonders-c028',
@@ -1024,7 +1024,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1980,
     'Hurtigt party-spil',
     'Knightly Wonders ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Knightly+Wonders+board+game'
+    NULL
 ),
 (
     'whisper-tribe-remix-c029',
@@ -1032,7 +1032,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1983,
     'Niche-titel',
     'Gæster scanner ofte Whisper Tribe Remix for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Tribe+Remix+board+game'
+    NULL
 ),
 (
     'jungle-expedition-deluxe-c030',
@@ -1040,7 +1040,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2008,
     'Strategi for entusiaster',
     'Mange café-besøgende opdager Jungle Expedition Deluxe først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Expedition+Deluxe+board+game'
+    NULL
 ),
 (
     'whisper-garden-legends-c031',
@@ -1048,7 +1048,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1987,
     'Nyhed i sortimentet',
     'Hylden med Whisper Garden Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Garden+Legends+board+game'
+    NULL
 ),
 (
     'primal-realm-express-c032',
@@ -1056,7 +1056,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2008,
     'Hurtigt party-spil',
     'Primal Realm Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Primal+Realm+Express+board+game'
+    NULL
 ),
 (
     'dragon-outpost-c033',
@@ -1064,7 +1064,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2012,
     'Klassiker på hylden',
     'Ejer-notat: Dragon Outpost er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Outpost+board+game'
+    NULL
 ),
 (
     'dragon-frontier-legends-c034',
@@ -1072,7 +1072,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1978,
     'Klassiker på hylden',
     'Dragon Frontier Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Frontier+Legends+board+game'
+    NULL
 ),
 (
     'sunset-citadel-junior-c035',
@@ -1080,7 +1080,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1990,
     'Nyhed i sortimentet',
     'Gæster scanner ofte Sunset Citadel Junior for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Citadel+Junior+board+game'
+    NULL
 ),
 (
     'ivory-dynasty-legends-c036',
@@ -1088,7 +1088,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2011,
     'Hurtigt party-spil',
     'Mange café-besøgende opdager Ivory Dynasty Legends først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Dynasty+Legends+board+game'
+    NULL
 ),
 (
     'ancient-forge-c037',
@@ -1096,7 +1096,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1981,
     'Strategi for entusiaster',
     'Ancient Forge passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Forge+board+game'
+    NULL
 ),
 (
     'distant-rail-legends-c038',
@@ -1104,7 +1104,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1978,
     'Populært hos gæster',
     'Distant Rail Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Distant+Rail+Legends+board+game'
+    NULL
 ),
 (
     'sunset-nexus-remix-c039',
@@ -1112,7 +1112,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1981,
     'Klassiker på hylden',
     'Mange café-besøgende opdager Sunset Nexus Remix først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Nexus+Remix+board+game'
+    NULL
 ),
 (
     'crimson-dynasty-express-c040',
@@ -1120,7 +1120,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1986,
     'Nyhed i sortimentet',
     'Hylden med Crimson Dynasty Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Dynasty+Express+board+game'
+    NULL
 ),
 (
     'dragon-spire-remix-c041',
@@ -1128,7 +1128,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2010,
     'Populært hos gæster',
     'Dragon Spire Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Spire+Remix+board+game'
+    NULL
 ),
 (
     'ivory-parade-c042',
@@ -1136,7 +1136,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1980,
     'Klassiker på hylden',
     'Mange café-besøgende opdager Ivory Parade først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Parade+board+game'
+    NULL
 ),
 (
     'eternal-fortress-remix-c043',
@@ -1144,7 +1144,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2000,
     'Café-katalog',
     'Mange café-besøgende opdager Eternal Fortress Remix først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Fortress+Remix+board+game'
+    NULL
 ),
 (
     'viking-horizon-remix-c044',
@@ -1152,7 +1152,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2004,
     'Nyhed i sortimentet',
     'Hylden med Viking Horizon Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Viking+Horizon+Remix+board+game'
+    NULL
 ),
 (
     'umber-monument-junior-c045',
@@ -1160,7 +1160,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2017,
     'Hurtigt party-spil',
     'Mange café-besøgende opdager Umber Monument Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Monument+Junior+board+game'
+    NULL
 ),
 (
     'mystic-yard-c046',
@@ -1168,7 +1168,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2012,
     'Café-katalog',
     'Gæster scanner ofte Mystic Yard for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Mystic+Yard+board+game'
+    NULL
 ),
 (
     'crystal-wastes-express-c047',
@@ -1176,7 +1176,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2007,
     'Niche-titel',
     'Crystal Wastes Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Wastes+Express+board+game'
+    NULL
 ),
 (
     'emerald-quarry-ii-c048',
@@ -1184,7 +1184,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1979,
     'Populært hos gæster',
     'Gæster scanner ofte Emerald Quarry II for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Quarry+II+board+game'
+    NULL
 ),
 (
     'wild-crown-junior-c049',
@@ -1192,7 +1192,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1990,
     'Café-katalog',
     'Ejer-notat: Wild Crown Junior er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Wild+Crown+Junior+board+game'
+    NULL
 ),
 (
     'quiet-wastes-junior-c050',
@@ -1200,7 +1200,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2008,
     'Familievenligt',
     'Quiet Wastes Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Wastes+Junior+board+game'
+    NULL
 ),
 (
     'tidal-market-ii-c051',
@@ -1208,7 +1208,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1991,
     'Strategi for entusiaster',
     'Mange café-besøgende opdager Tidal Market II først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Market+II+board+game'
+    NULL
 ),
 (
     'silver-stronghold-deluxe-c052',
@@ -1216,7 +1216,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2023,
     'Populært hos gæster',
     'Silver Stronghold Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Silver+Stronghold+Deluxe+board+game'
+    NULL
 ),
 (
     'knightly-convoy-c053',
@@ -1224,7 +1224,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2009,
     'Klassiker på hylden',
     'Ejer-notat: Knightly Convoy er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Knightly+Convoy+board+game'
+    NULL
 ),
 (
     'timber-summit-c054',
@@ -1232,7 +1232,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1990,
     'Familievenligt',
     'Timber Summit passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Timber+Summit+board+game'
+    NULL
 ),
 (
     'ivory-frontier-deluxe-c055',
@@ -1240,7 +1240,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2014,
     'Café-katalog',
     'Gæster scanner ofte Ivory Frontier Deluxe for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Frontier+Deluxe+board+game'
+    NULL
 ),
 (
     'silver-village-legends-c056',
@@ -1248,7 +1248,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1981,
     'Niche-titel',
     'Silver Village Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Silver+Village+Legends+board+game'
+    NULL
 ),
 (
     'frozen-haven-junior-c057',
@@ -1256,7 +1256,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1984,
     'Nyhed i sortimentet',
     'Frozen Haven Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Frozen+Haven+Junior+board+game'
+    NULL
 ),
 (
     'tidal-outpost-ii-c058',
@@ -1264,7 +1264,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2018,
     'Nyhed i sortimentet',
     'Ejer-notat: Tidal Outpost II er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Outpost+II+board+game'
+    NULL
 ),
 (
     'crystal-colony-legends-c059',
@@ -1272,7 +1272,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2002,
     'Nyhed i sortimentet',
     'Crystal Colony Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Colony+Legends+board+game'
+    NULL
 ),
 (
     'zenith-dynasty-legends-c060',
@@ -1280,7 +1280,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1991,
     'Niche-titel',
     'Gæster scanner ofte Zenith Dynasty Legends for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Zenith+Dynasty+Legends+board+game'
+    NULL
 ),
 (
     'tidal-siege-junior-c061',
@@ -1288,7 +1288,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1975,
     'Populært hos gæster',
     'Tidal Siege Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Siege+Junior+board+game'
+    NULL
 ),
 (
     'stellar-tavern-ii-c062',
@@ -1296,7 +1296,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2009,
     'Café-katalog',
     'Stellar Tavern II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Tavern+II+board+game'
+    NULL
 ),
 (
     'jungle-empire-express-c063',
@@ -1304,7 +1304,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1983,
     'Café-katalog',
     'Jungle Empire Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Empire+Express+board+game'
+    NULL
 ),
 (
     'cosmic-tavern-deluxe-c064',
@@ -1312,7 +1312,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1988,
     'Klassiker på hylden',
     'Gæster scanner ofte Cosmic Tavern Deluxe for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Tavern+Deluxe+board+game'
+    NULL
 ),
 (
     'zenith-valley-remix-c065',
@@ -1320,7 +1320,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2001,
     'Niche-titel',
     'Mange café-besøgende opdager Zenith Valley Remix først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Zenith+Valley+Remix+board+game'
+    NULL
 ),
 (
     'kingdom-summit-express-c066',
@@ -1328,7 +1328,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1976,
     'Niche-titel',
     'Gæster scanner ofte Kingdom Summit Express for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Summit+Express+board+game'
+    NULL
 ),
 (
     'ancient-nexus-legends-c067',
@@ -1336,7 +1336,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2022,
     'Klassiker på hylden',
     'Ancient Nexus Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Nexus+Legends+board+game'
+    NULL
 ),
 (
     'stellar-convoy-express-c068',
@@ -1344,7 +1344,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1977,
     'Hurtigt party-spil',
     'Mange café-besøgende opdager Stellar Convoy Express først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Convoy+Express+board+game'
+    NULL
 ),
 (
     'distant-quest-deluxe-c069',
@@ -1352,7 +1352,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1989,
     'Klassiker på hylden',
     'Distant Quest Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Distant+Quest+Deluxe+board+game'
+    NULL
 ),
 (
     'wild-outpost-deluxe-c070',
@@ -1360,7 +1360,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1979,
     'Nyhed i sortimentet',
     'Wild Outpost Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Wild+Outpost+Deluxe+board+game'
+    NULL
 ),
 (
     'wild-delta-remix-c071',
@@ -1368,7 +1368,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2009,
     'Familievenligt',
     'Wild Delta Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Wild+Delta+Remix+board+game'
+    NULL
 ),
 (
     'phantom-fleet-junior-c072',
@@ -1376,7 +1376,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1991,
     'Café-katalog',
     'Phantom Fleet Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Phantom+Fleet+Junior+board+game'
+    NULL
 ),
 (
     'timber-garden-remix-c073',
@@ -1384,7 +1384,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1995,
     'Strategi for entusiaster',
     'Ejer-notat: Timber Garden Remix er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Timber+Garden+Remix+board+game'
+    NULL
 ),
 (
     'golden-republic-junior-c074',
@@ -1392,7 +1392,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1987,
     'Nyhed i sortimentet',
     'Golden Republic Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Golden+Republic+Junior+board+game'
+    NULL
 ),
 (
     'arctic-trade-remix-c075',
@@ -1400,7 +1400,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2009,
     'Klassiker på hylden',
     'Arctic Trade Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Trade+Remix+board+game'
+    NULL
 ),
 (
     'quiet-union-deluxe-c076',
@@ -1408,7 +1408,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2014,
     'Familievenligt',
     'Gæster scanner ofte Quiet Union Deluxe for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Union+Deluxe+board+game'
+    NULL
 ),
 (
     'umber-tavern-deluxe-c077',
@@ -1416,7 +1416,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2007,
     'Nyhed i sortimentet',
     'Gæster scanner ofte Umber Tavern Deluxe for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Tavern+Deluxe+board+game'
+    NULL
 ),
 (
     'wild-echo-deluxe-c078',
@@ -1424,7 +1424,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2010,
     'Niche-titel',
     'Mange café-besøgende opdager Wild Echo Deluxe først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Wild+Echo+Deluxe+board+game'
+    NULL
 ),
 (
     'viking-delta-legends-c079',
@@ -1432,7 +1432,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1986,
     'Nyhed i sortimentet',
     'Hylden med Viking Delta Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Viking+Delta+Legends+board+game'
+    NULL
 ),
 (
     'arctic-legacy-deluxe-c080',
@@ -1440,7 +1440,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1988,
     'Strategi for entusiaster',
     'Arctic Legacy Deluxe ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Legacy+Deluxe+board+game'
+    NULL
 ),
 (
     'primal-market-express-c081',
@@ -1448,7 +1448,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2003,
     'Hurtigt party-spil',
     'Gæster scanner ofte Primal Market Express for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Primal+Market+Express+board+game'
+    NULL
 ),
 (
     'eternal-monument-remix-c082',
@@ -1456,7 +1456,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2022,
     'Niche-titel',
     'Gæster scanner ofte Eternal Monument Remix for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Monument+Remix+board+game'
+    NULL
 ),
 (
     'grand-circuit-legends-c083',
@@ -1464,7 +1464,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2014,
     'Familievenligt',
     'Grand Circuit Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Grand+Circuit+Legends+board+game'
+    NULL
 ),
 (
     'whisper-harbor-legends-c084',
@@ -1472,7 +1472,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1994,
     'Klassiker på hylden',
     'Whisper Harbor Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Harbor+Legends+board+game'
+    NULL
 ),
 (
     'baltic-caravan-ii-c085',
@@ -1480,7 +1480,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2005,
     'Populært hos gæster',
     'Hylden med Baltic Caravan II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Caravan+II+board+game'
+    NULL
 ),
 (
     'obsidian-voyage-ii-c086',
@@ -1488,7 +1488,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2020,
     'Strategi for entusiaster',
     'Hylden med Obsidian Voyage II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Voyage+II+board+game'
+    NULL
 ),
 (
     'iron-bazaar-legends-c087',
@@ -1496,7 +1496,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1975,
     'Populært hos gæster',
     'Iron Bazaar Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Iron+Bazaar+Legends+board+game'
+    NULL
 ),
 (
     'kingdom-nexus-legends-c088',
@@ -1504,7 +1504,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2008,
     'Hurtigt party-spil',
     'Kingdom Nexus Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Nexus+Legends+board+game'
+    NULL
 ),
 (
     'golden-stronghold-ii-c089',
@@ -1512,7 +1512,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2004,
     'Familievenligt',
     'Golden Stronghold II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Golden+Stronghold+II+board+game'
+    NULL
 ),
 (
     'neon-odyssey-legends-c090',
@@ -1520,7 +1520,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2007,
     'Strategi for entusiaster',
     'Neon Odyssey Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Neon+Odyssey+Legends+board+game'
+    NULL
 ),
 (
     'crimson-tavern-ii-c091',
@@ -1528,7 +1528,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2022,
     'Hurtigt party-spil',
     'Hylden med Crimson Tavern II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Tavern+II+board+game'
+    NULL
 ),
 (
     'ocean-parade-legends-c092',
@@ -1536,7 +1536,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1992,
     'Hurtigt party-spil',
     'Gæster scanner ofte Ocean Parade Legends for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Parade+Legends+board+game'
+    NULL
 ),
 (
     'crimson-citadel-legends-c093',
@@ -1544,7 +1544,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1993,
     'Klassiker på hylden',
     'Crimson Citadel Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Citadel+Legends+board+game'
+    NULL
 ),
 (
     'ivory-colony-ii-c094',
@@ -1552,7 +1552,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1984,
     'Klassiker på hylden',
     'Hylden med Ivory Colony II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Colony+II+board+game'
+    NULL
 ),
 (
     'tidal-fortress-c095',
@@ -1560,7 +1560,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2001,
     'Strategi for entusiaster',
     'Tidal Fortress passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Fortress+board+game'
+    NULL
 ),
 (
     'ancient-castle-ii-c096',
@@ -1568,7 +1568,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2001,
     'Strategi for entusiaster',
     'Ancient Castle II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Castle+II+board+game'
+    NULL
 ),
 (
     'stellar-arena-remix-c097',
@@ -1576,7 +1576,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2023,
     'Strategi for entusiaster',
     'Hylden med Stellar Arena Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Arena+Remix+board+game'
+    NULL
 ),
 (
     'timber-legacy-remix-c098',
@@ -1584,7 +1584,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1999,
     'Strategi for entusiaster',
     'Ejer-notat: Timber Legacy Remix er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Timber+Legacy+Remix+board+game'
+    NULL
 ),
 (
     'ivory-nexus-junior-c099',
@@ -1592,7 +1592,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1989,
     'Hurtigt party-spil',
     'Mange café-besøgende opdager Ivory Nexus Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Nexus+Junior+board+game'
+    NULL
 ),
 (
     'forgotten-arena-express-c100',
@@ -1600,7 +1600,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1996,
     'Strategi for entusiaster',
     'Gæster scanner ofte Forgotten Arena Express for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Forgotten+Arena+Express+board+game'
+    NULL
 ),
 (
     'distant-union-ii-c101',
@@ -1608,7 +1608,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2014,
     'Café-katalog',
     'Hylden med Distant Union II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Distant+Union+II+board+game'
+    NULL
 ),
 (
     'quiet-arena-c102',
@@ -1616,7 +1616,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2016,
     'Strategi for entusiaster',
     'Mange café-besøgende opdager Quiet Arena først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Arena+board+game'
+    NULL
 ),
 (
     'kingdom-castle-deluxe-c103',
@@ -1624,7 +1624,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1999,
     'Familievenligt',
     'Mange café-besøgende opdager Kingdom Castle Deluxe først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Castle+Deluxe+board+game'
+    NULL
 ),
 (
     'sunset-junction-express-c104',
@@ -1632,7 +1632,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1992,
     'Strategi for entusiaster',
     'Sunset Junction Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Junction+Express+board+game'
+    NULL
 ),
 (
     'eternal-arena-legends-c105',
@@ -1640,7 +1640,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2009,
     'Café-katalog',
     'Eternal Arena Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Arena+Legends+board+game'
+    NULL
 ),
 (
     'dragon-labyrinth-legends-c106',
@@ -1648,7 +1648,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1977,
     'Café-katalog',
     'Mange café-besøgende opdager Dragon Labyrinth Legends først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Labyrinth+Legends+board+game'
+    NULL
 ),
 (
     'baltic-workshop-ii-c107',
@@ -1656,7 +1656,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1990,
     'Niche-titel',
     'Hylden med Baltic Workshop II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Workshop+II+board+game'
+    NULL
 ),
 (
     'knightly-wonders-ii-c108',
@@ -1664,7 +1664,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2004,
     'Nyhed i sortimentet',
     'Knightly Wonders II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Knightly+Wonders+II+board+game'
+    NULL
 ),
 (
     'marble-wilds-legends-c109',
@@ -1672,7 +1672,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2020,
     'Populært hos gæster',
     'Marble Wilds Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Marble+Wilds+Legends+board+game'
+    NULL
 ),
 (
     'silver-convoy-junior-c110',
@@ -1680,7 +1680,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1976,
     'Nyhed i sortimentet',
     'Ejer-notat: Silver Convoy Junior er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Silver+Convoy+Junior+board+game'
+    NULL
 ),
 (
     'viking-ridge-legends-c111',
@@ -1688,7 +1688,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1987,
     'Populært hos gæster',
     'Ejer-notat: Viking Ridge Legends er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Viking+Ridge+Legends+board+game'
+    NULL
 ),
 (
     'obsidian-harbor-c112',
@@ -1696,7 +1696,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2019,
     'Nyhed i sortimentet',
     'Obsidian Harbor ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Harbor+board+game'
+    NULL
 ),
 (
     'golden-monument-junior-c113',
@@ -1704,7 +1704,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1977,
     'Familievenligt',
     'Ejer-notat: Golden Monument Junior er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Golden+Monument+Junior+board+game'
+    NULL
 ),
 (
     'urban-citadel-junior-c114',
@@ -1712,7 +1712,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2016,
     'Familievenligt',
     'Urban Citadel Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Urban+Citadel+Junior+board+game'
+    NULL
 ),
 (
     'forgotten-convoy-express-c115',
@@ -1720,7 +1720,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1998,
     'Hurtigt party-spil',
     'Gæster scanner ofte Forgotten Convoy Express for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Forgotten+Convoy+Express+board+game'
+    NULL
 ),
 (
     'kingdom-garden-junior-c116',
@@ -1728,7 +1728,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2016,
     'Nyhed i sortimentet',
     'Ejer-notat: Kingdom Garden Junior er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Garden+Junior+board+game'
+    NULL
 ),
 (
     'ivory-labyrinth-express-c117',
@@ -1736,7 +1736,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2004,
     'Strategi for entusiaster',
     'Ivory Labyrinth Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Labyrinth+Express+board+game'
+    NULL
 ),
 (
     'royal-market-remix-c118',
@@ -1744,7 +1744,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1990,
     'Populært hos gæster',
     'Royal Market Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Royal+Market+Remix+board+game'
+    NULL
 ),
 (
     'ocean-junction-express-c119',
@@ -1752,7 +1752,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2011,
     'Strategi for entusiaster',
     'Ocean Junction Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Junction+Express+board+game'
+    NULL
 ),
 (
     'storm-fleet-express-c120',
@@ -1760,7 +1760,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1988,
     'Familievenligt',
     'Storm Fleet Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Storm+Fleet+Express+board+game'
+    NULL
 ),
 (
     'royal-summit-junior-c121',
@@ -1768,7 +1768,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2019,
     'Nyhed i sortimentet',
     'Ejer-notat: Royal Summit Junior er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Royal+Summit+Junior+board+game'
+    NULL
 ),
 (
     'lunar-colony-ii-c122',
@@ -1776,7 +1776,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2021,
     'Strategi for entusiaster',
     'Hylden med Lunar Colony II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Lunar+Colony+II+board+game'
+    NULL
 ),
 (
     'ocean-echo-express-c123',
@@ -1784,7 +1784,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2016,
     'Hurtigt party-spil',
     'Hylden med Ocean Echo Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Echo+Express+board+game'
+    NULL
 ),
 (
     'emerald-kingdom-ii-c124',
@@ -1792,7 +1792,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2000,
     'Klassiker på hylden',
     'Emerald Kingdom II passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Kingdom+II+board+game'
+    NULL
 ),
 (
     'urban-temple-junior-c125',
@@ -1800,7 +1800,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2008,
     'Familievenligt',
     'Hylden med Urban Temple Junior bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Urban+Temple+Junior+board+game'
+    NULL
 ),
 (
     'jungle-outpost-deluxe-c126',
@@ -1808,7 +1808,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2019,
     'Hurtigt party-spil',
     'Jungle Outpost Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Outpost+Deluxe+board+game'
+    NULL
 ),
 (
     'nordic-crown-legends-c127',
@@ -1816,7 +1816,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1987,
     'Familievenligt',
     'Nordic Crown Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Crown+Legends+board+game'
+    NULL
 ),
 (
     'whisper-echo-ii-c128',
@@ -1824,7 +1824,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1987,
     'Klassiker på hylden',
     'Gæster scanner ofte Whisper Echo II for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Echo+II+board+game'
+    NULL
 ),
 (
     'umber-wastes-remix-c129',
@@ -1832,7 +1832,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2008,
     'Nyhed i sortimentet',
     'Umber Wastes Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Wastes+Remix+board+game'
+    NULL
 ),
 (
     'shadow-guild-deluxe-c130',
@@ -1840,7 +1840,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1986,
     'Nyhed i sortimentet',
     'Shadow Guild Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Guild+Deluxe+board+game'
+    NULL
 ),
 (
     'hidden-isles-c131',
@@ -1848,7 +1848,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1978,
     'Nyhed i sortimentet',
     'Gæster scanner ofte Hidden Isles for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Isles+board+game'
+    NULL
 ),
 (
     'obsidian-rail-remix-c132',
@@ -1856,7 +1856,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2006,
     'Populært hos gæster',
     'Obsidian Rail Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Rail+Remix+board+game'
+    NULL
 ),
 (
     'shadow-temple-express-c133',
@@ -1864,7 +1864,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2003,
     'Familievenligt',
     'Mange café-besøgende opdager Shadow Temple Express først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Temple+Express+board+game'
+    NULL
 ),
 (
     'phantom-wonders-remix-c134',
@@ -1872,7 +1872,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2005,
     'Populært hos gæster',
     'Phantom Wonders Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Phantom+Wonders+Remix+board+game'
+    NULL
 ),
 (
     'forgotten-citadel-junior-c135',
@@ -1880,7 +1880,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2015,
     'Café-katalog',
     'Mange café-besøgende opdager Forgotten Citadel Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Forgotten+Citadel+Junior+board+game'
+    NULL
 ),
 (
     'knightly-wonders-deluxe-c136',
@@ -1888,7 +1888,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1980,
     'Klassiker på hylden',
     'Knightly Wonders Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Knightly+Wonders+Deluxe+board+game'
+    NULL
 ),
 (
     'ancient-wilds-junior-c137',
@@ -1896,7 +1896,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2014,
     'Klassiker på hylden',
     'Ancient Wilds Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Wilds+Junior+board+game'
+    NULL
 ),
 (
     'crimson-union-express-c138',
@@ -1904,7 +1904,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1994,
     'Strategi for entusiaster',
     'Crimson Union Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Union+Express+board+game'
+    NULL
 ),
 (
     'crystal-workshop-legends-c139',
@@ -1912,7 +1912,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1981,
     'Klassiker på hylden',
     'Gæster scanner ofte Crystal Workshop Legends for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Workshop+Legends+board+game'
+    NULL
 ),
 (
     'quiet-colony-ii-c140',
@@ -1920,7 +1920,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1990,
     'Niche-titel',
     'Ejer-notat: Quiet Colony II er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Colony+II+board+game'
+    NULL
 ),
 (
     'arctic-sanctuary-express-c141',
@@ -1928,7 +1928,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2019,
     'Hurtigt party-spil',
     'Arctic Sanctuary Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Sanctuary+Express+board+game'
+    NULL
 ),
 (
     'shadow-frontier-deluxe-c142',
@@ -1936,7 +1936,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2019,
     'Hurtigt party-spil',
     'Shadow Frontier Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Frontier+Deluxe+board+game'
+    NULL
 ),
 (
     'phantom-monument-remix-c143',
@@ -1944,7 +1944,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2015,
     'Klassiker på hylden',
     'Hylden med Phantom Monument Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Phantom+Monument+Remix+board+game'
+    NULL
 ),
 (
     'nordic-bazaar-ii-c144',
@@ -1952,7 +1952,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1992,
     'Niche-titel',
     'Nordic Bazaar II er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Bazaar+II+board+game'
+    NULL
 ),
 (
     'silver-wilds-legends-c145',
@@ -1960,7 +1960,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2011,
     'Nyhed i sortimentet',
     'Hylden med Silver Wilds Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Silver+Wilds+Legends+board+game'
+    NULL
 ),
 (
     'stellar-legacy-legends-c146',
@@ -1968,7 +1968,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2000,
     'Nyhed i sortimentet',
     'Ejer-notat: Stellar Legacy Legends er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Legacy+Legends+board+game'
+    NULL
 ),
 (
     'crimson-colony-junior-c147',
@@ -1976,7 +1976,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1977,
     'Strategi for entusiaster',
     'Gæster scanner ofte Crimson Colony Junior for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Colony+Junior+board+game'
+    NULL
 ),
 (
     'phantom-arena-c148',
@@ -1984,7 +1984,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1989,
     'Café-katalog',
     'Phantom Arena ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Phantom+Arena+board+game'
+    NULL
 ),
 (
     'royal-voyage-c149',
@@ -1992,7 +1992,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2023,
     'Niche-titel',
     'Hylden med Royal Voyage bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Royal+Voyage+board+game'
+    NULL
 ),
 (
     'crimson-union-deluxe-c150',
@@ -2000,7 +2000,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1986,
     'Strategi for entusiaster',
     'Gæster scanner ofte Crimson Union Deluxe for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Union+Deluxe+board+game'
+    NULL
 ),
 (
     'emerald-temple-deluxe-c151',
@@ -2008,7 +2008,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2001,
     'Familievenligt',
     'Emerald Temple Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Temple+Deluxe+board+game'
+    NULL
 ),
 (
     'jade-outpost-express-c152',
@@ -2016,7 +2016,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2019,
     'Hurtigt party-spil',
     'Jade Outpost Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jade+Outpost+Express+board+game'
+    NULL
 ),
 (
     'wild-odyssey-remix-c153',
@@ -2024,7 +2024,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2010,
     'Café-katalog',
     'Hylden med Wild Odyssey Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Wild+Odyssey+Remix+board+game'
+    NULL
 ),
 (
     'phantom-market-c154',
@@ -2032,7 +2032,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2024,
     'Strategi for entusiaster',
     'Phantom Market ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Phantom+Market+board+game'
+    NULL
 ),
 (
     'arctic-circuit-remix-c155',
@@ -2040,7 +2040,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2009,
     'Hurtigt party-spil',
     'Hylden med Arctic Circuit Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Circuit+Remix+board+game'
+    NULL
 ),
 (
     'harbor-realm-junior-c156',
@@ -2048,7 +2048,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2023,
     'Hurtigt party-spil',
     'Gæster scanner ofte Harbor Realm Junior for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Realm+Junior+board+game'
+    NULL
 ),
 (
     'crystal-fortress-deluxe-c157',
@@ -2056,7 +2056,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2010,
     'Niche-titel',
     'Crystal Fortress Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Fortress+Deluxe+board+game'
+    NULL
 ),
 (
     'stellar-territory-c158',
@@ -2064,7 +2064,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1976,
     'Klassiker på hylden',
     'Gæster scanner ofte Stellar Territory for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Territory+board+game'
+    NULL
 ),
 (
     'jungle-alliance-junior-c159',
@@ -2072,7 +2072,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2001,
     'Populært hos gæster',
     'Mange café-besøgende opdager Jungle Alliance Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Alliance+Junior+board+game'
+    NULL
 ),
 (
     'golden-stronghold-c160',
@@ -2080,7 +2080,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2016,
     'Niche-titel',
     'Hylden med Golden Stronghold bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Golden+Stronghold+board+game'
+    NULL
 ),
 (
     'shadow-towers-legends-c161',
@@ -2088,7 +2088,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1992,
     'Strategi for entusiaster',
     'Shadow Towers Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Towers+Legends+board+game'
+    NULL
 ),
 (
     'eternal-harbor-express-c162',
@@ -2096,7 +2096,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2010,
     'Niche-titel',
     'Hylden med Eternal Harbor Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Harbor+Express+board+game'
+    NULL
 ),
 (
     'marble-towers-legends-c163',
@@ -2104,7 +2104,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1983,
     'Populært hos gæster',
     'Marble Towers Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Marble+Towers+Legends+board+game'
+    NULL
 ),
 (
     'ancient-outpost-remix-c164',
@@ -2112,7 +2112,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2007,
     'Nyhed i sortimentet',
     'Ancient Outpost Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Outpost+Remix+board+game'
+    NULL
 ),
 (
     'umber-legacy-remix-c165',
@@ -2120,7 +2120,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2012,
     'Hurtigt party-spil',
     'Umber Legacy Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Legacy+Remix+board+game'
+    NULL
 ),
 (
     'ivory-temple-deluxe-c166',
@@ -2128,7 +2128,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1996,
     'Strategi for entusiaster',
     'Hylden med Ivory Temple Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Temple+Deluxe+board+game'
+    NULL
 ),
 (
     'lunar-zone-legends-c167',
@@ -2136,7 +2136,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1990,
     'Strategi for entusiaster',
     'Mange café-besøgende opdager Lunar Zone Legends først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Lunar+Zone+Legends+board+game'
+    NULL
 ),
 (
     'ancient-caravan-deluxe-c168',
@@ -2144,7 +2144,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2022,
     'Hurtigt party-spil',
     'Gæster scanner ofte Ancient Caravan Deluxe for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Caravan+Deluxe+board+game'
+    NULL
 ),
 (
     'viking-republic-legends-c169',
@@ -2152,7 +2152,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2016,
     'Niche-titel',
     'Hylden med Viking Republic Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Viking+Republic+Legends+board+game'
+    NULL
 ),
 (
     'hidden-towers-junior-c170',
@@ -2160,7 +2160,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1996,
     'Populært hos gæster',
     'Hidden Towers Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Towers+Junior+board+game'
+    NULL
 ),
 (
     'frozen-trade-express-c171',
@@ -2168,7 +2168,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1975,
     'Niche-titel',
     'Hylden med Frozen Trade Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Frozen+Trade+Express+board+game'
+    NULL
 ),
 (
     'iron-citadel-express-c172',
@@ -2176,7 +2176,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1991,
     'Familievenligt',
     'Ejer-notat: Iron Citadel Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Iron+Citadel+Express+board+game'
+    NULL
 ),
 (
     'primal-colony-remix-c173',
@@ -2184,7 +2184,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1996,
     'Strategi for entusiaster',
     'Primal Colony Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Primal+Colony+Remix+board+game'
+    NULL
 ),
 (
     'whisper-territory-remix-c174',
@@ -2192,7 +2192,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2009,
     'Café-katalog',
     'Ejer-notat: Whisper Territory Remix er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Territory+Remix+board+game'
+    NULL
 ),
 (
     'obsidian-delta-deluxe-c175',
@@ -2200,7 +2200,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1989,
     'Populært hos gæster',
     'Hylden med Obsidian Delta Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Delta+Deluxe+board+game'
+    NULL
 ),
 (
     'whisper-archive-legends-c176',
@@ -2208,7 +2208,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1981,
     'Hurtigt party-spil',
     'Mange café-besøgende opdager Whisper Archive Legends først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Archive+Legends+board+game'
+    NULL
 ),
 (
     'baltic-caravan-deluxe-c177',
@@ -2216,7 +2216,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1978,
     'Nyhed i sortimentet',
     'Baltic Caravan Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Caravan+Deluxe+board+game'
+    NULL
 ),
 (
     'iron-harbor-junior-c178',
@@ -2224,7 +2224,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2001,
     'Niche-titel',
     'Mange café-besøgende opdager Iron Harbor Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Iron+Harbor+Junior+board+game'
+    NULL
 ),
 (
     'neon-rail-express-c179',
@@ -2232,7 +2232,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2014,
     'Klassiker på hylden',
     'Hylden med Neon Rail Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Neon+Rail+Express+board+game'
+    NULL
 ),
 (
     'iron-guild-express-c180',
@@ -2240,7 +2240,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2015,
     'Nyhed i sortimentet',
     'Hylden med Iron Guild Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Iron+Guild+Express+board+game'
+    NULL
 ),
 (
     'arctic-tavern-remix-c181',
@@ -2248,7 +2248,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2004,
     'Nyhed i sortimentet',
     'Gæster scanner ofte Arctic Tavern Remix for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Tavern+Remix+board+game'
+    NULL
 ),
 (
     'dragon-spire-deluxe-c182',
@@ -2256,7 +2256,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2012,
     'Nyhed i sortimentet',
     'Gæster scanner ofte Dragon Spire Deluxe for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Spire+Deluxe+board+game'
+    NULL
 ),
 (
     'stellar-horizon-express-c183',
@@ -2264,7 +2264,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1994,
     'Klassiker på hylden',
     'Hylden med Stellar Horizon Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Horizon+Express+board+game'
+    NULL
 ),
 (
     'frozen-harbor-express-c184',
@@ -2272,7 +2272,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2011,
     'Familievenligt',
     'Ejer-notat: Frozen Harbor Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Frozen+Harbor+Express+board+game'
+    NULL
 ),
 (
     'stellar-kingdom-c185',
@@ -2280,7 +2280,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2017,
     'Strategi for entusiaster',
     'Stellar Kingdom passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Kingdom+board+game'
+    NULL
 ),
 (
     'rustic-labyrinth-legends-c186',
@@ -2288,7 +2288,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1978,
     'Hurtigt party-spil',
     'Rustic Labyrinth Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Labyrinth+Legends+board+game'
+    NULL
 ),
 (
     'shadow-labyrinth-remix-c187',
@@ -2296,7 +2296,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1989,
     'Familievenligt',
     'Mange café-besøgende opdager Shadow Labyrinth Remix først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Labyrinth+Remix+board+game'
+    NULL
 ),
 (
     'neon-horizon-legends-c188',
@@ -2304,7 +2304,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2023,
     'Niche-titel',
     'Gæster scanner ofte Neon Horizon Legends for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Neon+Horizon+Legends+board+game'
+    NULL
 ),
 (
     'obsidian-bazaar-c189',
@@ -2312,7 +2312,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1994,
     'Hurtigt party-spil',
     'Obsidian Bazaar er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Bazaar+board+game'
+    NULL
 ),
 (
     'umber-dynasty-c190',
@@ -2320,7 +2320,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1993,
     'Familievenligt',
     'Gæster scanner ofte Umber Dynasty for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Dynasty+board+game'
+    NULL
 ),
 (
     'lunar-dynasty-remix-c191',
@@ -2328,7 +2328,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2009,
     'Familievenligt',
     'Ejer-notat: Lunar Dynasty Remix er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Lunar+Dynasty+Remix+board+game'
+    NULL
 ),
 (
     'royal-parade-ii-c192',
@@ -2336,7 +2336,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1991,
     'Hurtigt party-spil',
     'Royal Parade II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Royal+Parade+II+board+game'
+    NULL
 ),
 (
     'sunset-nexus-c193',
@@ -2344,7 +2344,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2004,
     'Populært hos gæster',
     'Mange café-besøgende opdager Sunset Nexus først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Nexus+board+game'
+    NULL
 ),
 (
     'nordic-rail-legends-c194',
@@ -2352,7 +2352,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2021,
     'Strategi for entusiaster',
     'Nordic Rail Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Rail+Legends+board+game'
+    NULL
 ),
 (
     'urban-colony-remix-c195',
@@ -2360,7 +2360,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2000,
     'Café-katalog',
     'Urban Colony Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Urban+Colony+Remix+board+game'
+    NULL
 ),
 (
     'distant-realm-legends-c196',
@@ -2368,7 +2368,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2022,
     'Nyhed i sortimentet',
     'Ejer-notat: Distant Realm Legends er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Distant+Realm+Legends+board+game'
+    NULL
 ),
 (
     'obsidian-wonders-deluxe-c197',
@@ -2376,7 +2376,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1981,
     'Klassiker på hylden',
     'Hylden med Obsidian Wonders Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Wonders+Deluxe+board+game'
+    NULL
 ),
 (
     'jungle-market-junior-c198',
@@ -2384,7 +2384,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1989,
     'Populært hos gæster',
     'Gæster scanner ofte Jungle Market Junior for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Market+Junior+board+game'
+    NULL
 ),
 (
     'stellar-legacy-legends-c199',
@@ -2392,7 +2392,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2001,
     'Populært hos gæster',
     'Mange café-besøgende opdager Stellar Legacy Legends først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Legacy+Legends+board+game'
+    NULL
 ),
 (
     'cosmic-legacy-express-c200',
@@ -2400,7 +2400,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1982,
     'Populært hos gæster',
     'Mange café-besøgende opdager Cosmic Legacy Express først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Legacy+Express+board+game'
+    NULL
 ),
 (
     'hidden-republic-express-c201',
@@ -2408,7 +2408,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1998,
     'Strategi for entusiaster',
     'Ejer-notat: Hidden Republic Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Republic+Express+board+game'
+    NULL
 ),
 (
     'iron-summit-express-c202',
@@ -2416,7 +2416,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2016,
     'Populært hos gæster',
     'Iron Summit Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Iron+Summit+Express+board+game'
+    NULL
 ),
 (
     'ancient-wonders-deluxe-c203',
@@ -2424,7 +2424,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1977,
     'Familievenligt',
     'Mange café-besøgende opdager Ancient Wonders Deluxe først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Wonders+Deluxe+board+game'
+    NULL
 ),
 (
     'ocean-quarry-deluxe-c204',
@@ -2432,7 +2432,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1981,
     'Familievenligt',
     'Ejer-notat: Ocean Quarry Deluxe er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Quarry+Deluxe+board+game'
+    NULL
 ),
 (
     'primal-quest-c205',
@@ -2440,7 +2440,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2000,
     'Nyhed i sortimentet',
     'Mange café-besøgende opdager Primal Quest først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Primal+Quest+board+game'
+    NULL
 ),
 (
     'distant-colony-legends-c206',
@@ -2448,7 +2448,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1988,
     'Café-katalog',
     'Distant Colony Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Distant+Colony+Legends+board+game'
+    NULL
 ),
 (
     'ocean-dynasty-remix-c207',
@@ -2456,7 +2456,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2011,
     'Klassiker på hylden',
     'Ocean Dynasty Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Dynasty+Remix+board+game'
+    NULL
 ),
 (
     'jungle-fortress-junior-c208',
@@ -2464,7 +2464,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1988,
     'Klassiker på hylden',
     'Jungle Fortress Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Fortress+Junior+board+game'
+    NULL
 ),
 (
     'marble-alliance-deluxe-c209',
@@ -2472,7 +2472,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1984,
     'Niche-titel',
     'Ejer-notat: Marble Alliance Deluxe er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Marble+Alliance+Deluxe+board+game'
+    NULL
 ),
 (
     'kingdom-crown-legends-c210',
@@ -2480,7 +2480,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1976,
     'Niche-titel',
     'Kingdom Crown Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Crown+Legends+board+game'
+    NULL
 ),
 (
     'ocean-wastes-deluxe-c211',
@@ -2488,7 +2488,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1976,
     'Niche-titel',
     'Ocean Wastes Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Wastes+Deluxe+board+game'
+    NULL
 ),
 (
     'velvet-sanctuary-junior-c212',
@@ -2496,7 +2496,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1982,
     'Populært hos gæster',
     'Hylden med Velvet Sanctuary Junior bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Velvet+Sanctuary+Junior+board+game'
+    NULL
 ),
 (
     'urban-towers-junior-c213',
@@ -2504,7 +2504,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1981,
     'Hurtigt party-spil',
     'Ejer-notat: Urban Towers Junior er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Urban+Towers+Junior+board+game'
+    NULL
 ),
 (
     'neon-caravan-legends-c214',
@@ -2512,7 +2512,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2017,
     'Nyhed i sortimentet',
     'Hylden med Neon Caravan Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Neon+Caravan+Legends+board+game'
+    NULL
 ),
 (
     'baltic-castle-express-c215',
@@ -2520,7 +2520,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2000,
     'Strategi for entusiaster',
     'Gæster scanner ofte Baltic Castle Express for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Castle+Express+board+game'
+    NULL
 ),
 (
     'tidal-union-express-c216',
@@ -2528,7 +2528,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1979,
     'Populært hos gæster',
     'Tidal Union Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Union+Express+board+game'
+    NULL
 ),
 (
     'dragon-dynasty-deluxe-c217',
@@ -2536,7 +2536,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2014,
     'Familievenligt',
     'Hylden med Dragon Dynasty Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Dynasty+Deluxe+board+game'
+    NULL
 ),
 (
     'harbor-kingdom-express-c218',
@@ -2544,7 +2544,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2007,
     'Strategi for entusiaster',
     'Harbor Kingdom Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Kingdom+Express+board+game'
+    NULL
 ),
 (
     'golden-quarry-legends-c219',
@@ -2552,7 +2552,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2016,
     'Klassiker på hylden',
     'Hylden med Golden Quarry Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Golden+Quarry+Legends+board+game'
+    NULL
 ),
 (
     'nordic-sanctuary-deluxe-c220',
@@ -2560,7 +2560,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2004,
     'Strategi for entusiaster',
     'Hylden med Nordic Sanctuary Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Sanctuary+Deluxe+board+game'
+    NULL
 ),
 (
     'storm-siege-deluxe-c221',
@@ -2568,7 +2568,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2017,
     'Nyhed i sortimentet',
     'Storm Siege Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Storm+Siege+Deluxe+board+game'
+    NULL
 ),
 (
     'rustic-village-express-c222',
@@ -2576,7 +2576,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1979,
     'Populært hos gæster',
     'Rustic Village Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Village+Express+board+game'
+    NULL
 ),
 (
     'brave-convoy-legends-c223',
@@ -2584,7 +2584,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2022,
     'Familievenligt',
     'Brave Convoy Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Brave+Convoy+Legends+board+game'
+    NULL
 ),
 (
     'crystal-wastes-junior-c224',
@@ -2592,7 +2592,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2010,
     'Familievenligt',
     'Gæster scanner ofte Crystal Wastes Junior for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Wastes+Junior+board+game'
+    NULL
 ),
 (
     'timber-rail-legends-c225',
@@ -2600,7 +2600,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2023,
     'Strategi for entusiaster',
     'Timber Rail Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Timber+Rail+Legends+board+game'
+    NULL
 ),
 (
     'crystal-yard-deluxe-c226',
@@ -2608,7 +2608,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2013,
     'Nyhed i sortimentet',
     'Crystal Yard Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Yard+Deluxe+board+game'
+    NULL
 ),
 (
     'grand-fortress-ii-c227',
@@ -2616,7 +2616,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2017,
     'Hurtigt party-spil',
     'Mange café-besøgende opdager Grand Fortress II først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Grand+Fortress+II+board+game'
+    NULL
 ),
 (
     'timber-quarry-junior-c228',
@@ -2624,7 +2624,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1998,
     'Populært hos gæster',
     'Timber Quarry Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Timber+Quarry+Junior+board+game'
+    NULL
 ),
 (
     'nordic-nexus-express-c229',
@@ -2632,7 +2632,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2010,
     'Café-katalog',
     'Ejer-notat: Nordic Nexus Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Nexus+Express+board+game'
+    NULL
 ),
 (
     'stellar-isles-c230',
@@ -2640,7 +2640,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1986,
     'Nyhed i sortimentet',
     'Gæster scanner ofte Stellar Isles for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Isles+board+game'
+    NULL
 ),
 (
     'sunset-quest-c231',
@@ -2648,7 +2648,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1986,
     'Niche-titel',
     'Ejer-notat: Sunset Quest er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Quest+board+game'
+    NULL
 ),
 (
     'dragon-empire-legends-c232',
@@ -2656,7 +2656,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2015,
     'Café-katalog',
     'Dragon Empire Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Empire+Legends+board+game'
+    NULL
 ),
 (
     'mystic-republic-express-c233',
@@ -2664,7 +2664,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2004,
     'Familievenligt',
     'Mange café-besøgende opdager Mystic Republic Express først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Mystic+Republic+Express+board+game'
+    NULL
 ),
 (
     'umber-market-remix-c234',
@@ -2672,7 +2672,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2011,
     'Populært hos gæster',
     'Umber Market Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Market+Remix+board+game'
+    NULL
 ),
 (
     'whisper-workshop-c235',
@@ -2680,7 +2680,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2018,
     'Populært hos gæster',
     'Whisper Workshop passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Workshop+board+game'
+    NULL
 ),
 (
     'brave-territory-junior-c236',
@@ -2688,7 +2688,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2003,
     'Strategi for entusiaster',
     'Brave Territory Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Brave+Territory+Junior+board+game'
+    NULL
 ),
 (
     'grand-crown-deluxe-c237',
@@ -2696,7 +2696,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2002,
     'Populært hos gæster',
     'Grand Crown Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Grand+Crown+Deluxe+board+game'
+    NULL
 ),
 (
     'lost-territory-junior-c238',
@@ -2704,7 +2704,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2017,
     'Nyhed i sortimentet',
     'Lost Territory Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Lost+Territory+Junior+board+game'
+    NULL
 ),
 (
     'marble-castle-c239',
@@ -2712,7 +2712,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1988,
     'Nyhed i sortimentet',
     'Mange café-besøgende opdager Marble Castle først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Marble+Castle+board+game'
+    NULL
 ),
 (
     'whisper-horizon-deluxe-c240',
@@ -2720,7 +2720,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1995,
     'Populært hos gæster',
     'Whisper Horizon Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Horizon+Deluxe+board+game'
+    NULL
 ),
 (
     'brave-fleet-ii-c241',
@@ -2728,7 +2728,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1999,
     'Klassiker på hylden',
     'Ejer-notat: Brave Fleet II er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Brave+Fleet+II+board+game'
+    NULL
 ),
 (
     'quiet-nexus-deluxe-c242',
@@ -2736,7 +2736,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1979,
     'Strategi for entusiaster',
     'Quiet Nexus Deluxe ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Nexus+Deluxe+board+game'
+    NULL
 ),
 (
     'brave-arena-express-c243',
@@ -2744,7 +2744,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1979,
     'Familievenligt',
     'Ejer-notat: Brave Arena Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Brave+Arena+Express+board+game'
+    NULL
 ),
 (
     'wild-frontier-legends-c244',
@@ -2752,7 +2752,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2001,
     'Nyhed i sortimentet',
     'Wild Frontier Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Wild+Frontier+Legends+board+game'
+    NULL
 ),
 (
     'storm-expedition-remix-c245',
@@ -2760,7 +2760,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2014,
     'Hurtigt party-spil',
     'Storm Expedition Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Storm+Expedition+Remix+board+game'
+    NULL
 ),
 (
     'urban-colony-express-c246',
@@ -2768,7 +2768,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1981,
     'Klassiker på hylden',
     'Hylden med Urban Colony Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Urban+Colony+Express+board+game'
+    NULL
 ),
 (
     'harbor-colony-express-c247',
@@ -2776,7 +2776,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1994,
     'Familievenligt',
     'Mange café-besøgende opdager Harbor Colony Express først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Colony+Express+board+game'
+    NULL
 ),
 (
     'jade-citadel-junior-c248',
@@ -2784,7 +2784,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2015,
     'Populært hos gæster',
     'Ejer-notat: Jade Citadel Junior er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jade+Citadel+Junior+board+game'
+    NULL
 ),
 (
     'zenith-quest-deluxe-c249',
@@ -2792,7 +2792,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2021,
     'Niche-titel',
     'Mange café-besøgende opdager Zenith Quest Deluxe først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Zenith+Quest+Deluxe+board+game'
+    NULL
 ),
 (
     'phantom-forge-ii-c250',
@@ -2800,7 +2800,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2013,
     'Niche-titel',
     'Phantom Forge II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Phantom+Forge+II+board+game'
+    NULL
 ),
 (
     'dragon-fleet-remix-c251',
@@ -2808,7 +2808,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2015,
     'Hurtigt party-spil',
     'Hylden med Dragon Fleet Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Fleet+Remix+board+game'
+    NULL
 ),
 (
     'whisper-wastes-express-c252',
@@ -2816,7 +2816,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2018,
     'Familievenligt',
     'Whisper Wastes Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Wastes+Express+board+game'
+    NULL
 ),
 (
     'storm-empire-express-c253',
@@ -2824,7 +2824,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1979,
     'Hurtigt party-spil',
     'Hylden med Storm Empire Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Storm+Empire+Express+board+game'
+    NULL
 ),
 (
     'royal-wastes-c254',
@@ -2832,7 +2832,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1997,
     'Populært hos gæster',
     'Royal Wastes passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Royal+Wastes+board+game'
+    NULL
 ),
 (
     'cosmic-castle-deluxe-c255',
@@ -2840,7 +2840,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1993,
     'Populært hos gæster',
     'Gæster scanner ofte Cosmic Castle Deluxe for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Castle+Deluxe+board+game'
+    NULL
 ),
 (
     'emerald-workshop-junior-c256',
@@ -2848,7 +2848,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2007,
     'Strategi for entusiaster',
     'Hylden med Emerald Workshop Junior bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Workshop+Junior+board+game'
+    NULL
 ),
 (
     'velvet-tavern-c257',
@@ -2856,7 +2856,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2003,
     'Klassiker på hylden',
     'Velvet Tavern passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Velvet+Tavern+board+game'
+    NULL
 ),
 (
     'grand-empire-c258',
@@ -2864,7 +2864,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2003,
     'Populært hos gæster',
     'Grand Empire ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Grand+Empire+board+game'
+    NULL
 ),
 (
     'sunset-zone-legends-c259',
@@ -2872,7 +2872,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1980,
     'Niche-titel',
     'Sunset Zone Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Zone+Legends+board+game'
+    NULL
 ),
 (
     'crimson-spire-junior-c260',
@@ -2880,7 +2880,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2008,
     'Niche-titel',
     'Crimson Spire Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Spire+Junior+board+game'
+    NULL
 ),
 (
     'shadow-republic-express-c261',
@@ -2888,7 +2888,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2024,
     'Familievenligt',
     'Gæster scanner ofte Shadow Republic Express for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Republic+Express+board+game'
+    NULL
 ),
 (
     'obsidian-bazaar-deluxe-c262',
@@ -2896,7 +2896,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1979,
     'Familievenligt',
     'Obsidian Bazaar Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Bazaar+Deluxe+board+game'
+    NULL
 ),
 (
     'viking-kingdom-deluxe-c263',
@@ -2904,7 +2904,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2021,
     'Niche-titel',
     'Viking Kingdom Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Viking+Kingdom+Deluxe+board+game'
+    NULL
 ),
 (
     'quiet-empire-deluxe-c264',
@@ -2912,7 +2912,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1994,
     'Strategi for entusiaster',
     'Mange café-besøgende opdager Quiet Empire Deluxe først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Empire+Deluxe+board+game'
+    NULL
 ),
 (
     'emerald-legacy-junior-c265',
@@ -2920,7 +2920,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1999,
     'Familievenligt',
     'Emerald Legacy Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Legacy+Junior+board+game'
+    NULL
 ),
 (
     'stellar-parade-legends-c266',
@@ -2928,7 +2928,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2018,
     'Populært hos gæster',
     'Gæster scanner ofte Stellar Parade Legends for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Parade+Legends+board+game'
+    NULL
 ),
 (
     'grand-realm-c267',
@@ -2936,7 +2936,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1998,
     'Nyhed i sortimentet',
     'Mange café-besøgende opdager Grand Realm først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Grand+Realm+board+game'
+    NULL
 ),
 (
     'sunset-wonders-remix-c268',
@@ -2944,7 +2944,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2006,
     'Klassiker på hylden',
     'Mange café-besøgende opdager Sunset Wonders Remix først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Wonders+Remix+board+game'
+    NULL
 ),
 (
     'iron-citadel-deluxe-c269',
@@ -2952,7 +2952,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1981,
     'Café-katalog',
     'Gæster scanner ofte Iron Citadel Deluxe for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Iron+Citadel+Deluxe+board+game'
+    NULL
 ),
 (
     'zenith-workshop-ii-c270',
@@ -2960,7 +2960,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2013,
     'Strategi for entusiaster',
     'Mange café-besøgende opdager Zenith Workshop II først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Zenith+Workshop+II+board+game'
+    NULL
 ),
 (
     'stellar-labyrinth-junior-c271',
@@ -2968,7 +2968,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1985,
     'Hurtigt party-spil',
     'Stellar Labyrinth Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Labyrinth+Junior+board+game'
+    NULL
 ),
 (
     'rustic-garden-ii-c272',
@@ -2976,7 +2976,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2003,
     'Nyhed i sortimentet',
     'Rustic Garden II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Garden+II+board+game'
+    NULL
 ),
 (
     'crimson-guild-junior-c273',
@@ -2984,7 +2984,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1990,
     'Nyhed i sortimentet',
     'Crimson Guild Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Guild+Junior+board+game'
+    NULL
 ),
 (
     'lunar-realm-legends-c274',
@@ -2992,7 +2992,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2011,
     'Hurtigt party-spil',
     'Hylden med Lunar Realm Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Lunar+Realm+Legends+board+game'
+    NULL
 ),
 (
     'zenith-republic-junior-c275',
@@ -3000,7 +3000,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2008,
     'Strategi for entusiaster',
     'Mange café-besøgende opdager Zenith Republic Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Zenith+Republic+Junior+board+game'
+    NULL
 ),
 (
     'marble-dynasty-remix-c276',
@@ -3008,7 +3008,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1991,
     'Café-katalog',
     'Gæster scanner ofte Marble Dynasty Remix for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Marble+Dynasty+Remix+board+game'
+    NULL
 ),
 (
     'urban-valley-c277',
@@ -3016,7 +3016,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2020,
     'Populært hos gæster',
     'Urban Valley passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Urban+Valley+board+game'
+    NULL
 ),
 (
     'jade-isles-express-c278',
@@ -3024,7 +3024,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2007,
     'Niche-titel',
     'Jade Isles Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jade+Isles+Express+board+game'
+    NULL
 ),
 (
     'nordic-odyssey-express-c279',
@@ -3032,7 +3032,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1997,
     'Café-katalog',
     'Hylden med Nordic Odyssey Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Odyssey+Express+board+game'
+    NULL
 ),
 (
     'grand-realm-ii-c280',
@@ -3040,7 +3040,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1999,
     'Populært hos gæster',
     'Grand Realm II passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Grand+Realm+II+board+game'
+    NULL
 ),
 (
     'storm-village-c281',
@@ -3048,7 +3048,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2020,
     'Familievenligt',
     'Storm Village ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Storm+Village+board+game'
+    NULL
 ),
 (
     'cosmic-kingdom-remix-c282',
@@ -3056,7 +3056,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2005,
     'Niche-titel',
     'Cosmic Kingdom Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Kingdom+Remix+board+game'
+    NULL
 ),
 (
     'crimson-workshop-c283',
@@ -3064,7 +3064,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1980,
     'Café-katalog',
     'Crimson Workshop passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Workshop+board+game'
+    NULL
 ),
 (
     'iron-valley-legends-c284',
@@ -3072,7 +3072,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2013,
     'Strategi for entusiaster',
     'Iron Valley Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Iron+Valley+Legends+board+game'
+    NULL
 ),
 (
     'ocean-legacy-c285',
@@ -3080,7 +3080,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1978,
     'Klassiker på hylden',
     'Hylden med Ocean Legacy bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Legacy+board+game'
+    NULL
 ),
 (
     'neon-stronghold-c286',
@@ -3088,7 +3088,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1982,
     'Hurtigt party-spil',
     'Ejer-notat: Neon Stronghold er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Neon+Stronghold+board+game'
+    NULL
 ),
 (
     'obsidian-towers-junior-c287',
@@ -3096,7 +3096,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1990,
     'Niche-titel',
     'Obsidian Towers Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Towers+Junior+board+game'
+    NULL
 ),
 (
     'neon-quest-ii-c288',
@@ -3104,7 +3104,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2011,
     'Strategi for entusiaster',
     'Mange café-besøgende opdager Neon Quest II først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Neon+Quest+II+board+game'
+    NULL
 ),
 (
     'emerald-trade-deluxe-c289',
@@ -3112,7 +3112,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1979,
     'Café-katalog',
     'Hylden med Emerald Trade Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Trade+Deluxe+board+game'
+    NULL
 ),
 (
     'cosmic-archive-express-c290',
@@ -3120,7 +3120,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1998,
     'Nyhed i sortimentet',
     'Gæster scanner ofte Cosmic Archive Express for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Archive+Express+board+game'
+    NULL
 ),
 (
     'dragon-quest-ii-c291',
@@ -3128,7 +3128,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2021,
     'Populært hos gæster',
     'Dragon Quest II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Quest+II+board+game'
+    NULL
 ),
 (
     'whisper-outpost-ii-c292',
@@ -3136,7 +3136,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1977,
     'Familievenligt',
     'Ejer-notat: Whisper Outpost II er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Outpost+II+board+game'
+    NULL
 ),
 (
     'primal-fleet-remix-c293',
@@ -3144,7 +3144,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2024,
     'Hurtigt party-spil',
     'Gæster scanner ofte Primal Fleet Remix for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Primal+Fleet+Remix+board+game'
+    NULL
 ),
 (
     'kingdom-nexus-ii-c294',
@@ -3152,7 +3152,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1979,
     'Hurtigt party-spil',
     'Kingdom Nexus II er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Nexus+II+board+game'
+    NULL
 ),
 (
     'cosmic-monument-ii-c295',
@@ -3160,7 +3160,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1977,
     'Familievenligt',
     'Cosmic Monument II passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Monument+II+board+game'
+    NULL
 ),
 (
     'ivory-temple-deluxe-c296',
@@ -3168,7 +3168,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1977,
     'Klassiker på hylden',
     'Ivory Temple Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Temple+Deluxe+board+game'
+    NULL
 ),
 (
     'zenith-castle-remix-c297',
@@ -3176,7 +3176,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2016,
     'Familievenligt',
     'Zenith Castle Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Zenith+Castle+Remix+board+game'
+    NULL
 ),
 (
     'urban-siege-express-c298',
@@ -3184,7 +3184,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2022,
     'Hurtigt party-spil',
     'Hylden med Urban Siege Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Urban+Siege+Express+board+game'
+    NULL
 ),
 (
     'kingdom-territory-legends-c299',
@@ -3192,7 +3192,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2006,
     'Familievenligt',
     'Kingdom Territory Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Territory+Legends+board+game'
+    NULL
 ),
 (
     'emerald-garden-express-c300',
@@ -3200,7 +3200,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1980,
     'Strategi for entusiaster',
     'Ejer-notat: Emerald Garden Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Garden+Express+board+game'
+    NULL
 ),
 (
     'kingdom-tribe-deluxe-c301',
@@ -3208,7 +3208,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1995,
     'Populært hos gæster',
     'Kingdom Tribe Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Tribe+Deluxe+board+game'
+    NULL
 ),
 (
     'shadow-legacy-express-c302',
@@ -3216,7 +3216,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2013,
     'Strategi for entusiaster',
     'Mange café-besøgende opdager Shadow Legacy Express først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Legacy+Express+board+game'
+    NULL
 ),
 (
     'timber-spire-c303',
@@ -3224,7 +3224,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2021,
     'Familievenligt',
     'Ejer-notat: Timber Spire er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Timber+Spire+board+game'
+    NULL
 ),
 (
     'royal-archive-remix-c304',
@@ -3232,7 +3232,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1978,
     'Populært hos gæster',
     'Gæster scanner ofte Royal Archive Remix for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Royal+Archive+Remix+board+game'
+    NULL
 ),
 (
     'urban-towers-remix-c305',
@@ -3240,7 +3240,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2022,
     'Niche-titel',
     'Urban Towers Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Urban+Towers+Remix+board+game'
+    NULL
 ),
 (
     'marble-delta-remix-c306',
@@ -3248,7 +3248,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2003,
     'Café-katalog',
     'Mange café-besøgende opdager Marble Delta Remix først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Marble+Delta+Remix+board+game'
+    NULL
 ),
 (
     'zenith-bazaar-deluxe-c307',
@@ -3256,7 +3256,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1998,
     'Strategi for entusiaster',
     'Ejer-notat: Zenith Bazaar Deluxe er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Zenith+Bazaar+Deluxe+board+game'
+    NULL
 ),
 (
     'iron-delta-express-c308',
@@ -3264,7 +3264,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1998,
     'Familievenligt',
     'Hylden med Iron Delta Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Iron+Delta+Express+board+game'
+    NULL
 ),
 (
     'knightly-dynasty-junior-c309',
@@ -3272,7 +3272,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1998,
     'Strategi for entusiaster',
     'Knightly Dynasty Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Knightly+Dynasty+Junior+board+game'
+    NULL
 ),
 (
     'ocean-yard-c310',
@@ -3280,7 +3280,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1976,
     'Niche-titel',
     'Hylden med Ocean Yard bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Yard+board+game'
+    NULL
 ),
 (
     'jungle-crown-deluxe-c311',
@@ -3288,7 +3288,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2024,
     'Nyhed i sortimentet',
     'Gæster scanner ofte Jungle Crown Deluxe for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Crown+Deluxe+board+game'
+    NULL
 ),
 (
     'neon-kingdom-legends-c312',
@@ -3296,7 +3296,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2006,
     'Klassiker på hylden',
     'Neon Kingdom Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Neon+Kingdom+Legends+board+game'
+    NULL
 ),
 (
     'dragon-spire-ii-c313',
@@ -3304,7 +3304,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2020,
     'Hurtigt party-spil',
     'Dragon Spire II er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Spire+II+board+game'
+    NULL
 ),
 (
     'storm-circuit-deluxe-c314',
@@ -3312,7 +3312,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2020,
     'Populært hos gæster',
     'Ejer-notat: Storm Circuit Deluxe er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Storm+Circuit+Deluxe+board+game'
+    NULL
 ),
 (
     'silver-quarry-ii-c315',
@@ -3320,7 +3320,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2020,
     'Niche-titel',
     'Silver Quarry II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Silver+Quarry+II+board+game'
+    NULL
 ),
 (
     'nordic-crown-ii-c316',
@@ -3328,7 +3328,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1983,
     'Klassiker på hylden',
     'Nordic Crown II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Crown+II+board+game'
+    NULL
 ),
 (
     'urban-valley-junior-c317',
@@ -3336,7 +3336,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1998,
     'Hurtigt party-spil',
     'Urban Valley Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Urban+Valley+Junior+board+game'
+    NULL
 ),
 (
     'hidden-workshop-c318',
@@ -3344,7 +3344,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1979,
     'Nyhed i sortimentet',
     'Hylden med Hidden Workshop bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Workshop+board+game'
+    NULL
 ),
 (
     'umber-temple-junior-c319',
@@ -3352,7 +3352,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2001,
     'Strategi for entusiaster',
     'Umber Temple Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Temple+Junior+board+game'
+    NULL
 ),
 (
     'hidden-zone-deluxe-c320',
@@ -3360,7 +3360,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2016,
     'Populært hos gæster',
     'Hylden med Hidden Zone Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Zone+Deluxe+board+game'
+    NULL
 ),
 (
     'harbor-quest-ii-c321',
@@ -3368,7 +3368,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2024,
     'Niche-titel',
     'Harbor Quest II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Quest+II+board+game'
+    NULL
 ),
 (
     'brave-towers-remix-c322',
@@ -3376,7 +3376,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1978,
     'Populært hos gæster',
     'Ejer-notat: Brave Towers Remix er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Brave+Towers+Remix+board+game'
+    NULL
 ),
 (
     'jade-expedition-deluxe-c323',
@@ -3384,7 +3384,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2020,
     'Klassiker på hylden',
     'Jade Expedition Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jade+Expedition+Deluxe+board+game'
+    NULL
 ),
 (
     'harbor-tavern-deluxe-c324',
@@ -3392,7 +3392,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1980,
     'Nyhed i sortimentet',
     'Mange café-besøgende opdager Harbor Tavern Deluxe først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Tavern+Deluxe+board+game'
+    NULL
 ),
 (
     'jungle-isles-ii-c325',
@@ -3400,7 +3400,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2015,
     'Nyhed i sortimentet',
     'Ejer-notat: Jungle Isles II er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Isles+II+board+game'
+    NULL
 ),
 (
     'grand-bazaar-ii-c326',
@@ -3408,7 +3408,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2012,
     'Niche-titel',
     'Mange café-besøgende opdager Grand Bazaar II først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Grand+Bazaar+II+board+game'
+    NULL
 ),
 (
     'umber-tavern-junior-c327',
@@ -3416,7 +3416,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1996,
     'Café-katalog',
     'Umber Tavern Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Tavern+Junior+board+game'
+    NULL
 ),
 (
     'emerald-caravan-legends-c328',
@@ -3424,7 +3424,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2024,
     'Nyhed i sortimentet',
     'Gæster scanner ofte Emerald Caravan Legends for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Caravan+Legends+board+game'
+    NULL
 ),
 (
     'knightly-sanctuary-junior-c329',
@@ -3432,7 +3432,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2015,
     'Café-katalog',
     'Hylden med Knightly Sanctuary Junior bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Knightly+Sanctuary+Junior+board+game'
+    NULL
 ),
 (
     'ivory-kingdom-legends-c330',
@@ -3440,7 +3440,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1994,
     'Hurtigt party-spil',
     'Mange café-besøgende opdager Ivory Kingdom Legends først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Kingdom+Legends+board+game'
+    NULL
 ),
 (
     'rustic-ridge-deluxe-c331',
@@ -3448,7 +3448,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2004,
     'Populært hos gæster',
     'Gæster scanner ofte Rustic Ridge Deluxe for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Ridge+Deluxe+board+game'
+    NULL
 ),
 (
     'crimson-sanctuary-express-c332',
@@ -3456,7 +3456,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2004,
     'Klassiker på hylden',
     'Crimson Sanctuary Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Sanctuary+Express+board+game'
+    NULL
 ),
 (
     'storm-rail-legends-c333',
@@ -3464,7 +3464,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1995,
     'Familievenligt',
     'Hylden med Storm Rail Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Storm+Rail+Legends+board+game'
+    NULL
 ),
 (
     'urban-towers-junior-c334',
@@ -3472,7 +3472,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1981,
     'Familievenligt',
     'Mange café-besøgende opdager Urban Towers Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Urban+Towers+Junior+board+game'
+    NULL
 ),
 (
     'royal-spire-ii-c335',
@@ -3480,7 +3480,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1984,
     'Populært hos gæster',
     'Royal Spire II er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Royal+Spire+II+board+game'
+    NULL
 ),
 (
     'viking-rail-junior-c336',
@@ -3488,7 +3488,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2001,
     'Klassiker på hylden',
     'Viking Rail Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Viking+Rail+Junior+board+game'
+    NULL
 ),
 (
     'storm-village-junior-c337',
@@ -3496,7 +3496,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2021,
     'Familievenligt',
     'Mange café-besøgende opdager Storm Village Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Storm+Village+Junior+board+game'
+    NULL
 ),
 (
     'forgotten-towers-express-c338',
@@ -3504,7 +3504,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2006,
     'Nyhed i sortimentet',
     'Hylden med Forgotten Towers Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Forgotten+Towers+Express+board+game'
+    NULL
 ),
 (
     'wild-towers-express-c339',
@@ -3512,7 +3512,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1990,
     'Klassiker på hylden',
     'Ejer-notat: Wild Towers Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Wild+Towers+Express+board+game'
+    NULL
 ),
 (
     'crystal-kingdom-express-c340',
@@ -3520,7 +3520,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2013,
     'Hurtigt party-spil',
     'Crystal Kingdom Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Kingdom+Express+board+game'
+    NULL
 ),
 (
     'frozen-siege-ii-c341',
@@ -3528,7 +3528,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1991,
     'Familievenligt',
     'Frozen Siege II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Frozen+Siege+II+board+game'
+    NULL
 ),
 (
     'cosmic-ridge-c342',
@@ -3536,7 +3536,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2011,
     'Klassiker på hylden',
     'Cosmic Ridge passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Ridge+board+game'
+    NULL
 ),
 (
     'dragon-republic-junior-c343',
@@ -3544,7 +3544,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2003,
     'Nyhed i sortimentet',
     'Dragon Republic Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Republic+Junior+board+game'
+    NULL
 ),
 (
     'rustic-workshop-c344',
@@ -3552,7 +3552,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1983,
     'Populært hos gæster',
     'Hylden med Rustic Workshop bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Workshop+board+game'
+    NULL
 ),
 (
     'sunset-valley-deluxe-c345',
@@ -3560,7 +3560,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2023,
     'Niche-titel',
     'Mange café-besøgende opdager Sunset Valley Deluxe først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Valley+Deluxe+board+game'
+    NULL
 ),
 (
     'wild-towers-c346',
@@ -3568,7 +3568,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1977,
     'Café-katalog',
     'Mange café-besøgende opdager Wild Towers først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Wild+Towers+board+game'
+    NULL
 ),
 (
     'eternal-trade-express-c347',
@@ -3576,7 +3576,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1984,
     'Niche-titel',
     'Eternal Trade Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Trade+Express+board+game'
+    NULL
 ),
 (
     'storm-expedition-express-c348',
@@ -3584,7 +3584,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2014,
     'Nyhed i sortimentet',
     'Ejer-notat: Storm Expedition Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Storm+Expedition+Express+board+game'
+    NULL
 ),
 (
     'grand-tribe-express-c349',
@@ -3592,7 +3592,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2020,
     'Nyhed i sortimentet',
     'Hylden med Grand Tribe Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Grand+Tribe+Express+board+game'
+    NULL
 ),
 (
     'urban-outpost-legends-c350',
@@ -3600,7 +3600,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1982,
     'Strategi for entusiaster',
     'Ejer-notat: Urban Outpost Legends er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Urban+Outpost+Legends+board+game'
+    NULL
 ),
 (
     'umber-rail-legends-c351',
@@ -3608,7 +3608,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2015,
     'Café-katalog',
     'Ejer-notat: Umber Rail Legends er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Rail+Legends+board+game'
+    NULL
 ),
 (
     'primal-monument-remix-c352',
@@ -3616,7 +3616,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2012,
     'Klassiker på hylden',
     'Gæster scanner ofte Primal Monument Remix for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Primal+Monument+Remix+board+game'
+    NULL
 ),
 (
     'eternal-expedition-junior-c353',
@@ -3624,7 +3624,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2015,
     'Strategi for entusiaster',
     'Mange café-besøgende opdager Eternal Expedition Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Expedition+Junior+board+game'
+    NULL
 ),
 (
     'ocean-caravan-junior-c354',
@@ -3632,7 +3632,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2019,
     'Populært hos gæster',
     'Mange café-besøgende opdager Ocean Caravan Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Caravan+Junior+board+game'
+    NULL
 ),
 (
     'storm-sanctuary-ii-c355',
@@ -3640,7 +3640,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2001,
     'Klassiker på hylden',
     'Hylden med Storm Sanctuary II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Storm+Sanctuary+II+board+game'
+    NULL
 ),
 (
     'neon-union-express-c356',
@@ -3648,7 +3648,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2022,
     'Café-katalog',
     'Gæster scanner ofte Neon Union Express for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Neon+Union+Express+board+game'
+    NULL
 ),
 (
     'mystic-valley-deluxe-c357',
@@ -3656,7 +3656,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2017,
     'Hurtigt party-spil',
     'Ejer-notat: Mystic Valley Deluxe er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Mystic+Valley+Deluxe+board+game'
+    NULL
 ),
 (
     'kingdom-stronghold-junior-c358',
@@ -3664,7 +3664,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1996,
     'Familievenligt',
     'Gæster scanner ofte Kingdom Stronghold Junior for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Stronghold+Junior+board+game'
+    NULL
 ),
 (
     'umber-delta-legends-c359',
@@ -3672,7 +3672,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2019,
     'Nyhed i sortimentet',
     'Ejer-notat: Umber Delta Legends er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Delta+Legends+board+game'
+    NULL
 ),
 (
     'ocean-isles-junior-c360',
@@ -3680,7 +3680,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1994,
     'Klassiker på hylden',
     'Ocean Isles Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Isles+Junior+board+game'
+    NULL
 ),
 (
     'tidal-fortress-legends-c361',
@@ -3688,7 +3688,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2020,
     'Hurtigt party-spil',
     'Tidal Fortress Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Fortress+Legends+board+game'
+    NULL
 ),
 (
     'jungle-village-remix-c362',
@@ -3696,7 +3696,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2021,
     'Nyhed i sortimentet',
     'Jungle Village Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Village+Remix+board+game'
+    NULL
 ),
 (
     'rustic-tribe-express-c363',
@@ -3704,7 +3704,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2000,
     'Familievenligt',
     'Rustic Tribe Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Tribe+Express+board+game'
+    NULL
 ),
 (
     'shadow-caravan-deluxe-c364',
@@ -3712,7 +3712,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2020,
     'Populært hos gæster',
     'Shadow Caravan Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Caravan+Deluxe+board+game'
+    NULL
 ),
 (
     'primal-horizon-legends-c365',
@@ -3720,7 +3720,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2005,
     'Klassiker på hylden',
     'Mange café-besøgende opdager Primal Horizon Legends først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Primal+Horizon+Legends+board+game'
+    NULL
 ),
 (
     'royal-village-junior-c366',
@@ -3728,7 +3728,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2019,
     'Nyhed i sortimentet',
     'Mange café-besøgende opdager Royal Village Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Royal+Village+Junior+board+game'
+    NULL
 ),
 (
     'velvet-wastes-ii-c367',
@@ -3736,7 +3736,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1990,
     'Café-katalog',
     'Gæster scanner ofte Velvet Wastes II for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Velvet+Wastes+II+board+game'
+    NULL
 ),
 (
     'nordic-archive-ii-c368',
@@ -3744,7 +3744,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1978,
     'Populært hos gæster',
     'Hylden med Nordic Archive II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Archive+II+board+game'
+    NULL
 ),
 (
     'eternal-convoy-legends-c369',
@@ -3752,7 +3752,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2024,
     'Niche-titel',
     'Eternal Convoy Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Convoy+Legends+board+game'
+    NULL
 ),
 (
     'jade-sanctuary-legends-c370',
@@ -3760,7 +3760,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2005,
     'Hurtigt party-spil',
     'Gæster scanner ofte Jade Sanctuary Legends for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jade+Sanctuary+Legends+board+game'
+    NULL
 ),
 (
     'shadow-market-deluxe-c371',
@@ -3768,7 +3768,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2016,
     'Café-katalog',
     'Shadow Market Deluxe ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Market+Deluxe+board+game'
+    NULL
 ),
 (
     'knightly-guild-junior-c372',
@@ -3776,7 +3776,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2022,
     'Café-katalog',
     'Mange café-besøgende opdager Knightly Guild Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Knightly+Guild+Junior+board+game'
+    NULL
 ),
 (
     'kingdom-village-c373',
@@ -3784,7 +3784,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2000,
     'Hurtigt party-spil',
     'Mange café-besøgende opdager Kingdom Village først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Village+board+game'
+    NULL
 ),
 (
     'shadow-summit-c374',
@@ -3792,7 +3792,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1975,
     'Nyhed i sortimentet',
     'Ejer-notat: Shadow Summit er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Summit+board+game'
+    NULL
 ),
 (
     'sunset-kingdom-express-c375',
@@ -3800,7 +3800,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2016,
     'Hurtigt party-spil',
     'Mange café-besøgende opdager Sunset Kingdom Express først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Kingdom+Express+board+game'
+    NULL
 ),
 (
     'distant-isles-ii-c376',
@@ -3808,7 +3808,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1982,
     'Familievenligt',
     'Mange café-besøgende opdager Distant Isles II først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Distant+Isles+II+board+game'
+    NULL
 ),
 (
     'primal-horizon-legends-c377',
@@ -3816,7 +3816,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1986,
     'Café-katalog',
     'Gæster scanner ofte Primal Horizon Legends for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Primal+Horizon+Legends+board+game'
+    NULL
 ),
 (
     'shadow-voyage-legends-c378',
@@ -3824,7 +3824,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2023,
     'Klassiker på hylden',
     'Mange café-besøgende opdager Shadow Voyage Legends først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Voyage+Legends+board+game'
+    NULL
 ),
 (
     'obsidian-tavern-express-c379',
@@ -3832,7 +3832,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2002,
     'Familievenligt',
     'Obsidian Tavern Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Tavern+Express+board+game'
+    NULL
 ),
 (
     'frozen-fleet-ii-c380',
@@ -3840,7 +3840,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2005,
     'Familievenligt',
     'Mange café-besøgende opdager Frozen Fleet II først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Frozen+Fleet+II+board+game'
+    NULL
 ),
 (
     'viking-harbor-express-c381',
@@ -3848,7 +3848,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2023,
     'Nyhed i sortimentet',
     'Viking Harbor Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Viking+Harbor+Express+board+game'
+    NULL
 ),
 (
     'umber-voyage-c382',
@@ -3856,7 +3856,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1991,
     'Familievenligt',
     'Gæster scanner ofte Umber Voyage for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Voyage+board+game'
+    NULL
 ),
 (
     'quiet-crown-express-c383',
@@ -3864,7 +3864,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1994,
     'Niche-titel',
     'Hylden med Quiet Crown Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Crown+Express+board+game'
+    NULL
 ),
 (
     'tidal-labyrinth-deluxe-c384',
@@ -3872,7 +3872,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2019,
     'Populært hos gæster',
     'Gæster scanner ofte Tidal Labyrinth Deluxe for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Labyrinth+Deluxe+board+game'
+    NULL
 ),
 (
     'shadow-realm-junior-c385',
@@ -3880,7 +3880,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1989,
     'Klassiker på hylden',
     'Mange café-besøgende opdager Shadow Realm Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Realm+Junior+board+game'
+    NULL
 ),
 (
     'distant-haven-junior-c386',
@@ -3888,7 +3888,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1998,
     'Strategi for entusiaster',
     'Gæster scanner ofte Distant Haven Junior for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Distant+Haven+Junior+board+game'
+    NULL
 ),
 (
     'eternal-junction-junior-c387',
@@ -3896,7 +3896,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2017,
     'Klassiker på hylden',
     'Eternal Junction Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Junction+Junior+board+game'
+    NULL
 ),
 (
     'whisper-wilds-remix-c388',
@@ -3904,7 +3904,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1980,
     'Hurtigt party-spil',
     'Ejer-notat: Whisper Wilds Remix er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Wilds+Remix+board+game'
+    NULL
 ),
 (
     'dragon-union-junior-c389',
@@ -3912,7 +3912,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1982,
     'Café-katalog',
     'Dragon Union Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Union+Junior+board+game'
+    NULL
 ),
 (
     'grand-forge-junior-c390',
@@ -3920,7 +3920,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2009,
     'Niche-titel',
     'Mange café-besøgende opdager Grand Forge Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Grand+Forge+Junior+board+game'
+    NULL
 ),
 (
     'harbor-spire-c391',
@@ -3928,7 +3928,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2018,
     'Klassiker på hylden',
     'Gæster scanner ofte Harbor Spire for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Spire+board+game'
+    NULL
 ),
 (
     'emerald-tavern-junior-c392',
@@ -3936,7 +3936,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2003,
     'Café-katalog',
     'Hylden med Emerald Tavern Junior bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Tavern+Junior+board+game'
+    NULL
 ),
 (
     'ancient-stronghold-junior-c393',
@@ -3944,7 +3944,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1978,
     'Hurtigt party-spil',
     'Gæster scanner ofte Ancient Stronghold Junior for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Stronghold+Junior+board+game'
+    NULL
 ),
 (
     'umber-arena-express-c394',
@@ -3952,7 +3952,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1991,
     'Café-katalog',
     'Gæster scanner ofte Umber Arena Express for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Arena+Express+board+game'
+    NULL
 ),
 (
     'dragon-caravan-express-c395',
@@ -3960,7 +3960,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1997,
     'Populært hos gæster',
     'Ejer-notat: Dragon Caravan Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Caravan+Express+board+game'
+    NULL
 ),
 (
     'dragon-village-express-c396',
@@ -3968,7 +3968,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1977,
     'Nyhed i sortimentet',
     'Hylden med Dragon Village Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Village+Express+board+game'
+    NULL
 ),
 (
     'hidden-labyrinth-legends-c397',
@@ -3976,7 +3976,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2021,
     'Strategi for entusiaster',
     'Hidden Labyrinth Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Labyrinth+Legends+board+game'
+    NULL
 ),
 (
     'viking-spire-remix-c398',
@@ -3984,7 +3984,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1999,
     'Strategi for entusiaster',
     'Viking Spire Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Viking+Spire+Remix+board+game'
+    NULL
 ),
 (
     'quiet-rail-junior-c399',
@@ -3992,7 +3992,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1983,
     'Familievenligt',
     'Quiet Rail Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Rail+Junior+board+game'
+    NULL
 ),
 (
     'ivory-ridge-junior-c400',
@@ -4000,7 +4000,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1983,
     'Klassiker på hylden',
     'Ivory Ridge Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Ridge+Junior+board+game'
+    NULL
 ),
 (
     'baltic-zone-deluxe-c401',
@@ -4008,7 +4008,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2004,
     'Strategi for entusiaster',
     'Ejer-notat: Baltic Zone Deluxe er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Zone+Deluxe+board+game'
+    NULL
 ),
 (
     'nordic-harbor-express-c402',
@@ -4016,7 +4016,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1997,
     'Niche-titel',
     'Nordic Harbor Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Harbor+Express+board+game'
+    NULL
 ),
 (
     'umber-junction-c403',
@@ -4024,7 +4024,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1977,
     'Strategi for entusiaster',
     'Ejer-notat: Umber Junction er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Junction+board+game'
+    NULL
 ),
 (
     'baltic-harbor-ii-c404',
@@ -4032,7 +4032,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1979,
     'Populært hos gæster',
     'Ejer-notat: Baltic Harbor II er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Harbor+II+board+game'
+    NULL
 ),
 (
     'marble-delta-legends-c405',
@@ -4040,7 +4040,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1978,
     'Klassiker på hylden',
     'Gæster scanner ofte Marble Delta Legends for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Marble+Delta+Legends+board+game'
+    NULL
 ),
 (
     'crimson-guild-junior-c406',
@@ -4048,7 +4048,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1988,
     'Café-katalog',
     'Mange café-besøgende opdager Crimson Guild Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Guild+Junior+board+game'
+    NULL
 ),
 (
     'shadow-guild-remix-c407',
@@ -4056,7 +4056,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2021,
     'Familievenligt',
     'Ejer-notat: Shadow Guild Remix er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Guild+Remix+board+game'
+    NULL
 ),
 (
     'rustic-odyssey-deluxe-c408',
@@ -4064,7 +4064,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1990,
     'Nyhed i sortimentet',
     'Mange café-besøgende opdager Rustic Odyssey Deluxe først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Odyssey+Deluxe+board+game'
+    NULL
 ),
 (
     'harbor-guild-express-c409',
@@ -4072,7 +4072,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1994,
     'Nyhed i sortimentet',
     'Harbor Guild Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Guild+Express+board+game'
+    NULL
 ),
 (
     'lost-summit-legends-c410',
@@ -4080,7 +4080,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1986,
     'Strategi for entusiaster',
     'Ejer-notat: Lost Summit Legends er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Lost+Summit+Legends+board+game'
+    NULL
 ),
 (
     'timber-wonders-legends-c411',
@@ -4088,7 +4088,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2017,
     'Strategi for entusiaster',
     'Timber Wonders Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Timber+Wonders+Legends+board+game'
+    NULL
 ),
 (
     'stellar-sanctuary-express-c412',
@@ -4096,7 +4096,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1984,
     'Nyhed i sortimentet',
     'Hylden med Stellar Sanctuary Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Sanctuary+Express+board+game'
+    NULL
 ),
 (
     'ivory-temple-ii-c413',
@@ -4104,7 +4104,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1989,
     'Nyhed i sortimentet',
     'Ivory Temple II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Temple+II+board+game'
+    NULL
 ),
 (
     'distant-union-c414',
@@ -4112,7 +4112,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2010,
     'Strategi for entusiaster',
     'Hylden med Distant Union bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Distant+Union+board+game'
+    NULL
 ),
 (
     'hidden-republic-ii-c415',
@@ -4120,7 +4120,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1991,
     'Klassiker på hylden',
     'Hidden Republic II passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Republic+II+board+game'
+    NULL
 ),
 (
     'crimson-quarry-deluxe-c416',
@@ -4128,7 +4128,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1980,
     'Klassiker på hylden',
     'Crimson Quarry Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Quarry+Deluxe+board+game'
+    NULL
 ),
 (
     'rustic-wilds-junior-c417',
@@ -4136,7 +4136,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1977,
     'Populært hos gæster',
     'Mange café-besøgende opdager Rustic Wilds Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Wilds+Junior+board+game'
+    NULL
 ),
 (
     'lost-garden-legends-c418',
@@ -4144,7 +4144,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2010,
     'Klassiker på hylden',
     'Hylden med Lost Garden Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Lost+Garden+Legends+board+game'
+    NULL
 ),
 (
     'sunset-legacy-c419',
@@ -4152,7 +4152,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1988,
     'Klassiker på hylden',
     'Gæster scanner ofte Sunset Legacy for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Legacy+board+game'
+    NULL
 ),
 (
     'whisper-temple-ii-c420',
@@ -4160,7 +4160,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2019,
     'Klassiker på hylden',
     'Hylden med Whisper Temple II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Temple+II+board+game'
+    NULL
 ),
 (
     'jungle-market-remix-c421',
@@ -4168,7 +4168,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1993,
     'Strategi for entusiaster',
     'Hylden med Jungle Market Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Market+Remix+board+game'
+    NULL
 ),
 (
     'timber-legacy-deluxe-c422',
@@ -4176,7 +4176,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1998,
     'Hurtigt party-spil',
     'Hylden med Timber Legacy Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Timber+Legacy+Deluxe+board+game'
+    NULL
 ),
 (
     'umber-temple-remix-c423',
@@ -4184,7 +4184,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1995,
     'Klassiker på hylden',
     'Umber Temple Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Temple+Remix+board+game'
+    NULL
 ),
 (
     'cosmic-voyage-remix-c424',
@@ -4192,7 +4192,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1989,
     'Niche-titel',
     'Cosmic Voyage Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Voyage+Remix+board+game'
+    NULL
 ),
 (
     'lost-wastes-legends-c425',
@@ -4200,7 +4200,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2001,
     'Nyhed i sortimentet',
     'Mange café-besøgende opdager Lost Wastes Legends først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Lost+Wastes+Legends+board+game'
+    NULL
 ),
 (
     'nordic-republic-junior-c426',
@@ -4208,7 +4208,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1990,
     'Hurtigt party-spil',
     'Ejer-notat: Nordic Republic Junior er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Republic+Junior+board+game'
+    NULL
 ),
 (
     'rustic-outpost-deluxe-c427',
@@ -4216,7 +4216,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2023,
     'Hurtigt party-spil',
     'Gæster scanner ofte Rustic Outpost Deluxe for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Outpost+Deluxe+board+game'
+    NULL
 ),
 (
     'forgotten-stronghold-ii-c428',
@@ -4224,7 +4224,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2021,
     'Familievenligt',
     'Mange café-besøgende opdager Forgotten Stronghold II først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Forgotten+Stronghold+II+board+game'
+    NULL
 ),
 (
     'ivory-territory-ii-c429',
@@ -4232,7 +4232,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2009,
     'Café-katalog',
     'Ejer-notat: Ivory Territory II er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Territory+II+board+game'
+    NULL
 ),
 (
     'dragon-wonders-remix-c430',
@@ -4240,7 +4240,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2017,
     'Café-katalog',
     'Dragon Wonders Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Wonders+Remix+board+game'
+    NULL
 ),
 (
     'hidden-parade-legends-c431',
@@ -4248,7 +4248,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1989,
     'Populært hos gæster',
     'Gæster scanner ofte Hidden Parade Legends for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Parade+Legends+board+game'
+    NULL
 ),
 (
     'mystic-towers-express-c432',
@@ -4256,7 +4256,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1998,
     'Café-katalog',
     'Ejer-notat: Mystic Towers Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Mystic+Towers+Express+board+game'
+    NULL
 ),
 (
     'neon-union-express-c433',
@@ -4264,7 +4264,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2017,
     'Hurtigt party-spil',
     'Neon Union Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Neon+Union+Express+board+game'
+    NULL
 ),
 (
     'jungle-sanctuary-c434',
@@ -4272,7 +4272,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1976,
     'Nyhed i sortimentet',
     'Ejer-notat: Jungle Sanctuary er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Sanctuary+board+game'
+    NULL
 ),
 (
     'baltic-towers-remix-c435',
@@ -4280,7 +4280,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2019,
     'Strategi for entusiaster',
     'Baltic Towers Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Towers+Remix+board+game'
+    NULL
 ),
 (
     'kingdom-convoy-c436',
@@ -4288,7 +4288,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2008,
     'Niche-titel',
     'Mange café-besøgende opdager Kingdom Convoy først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Convoy+board+game'
+    NULL
 ),
 (
     'harbor-horizon-remix-c437',
@@ -4296,7 +4296,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1997,
     'Nyhed i sortimentet',
     'Harbor Horizon Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Horizon+Remix+board+game'
+    NULL
 ),
 (
     'urban-yard-express-c438',
@@ -4304,7 +4304,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2004,
     'Klassiker på hylden',
     'Gæster scanner ofte Urban Yard Express for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Urban+Yard+Express+board+game'
+    NULL
 ),
 (
     'rustic-odyssey-remix-c439',
@@ -4312,7 +4312,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1980,
     'Café-katalog',
     'Rustic Odyssey Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Odyssey+Remix+board+game'
+    NULL
 ),
 (
     'viking-valley-express-c440',
@@ -4320,7 +4320,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1978,
     'Café-katalog',
     'Gæster scanner ofte Viking Valley Express for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Viking+Valley+Express+board+game'
+    NULL
 ),
 (
     'forgotten-quarry-express-c441',
@@ -4328,7 +4328,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2016,
     'Familievenligt',
     'Ejer-notat: Forgotten Quarry Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Forgotten+Quarry+Express+board+game'
+    NULL
 ),
 (
     'frozen-tavern-junior-c442',
@@ -4336,7 +4336,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1977,
     'Klassiker på hylden',
     'Mange café-besøgende opdager Frozen Tavern Junior først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Frozen+Tavern+Junior+board+game'
+    NULL
 ),
 (
     'stellar-summit-junior-c443',
@@ -4344,7 +4344,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2005,
     'Nyhed i sortimentet',
     'Stellar Summit Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Summit+Junior+board+game'
+    NULL
 ),
 (
     'rustic-village-deluxe-c444',
@@ -4352,7 +4352,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2009,
     'Café-katalog',
     'Mange café-besøgende opdager Rustic Village Deluxe først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Village+Deluxe+board+game'
+    NULL
 ),
 (
     'storm-arena-ii-c445',
@@ -4360,7 +4360,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2012,
     'Niche-titel',
     'Storm Arena II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Storm+Arena+II+board+game'
+    NULL
 ),
 (
     'wild-village-c446',
@@ -4368,7 +4368,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1994,
     'Niche-titel',
     'Ejer-notat: Wild Village er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Wild+Village+board+game'
+    NULL
 ),
 (
     'viking-delta-junior-c447',
@@ -4376,7 +4376,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1996,
     'Strategi for entusiaster',
     'Viking Delta Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Viking+Delta+Junior+board+game'
+    NULL
 ),
 (
     'stellar-garden-c448',
@@ -4384,7 +4384,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2007,
     'Familievenligt',
     'Stellar Garden er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Garden+board+game'
+    NULL
 ),
 (
     'nordic-parade-c449',
@@ -4392,7 +4392,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1996,
     'Strategi for entusiaster',
     'Nordic Parade ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Parade+board+game'
+    NULL
 ),
 (
     'obsidian-isles-remix-c450',
@@ -4400,7 +4400,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2003,
     'Hurtigt party-spil',
     'Mange café-besøgende opdager Obsidian Isles Remix først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Isles+Remix+board+game'
+    NULL
 ),
 (
     'viking-siege-ii-c451',
@@ -4408,7 +4408,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2018,
     'Strategi for entusiaster',
     'Viking Siege II er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Viking+Siege+II+board+game'
+    NULL
 ),
 (
     'shadow-nexus-ii-c452',
@@ -4416,7 +4416,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2020,
     'Populært hos gæster',
     'Shadow Nexus II er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Nexus+II+board+game'
+    NULL
 ),
 (
     'viking-frontier-remix-c453',
@@ -4424,7 +4424,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2015,
     'Niche-titel',
     'Gæster scanner ofte Viking Frontier Remix for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Viking+Frontier+Remix+board+game'
+    NULL
 ),
 (
     'urban-convoy-c454',
@@ -4432,7 +4432,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1975,
     'Nyhed i sortimentet',
     'Hylden med Urban Convoy bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Urban+Convoy+board+game'
+    NULL
 ),
 (
     'royal-convoy-ii-c455',
@@ -4440,7 +4440,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1980,
     'Niche-titel',
     'Hylden med Royal Convoy II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Royal+Convoy+II+board+game'
+    NULL
 ),
 (
     'jungle-towers-express-c456',
@@ -4448,7 +4448,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1981,
     'Café-katalog',
     'Jungle Towers Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Towers+Express+board+game'
+    NULL
 ),
 (
     'emerald-wilds-junior-c457',
@@ -4456,7 +4456,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1995,
     'Strategi for entusiaster',
     'Emerald Wilds Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Wilds+Junior+board+game'
+    NULL
 ),
 (
     'viking-labyrinth-c458',
@@ -4464,7 +4464,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2021,
     'Klassiker på hylden',
     'Ejer-notat: Viking Labyrinth er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Viking+Labyrinth+board+game'
+    NULL
 ),
 (
     'rustic-republic-ii-c459',
@@ -4472,7 +4472,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1983,
     'Nyhed i sortimentet',
     'Rustic Republic II passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Republic+II+board+game'
+    NULL
 ),
 (
     'iron-citadel-ii-c460',
@@ -4480,7 +4480,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2002,
     'Nyhed i sortimentet',
     'Hylden med Iron Citadel II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Iron+Citadel+II+board+game'
+    NULL
 ),
 (
     'dragon-realm-deluxe-c461',
@@ -4488,7 +4488,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1990,
     'Hurtigt party-spil',
     'Ejer-notat: Dragon Realm Deluxe er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Realm+Deluxe+board+game'
+    NULL
 ),
 (
     'distant-convoy-ii-c462',
@@ -4496,7 +4496,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1994,
     'Café-katalog',
     'Hylden med Distant Convoy II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Distant+Convoy+II+board+game'
+    NULL
 ),
 (
     'neon-republic-remix-c463',
@@ -4504,7 +4504,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1996,
     'Hurtigt party-spil',
     'Neon Republic Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Neon+Republic+Remix+board+game'
+    NULL
 ),
 (
     'primal-zone-junior-c464',
@@ -4512,7 +4512,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1983,
     'Nyhed i sortimentet',
     'Primal Zone Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Primal+Zone+Junior+board+game'
+    NULL
 ),
 (
     'stellar-forge-express-c465',
@@ -4520,7 +4520,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1995,
     'Niche-titel',
     'Hylden med Stellar Forge Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Forge+Express+board+game'
+    NULL
 ),
 (
     'shadow-haven-legends-c466',
@@ -4528,7 +4528,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2015,
     'Hurtigt party-spil',
     'Ejer-notat: Shadow Haven Legends er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Haven+Legends+board+game'
+    NULL
 ),
 (
     'storm-republic-deluxe-c467',
@@ -4536,7 +4536,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2000,
     'Familievenligt',
     'Storm Republic Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Storm+Republic+Deluxe+board+game'
+    NULL
 ),
 (
     'lunar-wastes-junior-c468',
@@ -4544,7 +4544,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1986,
     'Café-katalog',
     'Gæster scanner ofte Lunar Wastes Junior for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Lunar+Wastes+Junior+board+game'
+    NULL
 ),
 (
     'tidal-fortress-express-c469',
@@ -4552,7 +4552,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1993,
     'Populært hos gæster',
     'Tidal Fortress Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Fortress+Express+board+game'
+    NULL
 ),
 (
     'ancient-delta-express-c470',
@@ -4560,7 +4560,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1983,
     'Nyhed i sortimentet',
     'Mange café-besøgende opdager Ancient Delta Express først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Delta+Express+board+game'
+    NULL
 ),
 (
     'iron-frontier-express-c471',
@@ -4568,7 +4568,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1999,
     'Populært hos gæster',
     'Hylden med Iron Frontier Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Iron+Frontier+Express+board+game'
+    NULL
 ),
 (
     'eternal-wastes-express-c472',
@@ -4576,7 +4576,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2009,
     'Strategi for entusiaster',
     'Ejer-notat: Eternal Wastes Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Wastes+Express+board+game'
+    NULL
 ),
 (
     'urban-echo-remix-c473',
@@ -4584,7 +4584,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2009,
     'Populært hos gæster',
     'Urban Echo Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Urban+Echo+Remix+board+game'
+    NULL
 ),
 (
     'quiet-circuit-deluxe-c474',
@@ -4592,7 +4592,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1985,
     'Café-katalog',
     'Ejer-notat: Quiet Circuit Deluxe er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Circuit+Deluxe+board+game'
+    NULL
 ),
 (
     'rustic-bazaar-express-c475',
@@ -4600,7 +4600,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2023,
     'Familievenligt',
     'Rustic Bazaar Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Bazaar+Express+board+game'
+    NULL
 ),
 (
     'arctic-convoy-deluxe-c476',
@@ -4608,7 +4608,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1989,
     'Klassiker på hylden',
     'Hylden med Arctic Convoy Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Convoy+Deluxe+board+game'
+    NULL
 ),
 (
     'distant-labyrinth-legends-c477',
@@ -4616,7 +4616,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2012,
     'Niche-titel',
     'Distant Labyrinth Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Distant+Labyrinth+Legends+board+game'
+    NULL
 ),
 (
     'eternal-convoy-deluxe-c478',
@@ -4624,7 +4624,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2001,
     'Populært hos gæster',
     'Eternal Convoy Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Convoy+Deluxe+board+game'
+    NULL
 ),
 (
     'umber-empire-deluxe-c479',
@@ -4632,7 +4632,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1994,
     'Familievenligt',
     'Hylden med Umber Empire Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Umber+Empire+Deluxe+board+game'
+    NULL
 ),
 (
     'harbor-temple-deluxe-c480',
@@ -4640,7 +4640,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2005,
     'Populært hos gæster',
     'Hylden med Harbor Temple Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Temple+Deluxe+board+game'
+    NULL
 ),
 (
     'crimson-market-c481',
@@ -4648,7 +4648,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1994,
     'Café-katalog',
     'Crimson Market ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Market+board+game'
+    NULL
 ),
 (
     'baltic-quarry-deluxe-c482',
@@ -4656,7 +4656,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2016,
     'Populært hos gæster',
     'Gæster scanner ofte Baltic Quarry Deluxe for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Quarry+Deluxe+board+game'
+    NULL
 ),
 (
     'velvet-harbor-junior-c483',
@@ -4664,7 +4664,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1986,
     'Niche-titel',
     'Velvet Harbor Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Velvet+Harbor+Junior+board+game'
+    NULL
 ),
 (
     'distant-guild-remix-c484',
@@ -4672,7 +4672,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2000,
     'Niche-titel',
     'Mange café-besøgende opdager Distant Guild Remix først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Distant+Guild+Remix+board+game'
+    NULL
 ),
 (
     'brave-ridge-c485',
@@ -4680,7 +4680,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2022,
     'Klassiker på hylden',
     'Hylden med Brave Ridge bliver ofte tømt om lørdagen, når der kommer nye gæster ind.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Brave+Ridge+board+game'
+    NULL
 ),
 (
     'viking-alliance-legends-c486',
@@ -4688,7 +4688,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1988,
     'Klassiker på hylden',
     'Viking Alliance Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Viking+Alliance+Legends+board+game'
+    NULL
 ),
 (
     'dragon-voyage-c487',
@@ -4696,7 +4696,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2009,
     'Niche-titel',
     'Dragon Voyage passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Voyage+board+game'
+    NULL
 ),
 (
     'distant-crown-deluxe-c488',
@@ -4704,7 +4704,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2017,
     'Hurtigt party-spil',
     'Ejer-notat: Distant Crown Deluxe er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Distant+Crown+Deluxe+board+game'
+    NULL
 ),
 (
     'storm-wilds-express-c489',
@@ -4712,7 +4712,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2014,
     'Strategi for entusiaster',
     'Ejer-notat: Storm Wilds Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Storm+Wilds+Express+board+game'
+    NULL
 ),
 (
     'timber-quarry-express-c490',
@@ -4720,7 +4720,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2014,
     'Niche-titel',
     'Timber Quarry Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Timber+Quarry+Express+board+game'
+    NULL
 ),
 (
     'silver-union-junior-c491',
@@ -4728,7 +4728,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2012,
     'Populært hos gæster',
     'Gæster scanner ofte Silver Union Junior for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Silver+Union+Junior+board+game'
+    NULL
 ),
 (
     'golden-harbor-deluxe-c492',
@@ -4736,7 +4736,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1982,
     'Niche-titel',
     'Golden Harbor Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Golden+Harbor+Deluxe+board+game'
+    NULL
 ),
 (
     'grand-republic-express-c493',
@@ -4744,7 +4744,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2013,
     'Niche-titel',
     'Ejer-notat: Grand Republic Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Grand+Republic+Express+board+game'
+    NULL
 ),
 (
     'kingdom-territory-legends-c494',
@@ -4752,7 +4752,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2009,
     'Niche-titel',
     'Ejer-notat: Kingdom Territory Legends er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Territory+Legends+board+game'
+    NULL
 ),
 (
     'shadow-dynasty-ii-c495',
@@ -4760,7 +4760,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1995,
     'Hurtigt party-spil',
     'Ejer-notat: Shadow Dynasty II er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Dynasty+II+board+game'
+    NULL
 ),
 (
     'timber-wonders-c496',
@@ -4768,7 +4768,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2006,
     'Niche-titel',
     'Mange café-besøgende opdager Timber Wonders først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Timber+Wonders+board+game'
+    NULL
 ),
 (
     'jungle-towers-legends-c497',
@@ -4776,7 +4776,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2006,
     'Strategi for entusiaster',
     'Gæster scanner ofte Jungle Towers Legends for at læse regler, før de tager kassen med hjem til bordet.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Towers+Legends+board+game'
+    NULL
 ),
 (
     'tidal-parade-express-c498',
@@ -4784,7 +4784,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2006,
     'Niche-titel',
     'Tidal Parade Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Parade+Express+board+game'
+    NULL
 ),
 (
     'whisper-guild-deluxe-c499',
@@ -4792,7 +4792,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     1977,
     'Nyhed i sortimentet',
     'Mange café-besøgende opdager Whisper Guild Deluxe først via QR-koden — ikke via anbefaling ved disken.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Guild+Deluxe+board+game'
+    NULL
 ),
 (
     'jade-labyrinth-express-c500',
@@ -4800,7 +4800,7 @@ INSERT INTO games (slug, name, year_published, awards, fun_fact, wikipedia_url) 
     2011,
     'Hurtigt party-spil',
     'Ejer-notat: Jade Labyrinth Express er et godt mellemvalg mellem party og strategi.',
-    'https://en.wikipedia.org/wiki/Special:Search?search=Jade+Labyrinth+Express+board+game'
+    NULL
 )
 ON CONFLICT (slug) DO UPDATE SET
     name = EXCLUDED.name,

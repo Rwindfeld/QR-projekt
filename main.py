@@ -26,7 +26,7 @@ from pydantic import BaseModel, Field
 from sqlalchemy import func, or_, select, update
 
 from models import Game, Scan, get_db, get_game_by_slug, monthly_scan_rank, top_games
-from wiki_urls import wikipedia_url_for_slug
+from wiki_urls import resolve_wikipedia_url
 from scripts.render_bootstrap import bootstrap
 
 load_dotenv()
@@ -178,8 +178,8 @@ def scan_game(request: Request, slug: str):
     scan_db_duration_seconds.observe(db_ms / 1000.0)
     scan_server_duration_seconds.observe(server_ms / 1000.0)
 
-    wiki_url = game.wikipedia_url or wikipedia_url_for_slug(game.slug)
-    wiki_note = " (engelsk)" if "en.wikipedia.org" in wiki_url else ""
+    wiki_url = resolve_wikipedia_url(game.slug, game.wikipedia_url)
+    wiki_note = " (engelsk)" if wiki_url and "en.wikipedia.org" in wiki_url else ""
     return templates.TemplateResponse(
         request,
         "thanks.html",

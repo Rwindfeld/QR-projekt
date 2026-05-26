@@ -7,7 +7,7 @@ GAMES_BULK = [
         "year": 2022,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Mange café-besøgende opdager Obsidian Crown først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Crown+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -16,7 +16,7 @@ GAMES_BULK = [
         "year": 2022,
         "awards": "Populært hos gæster",
         "fun_fact": "Ejer-notat: Velvet Convoy Legends er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Velvet+Convoy+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -25,7 +25,7 @@ GAMES_BULK = [
         "year": 1989,
         "awards": "Café-katalog",
         "fun_fact": "Ejer-notat: Baltic Colony II er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Colony+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -34,7 +34,7 @@ GAMES_BULK = [
         "year": 2001,
         "awards": "Klassiker på hylden",
         "fun_fact": "Hylden med Primal Echo Junior bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Primal+Echo+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -43,7 +43,7 @@ GAMES_BULK = [
         "year": 1985,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Arctic Junction Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Junction+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -52,7 +52,7 @@ GAMES_BULK = [
         "year": 1996,
         "awards": "Populært hos gæster",
         "fun_fact": "Mystic Yard Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Mystic+Yard+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -61,7 +61,7 @@ GAMES_BULK = [
         "year": 2013,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Timber Quarry Deluxe ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Timber+Quarry+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -70,7 +70,7 @@ GAMES_BULK = [
         "year": 1999,
         "awards": "Populært hos gæster",
         "fun_fact": "Ejer-notat: Distant Tribe er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Distant+Tribe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -79,7 +79,7 @@ GAMES_BULK = [
         "year": 1998,
         "awards": "Klassiker på hylden",
         "fun_fact": "Gæster scanner ofte Obsidian Workshop Remix for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Workshop+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -88,7 +88,7 @@ GAMES_BULK = [
         "year": 1993,
         "awards": "Populært hos gæster",
         "fun_fact": "Quiet Guild Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Guild+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -97,7 +97,7 @@ GAMES_BULK = [
         "year": 2004,
         "awards": "Familievenligt",
         "fun_fact": "Mange café-besøgende opdager Frozen Republic Deluxe først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Frozen+Republic+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -106,7 +106,7 @@ GAMES_BULK = [
         "year": 2019,
         "awards": "Populært hos gæster",
         "fun_fact": "Ejer-notat: Mystic Circuit Deluxe er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Mystic+Circuit+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -115,7 +115,7 @@ GAMES_BULK = [
         "year": 1985,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Hylden med Ivory Garden II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Garden+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -124,7 +124,7 @@ GAMES_BULK = [
         "year": 1989,
         "awards": "Familievenligt",
         "fun_fact": "Obsidian Echo Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Echo+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -133,7 +133,7 @@ GAMES_BULK = [
         "year": 1977,
         "awards": "Familievenligt",
         "fun_fact": "Hylden med Crystal Guild Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Guild+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -142,7 +142,7 @@ GAMES_BULK = [
         "year": 2020,
         "awards": "Familievenligt",
         "fun_fact": "Mange café-besøgende opdager Mystic Union Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Mystic+Union+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -151,7 +151,7 @@ GAMES_BULK = [
         "year": 2004,
         "awards": "Niche-titel",
         "fun_fact": "Wild Summit Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Wild+Summit+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -160,7 +160,7 @@ GAMES_BULK = [
         "year": 1991,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ejer-notat: Velvet Valley Junior er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Velvet+Valley+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -169,7 +169,7 @@ GAMES_BULK = [
         "year": 2006,
         "awards": "Populært hos gæster",
         "fun_fact": "Nordic Dynasty Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Dynasty+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -178,7 +178,7 @@ GAMES_BULK = [
         "year": 1985,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ejer-notat: Golden Empire Legends er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Golden+Empire+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -187,7 +187,7 @@ GAMES_BULK = [
         "year": 2008,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Ejer-notat: Viking Wilds Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Viking+Wilds+Express+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -196,7 +196,7 @@ GAMES_BULK = [
         "year": 1982,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Arctic Delta Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Delta+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -205,7 +205,7 @@ GAMES_BULK = [
         "year": 1985,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Golden Kingdom Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Golden+Kingdom+Express+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -214,7 +214,7 @@ GAMES_BULK = [
         "year": 2023,
         "awards": "Niche-titel",
         "fun_fact": "Ejer-notat: Umber Horizon Junior er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Horizon+Junior+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -223,7 +223,7 @@ GAMES_BULK = [
         "year": 2015,
         "awards": "Klassiker på hylden",
         "fun_fact": "Mange café-besøgende opdager Obsidian Legacy Remix først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Legacy+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -232,7 +232,7 @@ GAMES_BULK = [
         "year": 2008,
         "awards": "Café-katalog",
         "fun_fact": "Ejer-notat: Jade Tribe Remix er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jade+Tribe+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -241,7 +241,7 @@ GAMES_BULK = [
         "year": 1994,
         "awards": "Klassiker på hylden",
         "fun_fact": "Baltic Crown Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Crown+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -250,7 +250,7 @@ GAMES_BULK = [
         "year": 1980,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Knightly Wonders ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Knightly+Wonders+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -259,7 +259,7 @@ GAMES_BULK = [
         "year": 1983,
         "awards": "Niche-titel",
         "fun_fact": "Gæster scanner ofte Whisper Tribe Remix for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Tribe+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -268,7 +268,7 @@ GAMES_BULK = [
         "year": 2008,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Mange café-besøgende opdager Jungle Expedition Deluxe først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Expedition+Deluxe+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -277,7 +277,7 @@ GAMES_BULK = [
         "year": 1987,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Hylden med Whisper Garden Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Garden+Legends+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -286,7 +286,7 @@ GAMES_BULK = [
         "year": 2008,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Primal Realm Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Primal+Realm+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -295,7 +295,7 @@ GAMES_BULK = [
         "year": 2012,
         "awards": "Klassiker på hylden",
         "fun_fact": "Ejer-notat: Dragon Outpost er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Outpost+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -304,7 +304,7 @@ GAMES_BULK = [
         "year": 1978,
         "awards": "Klassiker på hylden",
         "fun_fact": "Dragon Frontier Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Frontier+Legends+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -313,7 +313,7 @@ GAMES_BULK = [
         "year": 1990,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Gæster scanner ofte Sunset Citadel Junior for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Citadel+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -322,7 +322,7 @@ GAMES_BULK = [
         "year": 2011,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Mange café-besøgende opdager Ivory Dynasty Legends først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Dynasty+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -331,7 +331,7 @@ GAMES_BULK = [
         "year": 1981,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ancient Forge passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Forge+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -340,7 +340,7 @@ GAMES_BULK = [
         "year": 1978,
         "awards": "Populært hos gæster",
         "fun_fact": "Distant Rail Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Distant+Rail+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -349,7 +349,7 @@ GAMES_BULK = [
         "year": 1981,
         "awards": "Klassiker på hylden",
         "fun_fact": "Mange café-besøgende opdager Sunset Nexus Remix først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Nexus+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -358,7 +358,7 @@ GAMES_BULK = [
         "year": 1986,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Hylden med Crimson Dynasty Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Dynasty+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -367,7 +367,7 @@ GAMES_BULK = [
         "year": 2010,
         "awards": "Populært hos gæster",
         "fun_fact": "Dragon Spire Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Spire+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -376,7 +376,7 @@ GAMES_BULK = [
         "year": 1980,
         "awards": "Klassiker på hylden",
         "fun_fact": "Mange café-besøgende opdager Ivory Parade først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Parade+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -385,7 +385,7 @@ GAMES_BULK = [
         "year": 2000,
         "awards": "Café-katalog",
         "fun_fact": "Mange café-besøgende opdager Eternal Fortress Remix først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Fortress+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -394,7 +394,7 @@ GAMES_BULK = [
         "year": 2004,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Hylden med Viking Horizon Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Viking+Horizon+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -403,7 +403,7 @@ GAMES_BULK = [
         "year": 2017,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Mange café-besøgende opdager Umber Monument Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Monument+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -412,7 +412,7 @@ GAMES_BULK = [
         "year": 2012,
         "awards": "Café-katalog",
         "fun_fact": "Gæster scanner ofte Mystic Yard for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Mystic+Yard+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -421,7 +421,7 @@ GAMES_BULK = [
         "year": 2007,
         "awards": "Niche-titel",
         "fun_fact": "Crystal Wastes Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Wastes+Express+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -430,7 +430,7 @@ GAMES_BULK = [
         "year": 1979,
         "awards": "Populært hos gæster",
         "fun_fact": "Gæster scanner ofte Emerald Quarry II for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Quarry+II+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -439,7 +439,7 @@ GAMES_BULK = [
         "year": 1990,
         "awards": "Café-katalog",
         "fun_fact": "Ejer-notat: Wild Crown Junior er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Wild+Crown+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -448,7 +448,7 @@ GAMES_BULK = [
         "year": 2008,
         "awards": "Familievenligt",
         "fun_fact": "Quiet Wastes Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Wastes+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -457,7 +457,7 @@ GAMES_BULK = [
         "year": 1991,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Mange café-besøgende opdager Tidal Market II først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Market+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -466,7 +466,7 @@ GAMES_BULK = [
         "year": 2023,
         "awards": "Populært hos gæster",
         "fun_fact": "Silver Stronghold Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Silver+Stronghold+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -475,7 +475,7 @@ GAMES_BULK = [
         "year": 2009,
         "awards": "Klassiker på hylden",
         "fun_fact": "Ejer-notat: Knightly Convoy er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Knightly+Convoy+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -484,7 +484,7 @@ GAMES_BULK = [
         "year": 1990,
         "awards": "Familievenligt",
         "fun_fact": "Timber Summit passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Timber+Summit+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -493,7 +493,7 @@ GAMES_BULK = [
         "year": 2014,
         "awards": "Café-katalog",
         "fun_fact": "Gæster scanner ofte Ivory Frontier Deluxe for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Frontier+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -502,7 +502,7 @@ GAMES_BULK = [
         "year": 1981,
         "awards": "Niche-titel",
         "fun_fact": "Silver Village Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Silver+Village+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -511,7 +511,7 @@ GAMES_BULK = [
         "year": 1984,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Frozen Haven Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Frozen+Haven+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -520,7 +520,7 @@ GAMES_BULK = [
         "year": 2018,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Ejer-notat: Tidal Outpost II er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Outpost+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -529,7 +529,7 @@ GAMES_BULK = [
         "year": 2002,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Crystal Colony Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Colony+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -538,7 +538,7 @@ GAMES_BULK = [
         "year": 1991,
         "awards": "Niche-titel",
         "fun_fact": "Gæster scanner ofte Zenith Dynasty Legends for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Zenith+Dynasty+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -547,7 +547,7 @@ GAMES_BULK = [
         "year": 1975,
         "awards": "Populært hos gæster",
         "fun_fact": "Tidal Siege Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Siege+Junior+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -556,7 +556,7 @@ GAMES_BULK = [
         "year": 2009,
         "awards": "Café-katalog",
         "fun_fact": "Stellar Tavern II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Tavern+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -565,7 +565,7 @@ GAMES_BULK = [
         "year": 1983,
         "awards": "Café-katalog",
         "fun_fact": "Jungle Empire Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Empire+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -574,7 +574,7 @@ GAMES_BULK = [
         "year": 1988,
         "awards": "Klassiker på hylden",
         "fun_fact": "Gæster scanner ofte Cosmic Tavern Deluxe for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Tavern+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -583,7 +583,7 @@ GAMES_BULK = [
         "year": 2001,
         "awards": "Niche-titel",
         "fun_fact": "Mange café-besøgende opdager Zenith Valley Remix først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Zenith+Valley+Remix+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -592,7 +592,7 @@ GAMES_BULK = [
         "year": 1976,
         "awards": "Niche-titel",
         "fun_fact": "Gæster scanner ofte Kingdom Summit Express for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Summit+Express+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -601,7 +601,7 @@ GAMES_BULK = [
         "year": 2022,
         "awards": "Klassiker på hylden",
         "fun_fact": "Ancient Nexus Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Nexus+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -610,7 +610,7 @@ GAMES_BULK = [
         "year": 1977,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Mange café-besøgende opdager Stellar Convoy Express først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Convoy+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -619,7 +619,7 @@ GAMES_BULK = [
         "year": 1989,
         "awards": "Klassiker på hylden",
         "fun_fact": "Distant Quest Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Distant+Quest+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -628,7 +628,7 @@ GAMES_BULK = [
         "year": 1979,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Wild Outpost Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Wild+Outpost+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -637,7 +637,7 @@ GAMES_BULK = [
         "year": 2009,
         "awards": "Familievenligt",
         "fun_fact": "Wild Delta Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Wild+Delta+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -646,7 +646,7 @@ GAMES_BULK = [
         "year": 1991,
         "awards": "Café-katalog",
         "fun_fact": "Phantom Fleet Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Phantom+Fleet+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -655,7 +655,7 @@ GAMES_BULK = [
         "year": 1995,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ejer-notat: Timber Garden Remix er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Timber+Garden+Remix+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -664,7 +664,7 @@ GAMES_BULK = [
         "year": 1987,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Golden Republic Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Golden+Republic+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -673,7 +673,7 @@ GAMES_BULK = [
         "year": 2009,
         "awards": "Klassiker på hylden",
         "fun_fact": "Arctic Trade Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Trade+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -682,7 +682,7 @@ GAMES_BULK = [
         "year": 2014,
         "awards": "Familievenligt",
         "fun_fact": "Gæster scanner ofte Quiet Union Deluxe for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Union+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -691,7 +691,7 @@ GAMES_BULK = [
         "year": 2007,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Gæster scanner ofte Umber Tavern Deluxe for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Tavern+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -700,7 +700,7 @@ GAMES_BULK = [
         "year": 2010,
         "awards": "Niche-titel",
         "fun_fact": "Mange café-besøgende opdager Wild Echo Deluxe først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Wild+Echo+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -709,7 +709,7 @@ GAMES_BULK = [
         "year": 1986,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Hylden med Viking Delta Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Viking+Delta+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -718,7 +718,7 @@ GAMES_BULK = [
         "year": 1988,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Arctic Legacy Deluxe ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Legacy+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -727,7 +727,7 @@ GAMES_BULK = [
         "year": 2003,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Gæster scanner ofte Primal Market Express for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Primal+Market+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -736,7 +736,7 @@ GAMES_BULK = [
         "year": 2022,
         "awards": "Niche-titel",
         "fun_fact": "Gæster scanner ofte Eternal Monument Remix for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Monument+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -745,7 +745,7 @@ GAMES_BULK = [
         "year": 2014,
         "awards": "Familievenligt",
         "fun_fact": "Grand Circuit Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Grand+Circuit+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -754,7 +754,7 @@ GAMES_BULK = [
         "year": 1994,
         "awards": "Klassiker på hylden",
         "fun_fact": "Whisper Harbor Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Harbor+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -763,7 +763,7 @@ GAMES_BULK = [
         "year": 2005,
         "awards": "Populært hos gæster",
         "fun_fact": "Hylden med Baltic Caravan II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Caravan+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -772,7 +772,7 @@ GAMES_BULK = [
         "year": 2020,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Hylden med Obsidian Voyage II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Voyage+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -781,7 +781,7 @@ GAMES_BULK = [
         "year": 1975,
         "awards": "Populært hos gæster",
         "fun_fact": "Iron Bazaar Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Iron+Bazaar+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -790,7 +790,7 @@ GAMES_BULK = [
         "year": 2008,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Kingdom Nexus Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Nexus+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -799,7 +799,7 @@ GAMES_BULK = [
         "year": 2004,
         "awards": "Familievenligt",
         "fun_fact": "Golden Stronghold II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Golden+Stronghold+II+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -808,7 +808,7 @@ GAMES_BULK = [
         "year": 2007,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Neon Odyssey Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Neon+Odyssey+Legends+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -817,7 +817,7 @@ GAMES_BULK = [
         "year": 2022,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Hylden med Crimson Tavern II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Tavern+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -826,7 +826,7 @@ GAMES_BULK = [
         "year": 1992,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Gæster scanner ofte Ocean Parade Legends for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Parade+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -835,7 +835,7 @@ GAMES_BULK = [
         "year": 1993,
         "awards": "Klassiker på hylden",
         "fun_fact": "Crimson Citadel Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Citadel+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -844,7 +844,7 @@ GAMES_BULK = [
         "year": 1984,
         "awards": "Klassiker på hylden",
         "fun_fact": "Hylden med Ivory Colony II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Colony+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -853,7 +853,7 @@ GAMES_BULK = [
         "year": 2001,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Tidal Fortress passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Fortress+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -862,7 +862,7 @@ GAMES_BULK = [
         "year": 2001,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ancient Castle II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Castle+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -871,7 +871,7 @@ GAMES_BULK = [
         "year": 2023,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Hylden med Stellar Arena Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Arena+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -880,7 +880,7 @@ GAMES_BULK = [
         "year": 1999,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ejer-notat: Timber Legacy Remix er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Timber+Legacy+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -889,7 +889,7 @@ GAMES_BULK = [
         "year": 1989,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Mange café-besøgende opdager Ivory Nexus Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Nexus+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -898,7 +898,7 @@ GAMES_BULK = [
         "year": 1996,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Gæster scanner ofte Forgotten Arena Express for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Forgotten+Arena+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -907,7 +907,7 @@ GAMES_BULK = [
         "year": 2014,
         "awards": "Café-katalog",
         "fun_fact": "Hylden med Distant Union II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Distant+Union+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -916,7 +916,7 @@ GAMES_BULK = [
         "year": 2016,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Mange café-besøgende opdager Quiet Arena først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Arena+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -925,7 +925,7 @@ GAMES_BULK = [
         "year": 1999,
         "awards": "Familievenligt",
         "fun_fact": "Mange café-besøgende opdager Kingdom Castle Deluxe først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Castle+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -934,7 +934,7 @@ GAMES_BULK = [
         "year": 1992,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Sunset Junction Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Junction+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -943,7 +943,7 @@ GAMES_BULK = [
         "year": 2009,
         "awards": "Café-katalog",
         "fun_fact": "Eternal Arena Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Arena+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -952,7 +952,7 @@ GAMES_BULK = [
         "year": 1977,
         "awards": "Café-katalog",
         "fun_fact": "Mange café-besøgende opdager Dragon Labyrinth Legends først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Labyrinth+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -961,7 +961,7 @@ GAMES_BULK = [
         "year": 1990,
         "awards": "Niche-titel",
         "fun_fact": "Hylden med Baltic Workshop II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Workshop+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -970,7 +970,7 @@ GAMES_BULK = [
         "year": 2004,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Knightly Wonders II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Knightly+Wonders+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -979,7 +979,7 @@ GAMES_BULK = [
         "year": 2020,
         "awards": "Populært hos gæster",
         "fun_fact": "Marble Wilds Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Marble+Wilds+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -988,7 +988,7 @@ GAMES_BULK = [
         "year": 1976,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Ejer-notat: Silver Convoy Junior er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Silver+Convoy+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -997,7 +997,7 @@ GAMES_BULK = [
         "year": 1987,
         "awards": "Populært hos gæster",
         "fun_fact": "Ejer-notat: Viking Ridge Legends er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Viking+Ridge+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1006,7 +1006,7 @@ GAMES_BULK = [
         "year": 2019,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Obsidian Harbor ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Harbor+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1015,7 +1015,7 @@ GAMES_BULK = [
         "year": 1977,
         "awards": "Familievenligt",
         "fun_fact": "Ejer-notat: Golden Monument Junior er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Golden+Monument+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1024,7 +1024,7 @@ GAMES_BULK = [
         "year": 2016,
         "awards": "Familievenligt",
         "fun_fact": "Urban Citadel Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Urban+Citadel+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1033,7 +1033,7 @@ GAMES_BULK = [
         "year": 1998,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Gæster scanner ofte Forgotten Convoy Express for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Forgotten+Convoy+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1042,7 +1042,7 @@ GAMES_BULK = [
         "year": 2016,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Ejer-notat: Kingdom Garden Junior er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Garden+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1051,7 +1051,7 @@ GAMES_BULK = [
         "year": 2004,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ivory Labyrinth Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Labyrinth+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1060,7 +1060,7 @@ GAMES_BULK = [
         "year": 1990,
         "awards": "Populært hos gæster",
         "fun_fact": "Royal Market Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Royal+Market+Remix+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1069,7 +1069,7 @@ GAMES_BULK = [
         "year": 2011,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ocean Junction Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Junction+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1078,7 +1078,7 @@ GAMES_BULK = [
         "year": 1988,
         "awards": "Familievenligt",
         "fun_fact": "Storm Fleet Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Storm+Fleet+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1087,7 +1087,7 @@ GAMES_BULK = [
         "year": 2019,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Ejer-notat: Royal Summit Junior er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Royal+Summit+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1096,7 +1096,7 @@ GAMES_BULK = [
         "year": 2021,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Hylden med Lunar Colony II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Lunar+Colony+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1105,7 +1105,7 @@ GAMES_BULK = [
         "year": 2016,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Hylden med Ocean Echo Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Echo+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1114,7 +1114,7 @@ GAMES_BULK = [
         "year": 2000,
         "awards": "Klassiker på hylden",
         "fun_fact": "Emerald Kingdom II passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Kingdom+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1123,7 +1123,7 @@ GAMES_BULK = [
         "year": 2008,
         "awards": "Familievenligt",
         "fun_fact": "Hylden med Urban Temple Junior bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Urban+Temple+Junior+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -1132,7 +1132,7 @@ GAMES_BULK = [
         "year": 2019,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Jungle Outpost Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Outpost+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1141,7 +1141,7 @@ GAMES_BULK = [
         "year": 1987,
         "awards": "Familievenligt",
         "fun_fact": "Nordic Crown Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Crown+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1150,7 +1150,7 @@ GAMES_BULK = [
         "year": 1987,
         "awards": "Klassiker på hylden",
         "fun_fact": "Gæster scanner ofte Whisper Echo II for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Echo+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1159,7 +1159,7 @@ GAMES_BULK = [
         "year": 2008,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Umber Wastes Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Wastes+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1168,7 +1168,7 @@ GAMES_BULK = [
         "year": 1986,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Shadow Guild Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Guild+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1177,7 +1177,7 @@ GAMES_BULK = [
         "year": 1978,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Gæster scanner ofte Hidden Isles for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Isles+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1186,7 +1186,7 @@ GAMES_BULK = [
         "year": 2006,
         "awards": "Populært hos gæster",
         "fun_fact": "Obsidian Rail Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Rail+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1195,7 +1195,7 @@ GAMES_BULK = [
         "year": 2003,
         "awards": "Familievenligt",
         "fun_fact": "Mange café-besøgende opdager Shadow Temple Express først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Temple+Express+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1204,7 +1204,7 @@ GAMES_BULK = [
         "year": 2005,
         "awards": "Populært hos gæster",
         "fun_fact": "Phantom Wonders Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Phantom+Wonders+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1213,7 +1213,7 @@ GAMES_BULK = [
         "year": 2015,
         "awards": "Café-katalog",
         "fun_fact": "Mange café-besøgende opdager Forgotten Citadel Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Forgotten+Citadel+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1222,7 +1222,7 @@ GAMES_BULK = [
         "year": 1980,
         "awards": "Klassiker på hylden",
         "fun_fact": "Knightly Wonders Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Knightly+Wonders+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1231,7 +1231,7 @@ GAMES_BULK = [
         "year": 2014,
         "awards": "Klassiker på hylden",
         "fun_fact": "Ancient Wilds Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Wilds+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1240,7 +1240,7 @@ GAMES_BULK = [
         "year": 1994,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Crimson Union Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Union+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1249,7 +1249,7 @@ GAMES_BULK = [
         "year": 1981,
         "awards": "Klassiker på hylden",
         "fun_fact": "Gæster scanner ofte Crystal Workshop Legends for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Workshop+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1258,7 +1258,7 @@ GAMES_BULK = [
         "year": 1990,
         "awards": "Niche-titel",
         "fun_fact": "Ejer-notat: Quiet Colony II er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Colony+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1267,7 +1267,7 @@ GAMES_BULK = [
         "year": 2019,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Arctic Sanctuary Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Sanctuary+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1276,7 +1276,7 @@ GAMES_BULK = [
         "year": 2019,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Shadow Frontier Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Frontier+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1285,7 +1285,7 @@ GAMES_BULK = [
         "year": 2015,
         "awards": "Klassiker på hylden",
         "fun_fact": "Hylden med Phantom Monument Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Phantom+Monument+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1294,7 +1294,7 @@ GAMES_BULK = [
         "year": 1992,
         "awards": "Niche-titel",
         "fun_fact": "Nordic Bazaar II er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Bazaar+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1303,7 +1303,7 @@ GAMES_BULK = [
         "year": 2011,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Hylden med Silver Wilds Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Silver+Wilds+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1312,7 +1312,7 @@ GAMES_BULK = [
         "year": 2000,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Ejer-notat: Stellar Legacy Legends er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Legacy+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1321,7 +1321,7 @@ GAMES_BULK = [
         "year": 1977,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Gæster scanner ofte Crimson Colony Junior for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Colony+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1330,7 +1330,7 @@ GAMES_BULK = [
         "year": 1989,
         "awards": "Café-katalog",
         "fun_fact": "Phantom Arena ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Phantom+Arena+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1339,7 +1339,7 @@ GAMES_BULK = [
         "year": 2023,
         "awards": "Niche-titel",
         "fun_fact": "Hylden med Royal Voyage bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Royal+Voyage+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1348,7 +1348,7 @@ GAMES_BULK = [
         "year": 1986,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Gæster scanner ofte Crimson Union Deluxe for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Union+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1357,7 +1357,7 @@ GAMES_BULK = [
         "year": 2001,
         "awards": "Familievenligt",
         "fun_fact": "Emerald Temple Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Temple+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1366,7 +1366,7 @@ GAMES_BULK = [
         "year": 2019,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Jade Outpost Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jade+Outpost+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1375,7 +1375,7 @@ GAMES_BULK = [
         "year": 2010,
         "awards": "Café-katalog",
         "fun_fact": "Hylden med Wild Odyssey Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Wild+Odyssey+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1384,7 +1384,7 @@ GAMES_BULK = [
         "year": 2024,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Phantom Market ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Phantom+Market+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1393,7 +1393,7 @@ GAMES_BULK = [
         "year": 2009,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Hylden med Arctic Circuit Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Circuit+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1402,7 +1402,7 @@ GAMES_BULK = [
         "year": 2023,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Gæster scanner ofte Harbor Realm Junior for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Realm+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1411,7 +1411,7 @@ GAMES_BULK = [
         "year": 2010,
         "awards": "Niche-titel",
         "fun_fact": "Crystal Fortress Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Fortress+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1420,7 +1420,7 @@ GAMES_BULK = [
         "year": 1976,
         "awards": "Klassiker på hylden",
         "fun_fact": "Gæster scanner ofte Stellar Territory for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Territory+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1429,7 +1429,7 @@ GAMES_BULK = [
         "year": 2001,
         "awards": "Populært hos gæster",
         "fun_fact": "Mange café-besøgende opdager Jungle Alliance Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Alliance+Junior+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -1438,7 +1438,7 @@ GAMES_BULK = [
         "year": 2016,
         "awards": "Niche-titel",
         "fun_fact": "Hylden med Golden Stronghold bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Golden+Stronghold+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1447,7 +1447,7 @@ GAMES_BULK = [
         "year": 1992,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Shadow Towers Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Towers+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1456,7 +1456,7 @@ GAMES_BULK = [
         "year": 2010,
         "awards": "Niche-titel",
         "fun_fact": "Hylden med Eternal Harbor Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Harbor+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1465,7 +1465,7 @@ GAMES_BULK = [
         "year": 1983,
         "awards": "Populært hos gæster",
         "fun_fact": "Marble Towers Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Marble+Towers+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1474,7 +1474,7 @@ GAMES_BULK = [
         "year": 2007,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Ancient Outpost Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Outpost+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1483,7 +1483,7 @@ GAMES_BULK = [
         "year": 2012,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Umber Legacy Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Legacy+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1492,7 +1492,7 @@ GAMES_BULK = [
         "year": 1996,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Hylden med Ivory Temple Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Temple+Deluxe+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1501,7 +1501,7 @@ GAMES_BULK = [
         "year": 1990,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Mange café-besøgende opdager Lunar Zone Legends først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Lunar+Zone+Legends+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1510,7 +1510,7 @@ GAMES_BULK = [
         "year": 2022,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Gæster scanner ofte Ancient Caravan Deluxe for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Caravan+Deluxe+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1519,7 +1519,7 @@ GAMES_BULK = [
         "year": 2016,
         "awards": "Niche-titel",
         "fun_fact": "Hylden med Viking Republic Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Viking+Republic+Legends+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1528,7 +1528,7 @@ GAMES_BULK = [
         "year": 1996,
         "awards": "Populært hos gæster",
         "fun_fact": "Hidden Towers Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Towers+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1537,7 +1537,7 @@ GAMES_BULK = [
         "year": 1975,
         "awards": "Niche-titel",
         "fun_fact": "Hylden med Frozen Trade Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Frozen+Trade+Express+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1546,7 +1546,7 @@ GAMES_BULK = [
         "year": 1991,
         "awards": "Familievenligt",
         "fun_fact": "Ejer-notat: Iron Citadel Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Iron+Citadel+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1555,7 +1555,7 @@ GAMES_BULK = [
         "year": 1996,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Primal Colony Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Primal+Colony+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1564,7 +1564,7 @@ GAMES_BULK = [
         "year": 2009,
         "awards": "Café-katalog",
         "fun_fact": "Ejer-notat: Whisper Territory Remix er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Territory+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1573,7 +1573,7 @@ GAMES_BULK = [
         "year": 1989,
         "awards": "Populært hos gæster",
         "fun_fact": "Hylden med Obsidian Delta Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Delta+Deluxe+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1582,7 +1582,7 @@ GAMES_BULK = [
         "year": 1981,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Mange café-besøgende opdager Whisper Archive Legends først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Archive+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1591,7 +1591,7 @@ GAMES_BULK = [
         "year": 1978,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Baltic Caravan Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Caravan+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1600,7 +1600,7 @@ GAMES_BULK = [
         "year": 2001,
         "awards": "Niche-titel",
         "fun_fact": "Mange café-besøgende opdager Iron Harbor Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Iron+Harbor+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1609,7 +1609,7 @@ GAMES_BULK = [
         "year": 2014,
         "awards": "Klassiker på hylden",
         "fun_fact": "Hylden med Neon Rail Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Neon+Rail+Express+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1618,7 +1618,7 @@ GAMES_BULK = [
         "year": 2015,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Hylden med Iron Guild Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Iron+Guild+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1627,7 +1627,7 @@ GAMES_BULK = [
         "year": 2004,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Gæster scanner ofte Arctic Tavern Remix for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Tavern+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1636,7 +1636,7 @@ GAMES_BULK = [
         "year": 2012,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Gæster scanner ofte Dragon Spire Deluxe for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Spire+Deluxe+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1645,7 +1645,7 @@ GAMES_BULK = [
         "year": 1994,
         "awards": "Klassiker på hylden",
         "fun_fact": "Hylden med Stellar Horizon Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Horizon+Express+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1654,7 +1654,7 @@ GAMES_BULK = [
         "year": 2011,
         "awards": "Familievenligt",
         "fun_fact": "Ejer-notat: Frozen Harbor Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Frozen+Harbor+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1663,7 +1663,7 @@ GAMES_BULK = [
         "year": 2017,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Stellar Kingdom passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Kingdom+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1672,7 +1672,7 @@ GAMES_BULK = [
         "year": 1978,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Rustic Labyrinth Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Labyrinth+Legends+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1681,7 +1681,7 @@ GAMES_BULK = [
         "year": 1989,
         "awards": "Familievenligt",
         "fun_fact": "Mange café-besøgende opdager Shadow Labyrinth Remix først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Labyrinth+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1690,7 +1690,7 @@ GAMES_BULK = [
         "year": 2023,
         "awards": "Niche-titel",
         "fun_fact": "Gæster scanner ofte Neon Horizon Legends for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Neon+Horizon+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1699,7 +1699,7 @@ GAMES_BULK = [
         "year": 1994,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Obsidian Bazaar er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Bazaar+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1708,7 +1708,7 @@ GAMES_BULK = [
         "year": 1993,
         "awards": "Familievenligt",
         "fun_fact": "Gæster scanner ofte Umber Dynasty for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Dynasty+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1717,7 +1717,7 @@ GAMES_BULK = [
         "year": 2009,
         "awards": "Familievenligt",
         "fun_fact": "Ejer-notat: Lunar Dynasty Remix er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Lunar+Dynasty+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1726,7 +1726,7 @@ GAMES_BULK = [
         "year": 1991,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Royal Parade II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Royal+Parade+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1735,7 +1735,7 @@ GAMES_BULK = [
         "year": 2004,
         "awards": "Populært hos gæster",
         "fun_fact": "Mange café-besøgende opdager Sunset Nexus først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Nexus+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1744,7 +1744,7 @@ GAMES_BULK = [
         "year": 2021,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Nordic Rail Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Rail+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1753,7 +1753,7 @@ GAMES_BULK = [
         "year": 2000,
         "awards": "Café-katalog",
         "fun_fact": "Urban Colony Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Urban+Colony+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1762,7 +1762,7 @@ GAMES_BULK = [
         "year": 2022,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Ejer-notat: Distant Realm Legends er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Distant+Realm+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1771,7 +1771,7 @@ GAMES_BULK = [
         "year": 1981,
         "awards": "Klassiker på hylden",
         "fun_fact": "Hylden med Obsidian Wonders Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Wonders+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1780,7 +1780,7 @@ GAMES_BULK = [
         "year": 1989,
         "awards": "Populært hos gæster",
         "fun_fact": "Gæster scanner ofte Jungle Market Junior for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Market+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1789,7 +1789,7 @@ GAMES_BULK = [
         "year": 2001,
         "awards": "Populært hos gæster",
         "fun_fact": "Mange café-besøgende opdager Stellar Legacy Legends først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Legacy+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1798,7 +1798,7 @@ GAMES_BULK = [
         "year": 1982,
         "awards": "Populært hos gæster",
         "fun_fact": "Mange café-besøgende opdager Cosmic Legacy Express først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Legacy+Express+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1807,7 +1807,7 @@ GAMES_BULK = [
         "year": 1998,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ejer-notat: Hidden Republic Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Republic+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1816,7 +1816,7 @@ GAMES_BULK = [
         "year": 2016,
         "awards": "Populært hos gæster",
         "fun_fact": "Iron Summit Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Iron+Summit+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1825,7 +1825,7 @@ GAMES_BULK = [
         "year": 1977,
         "awards": "Familievenligt",
         "fun_fact": "Mange café-besøgende opdager Ancient Wonders Deluxe først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Wonders+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1834,7 +1834,7 @@ GAMES_BULK = [
         "year": 1981,
         "awards": "Familievenligt",
         "fun_fact": "Ejer-notat: Ocean Quarry Deluxe er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Quarry+Deluxe+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1843,7 +1843,7 @@ GAMES_BULK = [
         "year": 2000,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Mange café-besøgende opdager Primal Quest først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Primal+Quest+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1852,7 +1852,7 @@ GAMES_BULK = [
         "year": 1988,
         "awards": "Café-katalog",
         "fun_fact": "Distant Colony Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Distant+Colony+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1861,7 +1861,7 @@ GAMES_BULK = [
         "year": 2011,
         "awards": "Klassiker på hylden",
         "fun_fact": "Ocean Dynasty Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Dynasty+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1870,7 +1870,7 @@ GAMES_BULK = [
         "year": 1988,
         "awards": "Klassiker på hylden",
         "fun_fact": "Jungle Fortress Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Fortress+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1879,7 +1879,7 @@ GAMES_BULK = [
         "year": 1984,
         "awards": "Niche-titel",
         "fun_fact": "Ejer-notat: Marble Alliance Deluxe er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Marble+Alliance+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1888,7 +1888,7 @@ GAMES_BULK = [
         "year": 1976,
         "awards": "Niche-titel",
         "fun_fact": "Kingdom Crown Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Crown+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1897,7 +1897,7 @@ GAMES_BULK = [
         "year": 1976,
         "awards": "Niche-titel",
         "fun_fact": "Ocean Wastes Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Wastes+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1906,7 +1906,7 @@ GAMES_BULK = [
         "year": 1982,
         "awards": "Populært hos gæster",
         "fun_fact": "Hylden med Velvet Sanctuary Junior bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Velvet+Sanctuary+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1915,7 +1915,7 @@ GAMES_BULK = [
         "year": 1981,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Ejer-notat: Urban Towers Junior er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Urban+Towers+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1924,7 +1924,7 @@ GAMES_BULK = [
         "year": 2017,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Hylden med Neon Caravan Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Neon+Caravan+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1933,7 +1933,7 @@ GAMES_BULK = [
         "year": 2000,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Gæster scanner ofte Baltic Castle Express for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Castle+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1942,7 +1942,7 @@ GAMES_BULK = [
         "year": 1979,
         "awards": "Populært hos gæster",
         "fun_fact": "Tidal Union Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Union+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1951,7 +1951,7 @@ GAMES_BULK = [
         "year": 2014,
         "awards": "Familievenligt",
         "fun_fact": "Hylden med Dragon Dynasty Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Dynasty+Deluxe+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -1960,7 +1960,7 @@ GAMES_BULK = [
         "year": 2007,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Harbor Kingdom Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Kingdom+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1969,7 +1969,7 @@ GAMES_BULK = [
         "year": 2016,
         "awards": "Klassiker på hylden",
         "fun_fact": "Hylden med Golden Quarry Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Golden+Quarry+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1978,7 +1978,7 @@ GAMES_BULK = [
         "year": 2004,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Hylden med Nordic Sanctuary Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Sanctuary+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -1987,7 +1987,7 @@ GAMES_BULK = [
         "year": 2017,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Storm Siege Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Storm+Siege+Deluxe+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -1996,7 +1996,7 @@ GAMES_BULK = [
         "year": 1979,
         "awards": "Populært hos gæster",
         "fun_fact": "Rustic Village Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Village+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2005,7 +2005,7 @@ GAMES_BULK = [
         "year": 2022,
         "awards": "Familievenligt",
         "fun_fact": "Brave Convoy Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Brave+Convoy+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2014,7 +2014,7 @@ GAMES_BULK = [
         "year": 2010,
         "awards": "Familievenligt",
         "fun_fact": "Gæster scanner ofte Crystal Wastes Junior for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Wastes+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2023,7 +2023,7 @@ GAMES_BULK = [
         "year": 2023,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Timber Rail Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Timber+Rail+Legends+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -2032,7 +2032,7 @@ GAMES_BULK = [
         "year": 2013,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Crystal Yard Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Yard+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2041,7 +2041,7 @@ GAMES_BULK = [
         "year": 2017,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Mange café-besøgende opdager Grand Fortress II først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Grand+Fortress+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2050,7 +2050,7 @@ GAMES_BULK = [
         "year": 1998,
         "awards": "Populært hos gæster",
         "fun_fact": "Timber Quarry Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Timber+Quarry+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2059,7 +2059,7 @@ GAMES_BULK = [
         "year": 2010,
         "awards": "Café-katalog",
         "fun_fact": "Ejer-notat: Nordic Nexus Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Nexus+Express+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -2068,7 +2068,7 @@ GAMES_BULK = [
         "year": 1986,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Gæster scanner ofte Stellar Isles for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Isles+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2077,7 +2077,7 @@ GAMES_BULK = [
         "year": 1986,
         "awards": "Niche-titel",
         "fun_fact": "Ejer-notat: Sunset Quest er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Quest+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2086,7 +2086,7 @@ GAMES_BULK = [
         "year": 2015,
         "awards": "Café-katalog",
         "fun_fact": "Dragon Empire Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Empire+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2095,7 +2095,7 @@ GAMES_BULK = [
         "year": 2004,
         "awards": "Familievenligt",
         "fun_fact": "Mange café-besøgende opdager Mystic Republic Express først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Mystic+Republic+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2104,7 +2104,7 @@ GAMES_BULK = [
         "year": 2011,
         "awards": "Populært hos gæster",
         "fun_fact": "Umber Market Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Market+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2113,7 +2113,7 @@ GAMES_BULK = [
         "year": 2018,
         "awards": "Populært hos gæster",
         "fun_fact": "Whisper Workshop passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Workshop+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2122,7 +2122,7 @@ GAMES_BULK = [
         "year": 2003,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Brave Territory Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Brave+Territory+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2131,7 +2131,7 @@ GAMES_BULK = [
         "year": 2002,
         "awards": "Populært hos gæster",
         "fun_fact": "Grand Crown Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Grand+Crown+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2140,7 +2140,7 @@ GAMES_BULK = [
         "year": 2017,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Lost Territory Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Lost+Territory+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2149,7 +2149,7 @@ GAMES_BULK = [
         "year": 1988,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Mange café-besøgende opdager Marble Castle først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Marble+Castle+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2158,7 +2158,7 @@ GAMES_BULK = [
         "year": 1995,
         "awards": "Populært hos gæster",
         "fun_fact": "Whisper Horizon Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Horizon+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2167,7 +2167,7 @@ GAMES_BULK = [
         "year": 1999,
         "awards": "Klassiker på hylden",
         "fun_fact": "Ejer-notat: Brave Fleet II er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Brave+Fleet+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2176,7 +2176,7 @@ GAMES_BULK = [
         "year": 1979,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Quiet Nexus Deluxe ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Nexus+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2185,7 +2185,7 @@ GAMES_BULK = [
         "year": 1979,
         "awards": "Familievenligt",
         "fun_fact": "Ejer-notat: Brave Arena Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Brave+Arena+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2194,7 +2194,7 @@ GAMES_BULK = [
         "year": 2001,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Wild Frontier Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Wild+Frontier+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2203,7 +2203,7 @@ GAMES_BULK = [
         "year": 2014,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Storm Expedition Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Storm+Expedition+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2212,7 +2212,7 @@ GAMES_BULK = [
         "year": 1981,
         "awards": "Klassiker på hylden",
         "fun_fact": "Hylden med Urban Colony Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Urban+Colony+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2221,7 +2221,7 @@ GAMES_BULK = [
         "year": 1994,
         "awards": "Familievenligt",
         "fun_fact": "Mange café-besøgende opdager Harbor Colony Express først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Colony+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2230,7 +2230,7 @@ GAMES_BULK = [
         "year": 2015,
         "awards": "Populært hos gæster",
         "fun_fact": "Ejer-notat: Jade Citadel Junior er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jade+Citadel+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2239,7 +2239,7 @@ GAMES_BULK = [
         "year": 2021,
         "awards": "Niche-titel",
         "fun_fact": "Mange café-besøgende opdager Zenith Quest Deluxe først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Zenith+Quest+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2248,7 +2248,7 @@ GAMES_BULK = [
         "year": 2013,
         "awards": "Niche-titel",
         "fun_fact": "Phantom Forge II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Phantom+Forge+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2257,7 +2257,7 @@ GAMES_BULK = [
         "year": 2015,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Hylden med Dragon Fleet Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Fleet+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2266,7 +2266,7 @@ GAMES_BULK = [
         "year": 2018,
         "awards": "Familievenligt",
         "fun_fact": "Whisper Wastes Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Wastes+Express+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -2275,7 +2275,7 @@ GAMES_BULK = [
         "year": 1979,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Hylden med Storm Empire Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Storm+Empire+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2284,7 +2284,7 @@ GAMES_BULK = [
         "year": 1997,
         "awards": "Populært hos gæster",
         "fun_fact": "Royal Wastes passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Royal+Wastes+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2293,7 +2293,7 @@ GAMES_BULK = [
         "year": 1993,
         "awards": "Populært hos gæster",
         "fun_fact": "Gæster scanner ofte Cosmic Castle Deluxe for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Castle+Deluxe+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -2302,7 +2302,7 @@ GAMES_BULK = [
         "year": 2007,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Hylden med Emerald Workshop Junior bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Workshop+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2311,7 +2311,7 @@ GAMES_BULK = [
         "year": 2003,
         "awards": "Klassiker på hylden",
         "fun_fact": "Velvet Tavern passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Velvet+Tavern+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2320,7 +2320,7 @@ GAMES_BULK = [
         "year": 2003,
         "awards": "Populært hos gæster",
         "fun_fact": "Grand Empire ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Grand+Empire+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -2329,7 +2329,7 @@ GAMES_BULK = [
         "year": 1980,
         "awards": "Niche-titel",
         "fun_fact": "Sunset Zone Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Zone+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2338,7 +2338,7 @@ GAMES_BULK = [
         "year": 2008,
         "awards": "Niche-titel",
         "fun_fact": "Crimson Spire Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Spire+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2347,7 +2347,7 @@ GAMES_BULK = [
         "year": 2024,
         "awards": "Familievenligt",
         "fun_fact": "Gæster scanner ofte Shadow Republic Express for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Republic+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2356,7 +2356,7 @@ GAMES_BULK = [
         "year": 1979,
         "awards": "Familievenligt",
         "fun_fact": "Obsidian Bazaar Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Bazaar+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2365,7 +2365,7 @@ GAMES_BULK = [
         "year": 2021,
         "awards": "Niche-titel",
         "fun_fact": "Viking Kingdom Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Viking+Kingdom+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2374,7 +2374,7 @@ GAMES_BULK = [
         "year": 1994,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Mange café-besøgende opdager Quiet Empire Deluxe først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Empire+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2383,7 +2383,7 @@ GAMES_BULK = [
         "year": 1999,
         "awards": "Familievenligt",
         "fun_fact": "Emerald Legacy Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Legacy+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2392,7 +2392,7 @@ GAMES_BULK = [
         "year": 2018,
         "awards": "Populært hos gæster",
         "fun_fact": "Gæster scanner ofte Stellar Parade Legends for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Parade+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2401,7 +2401,7 @@ GAMES_BULK = [
         "year": 1998,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Mange café-besøgende opdager Grand Realm først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Grand+Realm+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -2410,7 +2410,7 @@ GAMES_BULK = [
         "year": 2006,
         "awards": "Klassiker på hylden",
         "fun_fact": "Mange café-besøgende opdager Sunset Wonders Remix først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Wonders+Remix+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -2419,7 +2419,7 @@ GAMES_BULK = [
         "year": 1981,
         "awards": "Café-katalog",
         "fun_fact": "Gæster scanner ofte Iron Citadel Deluxe for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Iron+Citadel+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2428,7 +2428,7 @@ GAMES_BULK = [
         "year": 2013,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Mange café-besøgende opdager Zenith Workshop II først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Zenith+Workshop+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2437,7 +2437,7 @@ GAMES_BULK = [
         "year": 1985,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Stellar Labyrinth Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Labyrinth+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2446,7 +2446,7 @@ GAMES_BULK = [
         "year": 2003,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Rustic Garden II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Garden+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2455,7 +2455,7 @@ GAMES_BULK = [
         "year": 1990,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Crimson Guild Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Guild+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2464,7 +2464,7 @@ GAMES_BULK = [
         "year": 2011,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Hylden med Lunar Realm Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Lunar+Realm+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2473,7 +2473,7 @@ GAMES_BULK = [
         "year": 2008,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Mange café-besøgende opdager Zenith Republic Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Zenith+Republic+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2482,7 +2482,7 @@ GAMES_BULK = [
         "year": 1991,
         "awards": "Café-katalog",
         "fun_fact": "Gæster scanner ofte Marble Dynasty Remix for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Marble+Dynasty+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2491,7 +2491,7 @@ GAMES_BULK = [
         "year": 2020,
         "awards": "Populært hos gæster",
         "fun_fact": "Urban Valley passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Urban+Valley+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2500,7 +2500,7 @@ GAMES_BULK = [
         "year": 2007,
         "awards": "Niche-titel",
         "fun_fact": "Jade Isles Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jade+Isles+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2509,7 +2509,7 @@ GAMES_BULK = [
         "year": 1997,
         "awards": "Café-katalog",
         "fun_fact": "Hylden med Nordic Odyssey Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Odyssey+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2518,7 +2518,7 @@ GAMES_BULK = [
         "year": 1999,
         "awards": "Populært hos gæster",
         "fun_fact": "Grand Realm II passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Grand+Realm+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2527,7 +2527,7 @@ GAMES_BULK = [
         "year": 2020,
         "awards": "Familievenligt",
         "fun_fact": "Storm Village ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Storm+Village+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2536,7 +2536,7 @@ GAMES_BULK = [
         "year": 2005,
         "awards": "Niche-titel",
         "fun_fact": "Cosmic Kingdom Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Kingdom+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2545,7 +2545,7 @@ GAMES_BULK = [
         "year": 1980,
         "awards": "Café-katalog",
         "fun_fact": "Crimson Workshop passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Workshop+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2554,7 +2554,7 @@ GAMES_BULK = [
         "year": 2013,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Iron Valley Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Iron+Valley+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2563,7 +2563,7 @@ GAMES_BULK = [
         "year": 1978,
         "awards": "Klassiker på hylden",
         "fun_fact": "Hylden med Ocean Legacy bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Legacy+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2572,7 +2572,7 @@ GAMES_BULK = [
         "year": 1982,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Ejer-notat: Neon Stronghold er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Neon+Stronghold+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2581,7 +2581,7 @@ GAMES_BULK = [
         "year": 1990,
         "awards": "Niche-titel",
         "fun_fact": "Obsidian Towers Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Towers+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2590,7 +2590,7 @@ GAMES_BULK = [
         "year": 2011,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Mange café-besøgende opdager Neon Quest II først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Neon+Quest+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2599,7 +2599,7 @@ GAMES_BULK = [
         "year": 1979,
         "awards": "Café-katalog",
         "fun_fact": "Hylden med Emerald Trade Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Trade+Deluxe+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -2608,7 +2608,7 @@ GAMES_BULK = [
         "year": 1998,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Gæster scanner ofte Cosmic Archive Express for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Archive+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2617,7 +2617,7 @@ GAMES_BULK = [
         "year": 2021,
         "awards": "Populært hos gæster",
         "fun_fact": "Dragon Quest II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Quest+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2626,7 +2626,7 @@ GAMES_BULK = [
         "year": 1977,
         "awards": "Familievenligt",
         "fun_fact": "Ejer-notat: Whisper Outpost II er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Outpost+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2635,7 +2635,7 @@ GAMES_BULK = [
         "year": 2024,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Gæster scanner ofte Primal Fleet Remix for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Primal+Fleet+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2644,7 +2644,7 @@ GAMES_BULK = [
         "year": 1979,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Kingdom Nexus II er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Nexus+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2653,7 +2653,7 @@ GAMES_BULK = [
         "year": 1977,
         "awards": "Familievenligt",
         "fun_fact": "Cosmic Monument II passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Monument+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2662,7 +2662,7 @@ GAMES_BULK = [
         "year": 1977,
         "awards": "Klassiker på hylden",
         "fun_fact": "Ivory Temple Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Temple+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2671,7 +2671,7 @@ GAMES_BULK = [
         "year": 2016,
         "awards": "Familievenligt",
         "fun_fact": "Zenith Castle Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Zenith+Castle+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2680,7 +2680,7 @@ GAMES_BULK = [
         "year": 2022,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Hylden med Urban Siege Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Urban+Siege+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2689,7 +2689,7 @@ GAMES_BULK = [
         "year": 2006,
         "awards": "Familievenligt",
         "fun_fact": "Kingdom Territory Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Territory+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2698,7 +2698,7 @@ GAMES_BULK = [
         "year": 1980,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ejer-notat: Emerald Garden Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Garden+Express+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -2707,7 +2707,7 @@ GAMES_BULK = [
         "year": 1995,
         "awards": "Populært hos gæster",
         "fun_fact": "Kingdom Tribe Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Tribe+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2716,7 +2716,7 @@ GAMES_BULK = [
         "year": 2013,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Mange café-besøgende opdager Shadow Legacy Express først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Legacy+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2725,7 +2725,7 @@ GAMES_BULK = [
         "year": 2021,
         "awards": "Familievenligt",
         "fun_fact": "Ejer-notat: Timber Spire er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Timber+Spire+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -2734,7 +2734,7 @@ GAMES_BULK = [
         "year": 1978,
         "awards": "Populært hos gæster",
         "fun_fact": "Gæster scanner ofte Royal Archive Remix for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Royal+Archive+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2743,7 +2743,7 @@ GAMES_BULK = [
         "year": 2022,
         "awards": "Niche-titel",
         "fun_fact": "Urban Towers Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Urban+Towers+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2752,7 +2752,7 @@ GAMES_BULK = [
         "year": 2003,
         "awards": "Café-katalog",
         "fun_fact": "Mange café-besøgende opdager Marble Delta Remix først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Marble+Delta+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2761,7 +2761,7 @@ GAMES_BULK = [
         "year": 1998,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ejer-notat: Zenith Bazaar Deluxe er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Zenith+Bazaar+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2770,7 +2770,7 @@ GAMES_BULK = [
         "year": 1998,
         "awards": "Familievenligt",
         "fun_fact": "Hylden med Iron Delta Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Iron+Delta+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2779,7 +2779,7 @@ GAMES_BULK = [
         "year": 1998,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Knightly Dynasty Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Knightly+Dynasty+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2788,7 +2788,7 @@ GAMES_BULK = [
         "year": 1976,
         "awards": "Niche-titel",
         "fun_fact": "Hylden med Ocean Yard bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Yard+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2797,7 +2797,7 @@ GAMES_BULK = [
         "year": 2024,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Gæster scanner ofte Jungle Crown Deluxe for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Crown+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2806,7 +2806,7 @@ GAMES_BULK = [
         "year": 2006,
         "awards": "Klassiker på hylden",
         "fun_fact": "Neon Kingdom Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Neon+Kingdom+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2815,7 +2815,7 @@ GAMES_BULK = [
         "year": 2020,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Dragon Spire II er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Spire+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2824,7 +2824,7 @@ GAMES_BULK = [
         "year": 2020,
         "awards": "Populært hos gæster",
         "fun_fact": "Ejer-notat: Storm Circuit Deluxe er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Storm+Circuit+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2833,7 +2833,7 @@ GAMES_BULK = [
         "year": 2020,
         "awards": "Niche-titel",
         "fun_fact": "Silver Quarry II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Silver+Quarry+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2842,7 +2842,7 @@ GAMES_BULK = [
         "year": 1983,
         "awards": "Klassiker på hylden",
         "fun_fact": "Nordic Crown II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Crown+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2851,7 +2851,7 @@ GAMES_BULK = [
         "year": 1998,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Urban Valley Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Urban+Valley+Junior+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -2860,7 +2860,7 @@ GAMES_BULK = [
         "year": 1979,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Hylden med Hidden Workshop bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Workshop+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -2869,7 +2869,7 @@ GAMES_BULK = [
         "year": 2001,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Umber Temple Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Temple+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2878,7 +2878,7 @@ GAMES_BULK = [
         "year": 2016,
         "awards": "Populært hos gæster",
         "fun_fact": "Hylden med Hidden Zone Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Zone+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2887,7 +2887,7 @@ GAMES_BULK = [
         "year": 2024,
         "awards": "Niche-titel",
         "fun_fact": "Harbor Quest II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Quest+II+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -2896,7 +2896,7 @@ GAMES_BULK = [
         "year": 1978,
         "awards": "Populært hos gæster",
         "fun_fact": "Ejer-notat: Brave Towers Remix er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Brave+Towers+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2905,7 +2905,7 @@ GAMES_BULK = [
         "year": 2020,
         "awards": "Klassiker på hylden",
         "fun_fact": "Jade Expedition Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jade+Expedition+Deluxe+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -2914,7 +2914,7 @@ GAMES_BULK = [
         "year": 1980,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Mange café-besøgende opdager Harbor Tavern Deluxe først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Tavern+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2923,7 +2923,7 @@ GAMES_BULK = [
         "year": 2015,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Ejer-notat: Jungle Isles II er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Isles+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2932,7 +2932,7 @@ GAMES_BULK = [
         "year": 2012,
         "awards": "Niche-titel",
         "fun_fact": "Mange café-besøgende opdager Grand Bazaar II først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Grand+Bazaar+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2941,7 +2941,7 @@ GAMES_BULK = [
         "year": 1996,
         "awards": "Café-katalog",
         "fun_fact": "Umber Tavern Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Tavern+Junior+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -2950,7 +2950,7 @@ GAMES_BULK = [
         "year": 2024,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Gæster scanner ofte Emerald Caravan Legends for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Caravan+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2959,7 +2959,7 @@ GAMES_BULK = [
         "year": 2015,
         "awards": "Café-katalog",
         "fun_fact": "Hylden med Knightly Sanctuary Junior bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Knightly+Sanctuary+Junior+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -2968,7 +2968,7 @@ GAMES_BULK = [
         "year": 1994,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Mange café-besøgende opdager Ivory Kingdom Legends først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Kingdom+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2977,7 +2977,7 @@ GAMES_BULK = [
         "year": 2004,
         "awards": "Populært hos gæster",
         "fun_fact": "Gæster scanner ofte Rustic Ridge Deluxe for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Ridge+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2986,7 +2986,7 @@ GAMES_BULK = [
         "year": 2004,
         "awards": "Klassiker på hylden",
         "fun_fact": "Crimson Sanctuary Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Sanctuary+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -2995,7 +2995,7 @@ GAMES_BULK = [
         "year": 1995,
         "awards": "Familievenligt",
         "fun_fact": "Hylden med Storm Rail Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Storm+Rail+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3004,7 +3004,7 @@ GAMES_BULK = [
         "year": 1981,
         "awards": "Familievenligt",
         "fun_fact": "Mange café-besøgende opdager Urban Towers Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Urban+Towers+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3013,7 +3013,7 @@ GAMES_BULK = [
         "year": 1984,
         "awards": "Populært hos gæster",
         "fun_fact": "Royal Spire II er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Royal+Spire+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3022,7 +3022,7 @@ GAMES_BULK = [
         "year": 2001,
         "awards": "Klassiker på hylden",
         "fun_fact": "Viking Rail Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Viking+Rail+Junior+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -3031,7 +3031,7 @@ GAMES_BULK = [
         "year": 2021,
         "awards": "Familievenligt",
         "fun_fact": "Mange café-besøgende opdager Storm Village Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Storm+Village+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3040,7 +3040,7 @@ GAMES_BULK = [
         "year": 2006,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Hylden med Forgotten Towers Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Forgotten+Towers+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3049,7 +3049,7 @@ GAMES_BULK = [
         "year": 1990,
         "awards": "Klassiker på hylden",
         "fun_fact": "Ejer-notat: Wild Towers Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Wild+Towers+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3058,7 +3058,7 @@ GAMES_BULK = [
         "year": 2013,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Crystal Kingdom Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crystal+Kingdom+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3067,7 +3067,7 @@ GAMES_BULK = [
         "year": 1991,
         "awards": "Familievenligt",
         "fun_fact": "Frozen Siege II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Frozen+Siege+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3076,7 +3076,7 @@ GAMES_BULK = [
         "year": 2011,
         "awards": "Klassiker på hylden",
         "fun_fact": "Cosmic Ridge passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Ridge+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3085,7 +3085,7 @@ GAMES_BULK = [
         "year": 2003,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Dragon Republic Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Republic+Junior+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -3094,7 +3094,7 @@ GAMES_BULK = [
         "year": 1983,
         "awards": "Populært hos gæster",
         "fun_fact": "Hylden med Rustic Workshop bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Workshop+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3103,7 +3103,7 @@ GAMES_BULK = [
         "year": 2023,
         "awards": "Niche-titel",
         "fun_fact": "Mange café-besøgende opdager Sunset Valley Deluxe først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Valley+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3112,7 +3112,7 @@ GAMES_BULK = [
         "year": 1977,
         "awards": "Café-katalog",
         "fun_fact": "Mange café-besøgende opdager Wild Towers først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Wild+Towers+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3121,7 +3121,7 @@ GAMES_BULK = [
         "year": 1984,
         "awards": "Niche-titel",
         "fun_fact": "Eternal Trade Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Trade+Express+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -3130,7 +3130,7 @@ GAMES_BULK = [
         "year": 2014,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Ejer-notat: Storm Expedition Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Storm+Expedition+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3139,7 +3139,7 @@ GAMES_BULK = [
         "year": 2020,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Hylden med Grand Tribe Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Grand+Tribe+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3148,7 +3148,7 @@ GAMES_BULK = [
         "year": 1982,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ejer-notat: Urban Outpost Legends er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Urban+Outpost+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3157,7 +3157,7 @@ GAMES_BULK = [
         "year": 2015,
         "awards": "Café-katalog",
         "fun_fact": "Ejer-notat: Umber Rail Legends er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Rail+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3166,7 +3166,7 @@ GAMES_BULK = [
         "year": 2012,
         "awards": "Klassiker på hylden",
         "fun_fact": "Gæster scanner ofte Primal Monument Remix for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Primal+Monument+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3175,7 +3175,7 @@ GAMES_BULK = [
         "year": 2015,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Mange café-besøgende opdager Eternal Expedition Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Expedition+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3184,7 +3184,7 @@ GAMES_BULK = [
         "year": 2019,
         "awards": "Populært hos gæster",
         "fun_fact": "Mange café-besøgende opdager Ocean Caravan Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Caravan+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3193,7 +3193,7 @@ GAMES_BULK = [
         "year": 2001,
         "awards": "Klassiker på hylden",
         "fun_fact": "Hylden med Storm Sanctuary II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Storm+Sanctuary+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3202,7 +3202,7 @@ GAMES_BULK = [
         "year": 2022,
         "awards": "Café-katalog",
         "fun_fact": "Gæster scanner ofte Neon Union Express for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Neon+Union+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3211,7 +3211,7 @@ GAMES_BULK = [
         "year": 2017,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Ejer-notat: Mystic Valley Deluxe er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Mystic+Valley+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3220,7 +3220,7 @@ GAMES_BULK = [
         "year": 1996,
         "awards": "Familievenligt",
         "fun_fact": "Gæster scanner ofte Kingdom Stronghold Junior for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Stronghold+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3229,7 +3229,7 @@ GAMES_BULK = [
         "year": 2019,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Ejer-notat: Umber Delta Legends er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Delta+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3238,7 +3238,7 @@ GAMES_BULK = [
         "year": 1994,
         "awards": "Klassiker på hylden",
         "fun_fact": "Ocean Isles Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ocean+Isles+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3247,7 +3247,7 @@ GAMES_BULK = [
         "year": 2020,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Tidal Fortress Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Fortress+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3256,7 +3256,7 @@ GAMES_BULK = [
         "year": 2021,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Jungle Village Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Village+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3265,7 +3265,7 @@ GAMES_BULK = [
         "year": 2000,
         "awards": "Familievenligt",
         "fun_fact": "Rustic Tribe Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Tribe+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3274,7 +3274,7 @@ GAMES_BULK = [
         "year": 2020,
         "awards": "Populært hos gæster",
         "fun_fact": "Shadow Caravan Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Caravan+Deluxe+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -3283,7 +3283,7 @@ GAMES_BULK = [
         "year": 2005,
         "awards": "Klassiker på hylden",
         "fun_fact": "Mange café-besøgende opdager Primal Horizon Legends først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Primal+Horizon+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3292,7 +3292,7 @@ GAMES_BULK = [
         "year": 2019,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Mange café-besøgende opdager Royal Village Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Royal+Village+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3301,7 +3301,7 @@ GAMES_BULK = [
         "year": 1990,
         "awards": "Café-katalog",
         "fun_fact": "Gæster scanner ofte Velvet Wastes II for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Velvet+Wastes+II+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -3310,7 +3310,7 @@ GAMES_BULK = [
         "year": 1978,
         "awards": "Populært hos gæster",
         "fun_fact": "Hylden med Nordic Archive II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Archive+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3319,7 +3319,7 @@ GAMES_BULK = [
         "year": 2024,
         "awards": "Niche-titel",
         "fun_fact": "Eternal Convoy Legends er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Convoy+Legends+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -3328,7 +3328,7 @@ GAMES_BULK = [
         "year": 2005,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Gæster scanner ofte Jade Sanctuary Legends for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jade+Sanctuary+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3337,7 +3337,7 @@ GAMES_BULK = [
         "year": 2016,
         "awards": "Café-katalog",
         "fun_fact": "Shadow Market Deluxe ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Market+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3346,7 +3346,7 @@ GAMES_BULK = [
         "year": 2022,
         "awards": "Café-katalog",
         "fun_fact": "Mange café-besøgende opdager Knightly Guild Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Knightly+Guild+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3355,7 +3355,7 @@ GAMES_BULK = [
         "year": 2000,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Mange café-besøgende opdager Kingdom Village først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Village+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -3364,7 +3364,7 @@ GAMES_BULK = [
         "year": 1975,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Ejer-notat: Shadow Summit er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Summit+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3373,7 +3373,7 @@ GAMES_BULK = [
         "year": 2016,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Mange café-besøgende opdager Sunset Kingdom Express først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Kingdom+Express+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -3382,7 +3382,7 @@ GAMES_BULK = [
         "year": 1982,
         "awards": "Familievenligt",
         "fun_fact": "Mange café-besøgende opdager Distant Isles II først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Distant+Isles+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3391,7 +3391,7 @@ GAMES_BULK = [
         "year": 1986,
         "awards": "Café-katalog",
         "fun_fact": "Gæster scanner ofte Primal Horizon Legends for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Primal+Horizon+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3400,7 +3400,7 @@ GAMES_BULK = [
         "year": 2023,
         "awards": "Klassiker på hylden",
         "fun_fact": "Mange café-besøgende opdager Shadow Voyage Legends først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Voyage+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3409,7 +3409,7 @@ GAMES_BULK = [
         "year": 2002,
         "awards": "Familievenligt",
         "fun_fact": "Obsidian Tavern Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Tavern+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3418,7 +3418,7 @@ GAMES_BULK = [
         "year": 2005,
         "awards": "Familievenligt",
         "fun_fact": "Mange café-besøgende opdager Frozen Fleet II først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Frozen+Fleet+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3427,7 +3427,7 @@ GAMES_BULK = [
         "year": 2023,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Viking Harbor Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Viking+Harbor+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3436,7 +3436,7 @@ GAMES_BULK = [
         "year": 1991,
         "awards": "Familievenligt",
         "fun_fact": "Gæster scanner ofte Umber Voyage for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Voyage+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3445,7 +3445,7 @@ GAMES_BULK = [
         "year": 1994,
         "awards": "Niche-titel",
         "fun_fact": "Hylden med Quiet Crown Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Crown+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3454,7 +3454,7 @@ GAMES_BULK = [
         "year": 2019,
         "awards": "Populært hos gæster",
         "fun_fact": "Gæster scanner ofte Tidal Labyrinth Deluxe for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Labyrinth+Deluxe+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -3463,7 +3463,7 @@ GAMES_BULK = [
         "year": 1989,
         "awards": "Klassiker på hylden",
         "fun_fact": "Mange café-besøgende opdager Shadow Realm Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Realm+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3472,7 +3472,7 @@ GAMES_BULK = [
         "year": 1998,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Gæster scanner ofte Distant Haven Junior for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Distant+Haven+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3481,7 +3481,7 @@ GAMES_BULK = [
         "year": 2017,
         "awards": "Klassiker på hylden",
         "fun_fact": "Eternal Junction Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Junction+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3490,7 +3490,7 @@ GAMES_BULK = [
         "year": 1980,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Ejer-notat: Whisper Wilds Remix er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Wilds+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3499,7 +3499,7 @@ GAMES_BULK = [
         "year": 1982,
         "awards": "Café-katalog",
         "fun_fact": "Dragon Union Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Union+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3508,7 +3508,7 @@ GAMES_BULK = [
         "year": 2009,
         "awards": "Niche-titel",
         "fun_fact": "Mange café-besøgende opdager Grand Forge Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Grand+Forge+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3517,7 +3517,7 @@ GAMES_BULK = [
         "year": 2018,
         "awards": "Klassiker på hylden",
         "fun_fact": "Gæster scanner ofte Harbor Spire for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Spire+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3526,7 +3526,7 @@ GAMES_BULK = [
         "year": 2003,
         "awards": "Café-katalog",
         "fun_fact": "Hylden med Emerald Tavern Junior bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Tavern+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3535,7 +3535,7 @@ GAMES_BULK = [
         "year": 1978,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Gæster scanner ofte Ancient Stronghold Junior for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Stronghold+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3544,7 +3544,7 @@ GAMES_BULK = [
         "year": 1991,
         "awards": "Café-katalog",
         "fun_fact": "Gæster scanner ofte Umber Arena Express for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Arena+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3553,7 +3553,7 @@ GAMES_BULK = [
         "year": 1997,
         "awards": "Populært hos gæster",
         "fun_fact": "Ejer-notat: Dragon Caravan Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Caravan+Express+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -3562,7 +3562,7 @@ GAMES_BULK = [
         "year": 1977,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Hylden med Dragon Village Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Village+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3571,7 +3571,7 @@ GAMES_BULK = [
         "year": 2021,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Hidden Labyrinth Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Labyrinth+Legends+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -3580,7 +3580,7 @@ GAMES_BULK = [
         "year": 1999,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Viking Spire Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Viking+Spire+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3589,7 +3589,7 @@ GAMES_BULK = [
         "year": 1983,
         "awards": "Familievenligt",
         "fun_fact": "Quiet Rail Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Rail+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3598,7 +3598,7 @@ GAMES_BULK = [
         "year": 1983,
         "awards": "Klassiker på hylden",
         "fun_fact": "Ivory Ridge Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Ridge+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3607,7 +3607,7 @@ GAMES_BULK = [
         "year": 2004,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ejer-notat: Baltic Zone Deluxe er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Zone+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3616,7 +3616,7 @@ GAMES_BULK = [
         "year": 1997,
         "awards": "Niche-titel",
         "fun_fact": "Nordic Harbor Express passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Harbor+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3625,7 +3625,7 @@ GAMES_BULK = [
         "year": 1977,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ejer-notat: Umber Junction er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Junction+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3634,7 +3634,7 @@ GAMES_BULK = [
         "year": 1979,
         "awards": "Populært hos gæster",
         "fun_fact": "Ejer-notat: Baltic Harbor II er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Harbor+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3643,7 +3643,7 @@ GAMES_BULK = [
         "year": 1978,
         "awards": "Klassiker på hylden",
         "fun_fact": "Gæster scanner ofte Marble Delta Legends for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Marble+Delta+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3652,7 +3652,7 @@ GAMES_BULK = [
         "year": 1988,
         "awards": "Café-katalog",
         "fun_fact": "Mange café-besøgende opdager Crimson Guild Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Guild+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3661,7 +3661,7 @@ GAMES_BULK = [
         "year": 2021,
         "awards": "Familievenligt",
         "fun_fact": "Ejer-notat: Shadow Guild Remix er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Guild+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3670,7 +3670,7 @@ GAMES_BULK = [
         "year": 1990,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Mange café-besøgende opdager Rustic Odyssey Deluxe først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Odyssey+Deluxe+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -3679,7 +3679,7 @@ GAMES_BULK = [
         "year": 1994,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Harbor Guild Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Guild+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3688,7 +3688,7 @@ GAMES_BULK = [
         "year": 1986,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ejer-notat: Lost Summit Legends er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Lost+Summit+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3697,7 +3697,7 @@ GAMES_BULK = [
         "year": 2017,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Timber Wonders Legends ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Timber+Wonders+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3706,7 +3706,7 @@ GAMES_BULK = [
         "year": 1984,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Hylden med Stellar Sanctuary Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Sanctuary+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3715,7 +3715,7 @@ GAMES_BULK = [
         "year": 1989,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Ivory Temple II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Temple+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3724,7 +3724,7 @@ GAMES_BULK = [
         "year": 2010,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Hylden med Distant Union bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Distant+Union+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3733,7 +3733,7 @@ GAMES_BULK = [
         "year": 1991,
         "awards": "Klassiker på hylden",
         "fun_fact": "Hidden Republic II passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Republic+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3742,7 +3742,7 @@ GAMES_BULK = [
         "year": 1980,
         "awards": "Klassiker på hylden",
         "fun_fact": "Crimson Quarry Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Quarry+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3751,7 +3751,7 @@ GAMES_BULK = [
         "year": 1977,
         "awards": "Populært hos gæster",
         "fun_fact": "Mange café-besøgende opdager Rustic Wilds Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Wilds+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3760,7 +3760,7 @@ GAMES_BULK = [
         "year": 2010,
         "awards": "Klassiker på hylden",
         "fun_fact": "Hylden med Lost Garden Legends bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Lost+Garden+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3769,7 +3769,7 @@ GAMES_BULK = [
         "year": 1988,
         "awards": "Klassiker på hylden",
         "fun_fact": "Gæster scanner ofte Sunset Legacy for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Sunset+Legacy+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3778,7 +3778,7 @@ GAMES_BULK = [
         "year": 2019,
         "awards": "Klassiker på hylden",
         "fun_fact": "Hylden med Whisper Temple II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Temple+II+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -3787,7 +3787,7 @@ GAMES_BULK = [
         "year": 1993,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Hylden med Jungle Market Remix bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Market+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3796,7 +3796,7 @@ GAMES_BULK = [
         "year": 1998,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Hylden med Timber Legacy Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Timber+Legacy+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3805,7 +3805,7 @@ GAMES_BULK = [
         "year": 1995,
         "awards": "Klassiker på hylden",
         "fun_fact": "Umber Temple Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Temple+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3814,7 +3814,7 @@ GAMES_BULK = [
         "year": 1989,
         "awards": "Niche-titel",
         "fun_fact": "Cosmic Voyage Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Cosmic+Voyage+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3823,7 +3823,7 @@ GAMES_BULK = [
         "year": 2001,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Mange café-besøgende opdager Lost Wastes Legends først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Lost+Wastes+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3832,7 +3832,7 @@ GAMES_BULK = [
         "year": 1990,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Ejer-notat: Nordic Republic Junior er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Republic+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3841,7 +3841,7 @@ GAMES_BULK = [
         "year": 2023,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Gæster scanner ofte Rustic Outpost Deluxe for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Outpost+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3850,7 +3850,7 @@ GAMES_BULK = [
         "year": 2021,
         "awards": "Familievenligt",
         "fun_fact": "Mange café-besøgende opdager Forgotten Stronghold II først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Forgotten+Stronghold+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3859,7 +3859,7 @@ GAMES_BULK = [
         "year": 2009,
         "awards": "Café-katalog",
         "fun_fact": "Ejer-notat: Ivory Territory II er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ivory+Territory+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3868,7 +3868,7 @@ GAMES_BULK = [
         "year": 2017,
         "awards": "Café-katalog",
         "fun_fact": "Dragon Wonders Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Wonders+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3877,7 +3877,7 @@ GAMES_BULK = [
         "year": 1989,
         "awards": "Populært hos gæster",
         "fun_fact": "Gæster scanner ofte Hidden Parade Legends for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Hidden+Parade+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3886,7 +3886,7 @@ GAMES_BULK = [
         "year": 1998,
         "awards": "Café-katalog",
         "fun_fact": "Ejer-notat: Mystic Towers Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Mystic+Towers+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3895,7 +3895,7 @@ GAMES_BULK = [
         "year": 2017,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Neon Union Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Neon+Union+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3904,7 +3904,7 @@ GAMES_BULK = [
         "year": 1976,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Ejer-notat: Jungle Sanctuary er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Sanctuary+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -3913,7 +3913,7 @@ GAMES_BULK = [
         "year": 2019,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Baltic Towers Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Towers+Remix+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -3922,7 +3922,7 @@ GAMES_BULK = [
         "year": 2008,
         "awards": "Niche-titel",
         "fun_fact": "Mange café-besøgende opdager Kingdom Convoy først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Convoy+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3931,7 +3931,7 @@ GAMES_BULK = [
         "year": 1997,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Harbor Horizon Remix ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Horizon+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3940,7 +3940,7 @@ GAMES_BULK = [
         "year": 2004,
         "awards": "Klassiker på hylden",
         "fun_fact": "Gæster scanner ofte Urban Yard Express for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Urban+Yard+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3949,7 +3949,7 @@ GAMES_BULK = [
         "year": 1980,
         "awards": "Café-katalog",
         "fun_fact": "Rustic Odyssey Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Odyssey+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3958,7 +3958,7 @@ GAMES_BULK = [
         "year": 1978,
         "awards": "Café-katalog",
         "fun_fact": "Gæster scanner ofte Viking Valley Express for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Viking+Valley+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -3967,7 +3967,7 @@ GAMES_BULK = [
         "year": 2016,
         "awards": "Familievenligt",
         "fun_fact": "Ejer-notat: Forgotten Quarry Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Forgotten+Quarry+Express+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -3976,7 +3976,7 @@ GAMES_BULK = [
         "year": 1977,
         "awards": "Klassiker på hylden",
         "fun_fact": "Mange café-besøgende opdager Frozen Tavern Junior først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Frozen+Tavern+Junior+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -3985,7 +3985,7 @@ GAMES_BULK = [
         "year": 2005,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Stellar Summit Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Summit+Junior+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -3994,7 +3994,7 @@ GAMES_BULK = [
         "year": 2009,
         "awards": "Café-katalog",
         "fun_fact": "Mange café-besøgende opdager Rustic Village Deluxe først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Village+Deluxe+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -4003,7 +4003,7 @@ GAMES_BULK = [
         "year": 2012,
         "awards": "Niche-titel",
         "fun_fact": "Storm Arena II ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Storm+Arena+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4012,7 +4012,7 @@ GAMES_BULK = [
         "year": 1994,
         "awards": "Niche-titel",
         "fun_fact": "Ejer-notat: Wild Village er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Wild+Village+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4021,7 +4021,7 @@ GAMES_BULK = [
         "year": 1996,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Viking Delta Junior ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Viking+Delta+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4030,7 +4030,7 @@ GAMES_BULK = [
         "year": 2007,
         "awards": "Familievenligt",
         "fun_fact": "Stellar Garden er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Garden+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4039,7 +4039,7 @@ GAMES_BULK = [
         "year": 1996,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Nordic Parade ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Nordic+Parade+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4048,7 +4048,7 @@ GAMES_BULK = [
         "year": 2003,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Mange café-besøgende opdager Obsidian Isles Remix først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Obsidian+Isles+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4057,7 +4057,7 @@ GAMES_BULK = [
         "year": 2018,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Viking Siege II er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Viking+Siege+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4066,7 +4066,7 @@ GAMES_BULK = [
         "year": 2020,
         "awards": "Populært hos gæster",
         "fun_fact": "Shadow Nexus II er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Nexus+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4075,7 +4075,7 @@ GAMES_BULK = [
         "year": 2015,
         "awards": "Niche-titel",
         "fun_fact": "Gæster scanner ofte Viking Frontier Remix for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Viking+Frontier+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4084,7 +4084,7 @@ GAMES_BULK = [
         "year": 1975,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Hylden med Urban Convoy bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Urban+Convoy+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4093,7 +4093,7 @@ GAMES_BULK = [
         "year": 1980,
         "awards": "Niche-titel",
         "fun_fact": "Hylden med Royal Convoy II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Royal+Convoy+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4102,7 +4102,7 @@ GAMES_BULK = [
         "year": 1981,
         "awards": "Café-katalog",
         "fun_fact": "Jungle Towers Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Towers+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4111,7 +4111,7 @@ GAMES_BULK = [
         "year": 1995,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Emerald Wilds Junior er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Emerald+Wilds+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4120,7 +4120,7 @@ GAMES_BULK = [
         "year": 2021,
         "awards": "Klassiker på hylden",
         "fun_fact": "Ejer-notat: Viking Labyrinth er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Viking+Labyrinth+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4129,7 +4129,7 @@ GAMES_BULK = [
         "year": 1983,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Rustic Republic II passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Republic+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4138,7 +4138,7 @@ GAMES_BULK = [
         "year": 2002,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Hylden med Iron Citadel II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Iron+Citadel+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4147,7 +4147,7 @@ GAMES_BULK = [
         "year": 1990,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Ejer-notat: Dragon Realm Deluxe er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Realm+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4156,7 +4156,7 @@ GAMES_BULK = [
         "year": 1994,
         "awards": "Café-katalog",
         "fun_fact": "Hylden med Distant Convoy II bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Distant+Convoy+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4165,7 +4165,7 @@ GAMES_BULK = [
         "year": 1996,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Neon Republic Remix passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Neon+Republic+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4174,7 +4174,7 @@ GAMES_BULK = [
         "year": 1983,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Primal Zone Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Primal+Zone+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4183,7 +4183,7 @@ GAMES_BULK = [
         "year": 1995,
         "awards": "Niche-titel",
         "fun_fact": "Hylden med Stellar Forge Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Stellar+Forge+Express+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -4192,7 +4192,7 @@ GAMES_BULK = [
         "year": 2015,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Ejer-notat: Shadow Haven Legends er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Haven+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4201,7 +4201,7 @@ GAMES_BULK = [
         "year": 2000,
         "awards": "Familievenligt",
         "fun_fact": "Storm Republic Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Storm+Republic+Deluxe+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -4210,7 +4210,7 @@ GAMES_BULK = [
         "year": 1986,
         "awards": "Café-katalog",
         "fun_fact": "Gæster scanner ofte Lunar Wastes Junior for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Lunar+Wastes+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4219,7 +4219,7 @@ GAMES_BULK = [
         "year": 1993,
         "awards": "Populært hos gæster",
         "fun_fact": "Tidal Fortress Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Fortress+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4228,7 +4228,7 @@ GAMES_BULK = [
         "year": 1983,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Mange café-besøgende opdager Ancient Delta Express først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Ancient+Delta+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4237,7 +4237,7 @@ GAMES_BULK = [
         "year": 1999,
         "awards": "Populært hos gæster",
         "fun_fact": "Hylden med Iron Frontier Express bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Iron+Frontier+Express+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -4246,7 +4246,7 @@ GAMES_BULK = [
         "year": 2009,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ejer-notat: Eternal Wastes Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Wastes+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4255,7 +4255,7 @@ GAMES_BULK = [
         "year": 2009,
         "awards": "Populært hos gæster",
         "fun_fact": "Urban Echo Remix er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Urban+Echo+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4264,7 +4264,7 @@ GAMES_BULK = [
         "year": 1985,
         "awards": "Café-katalog",
         "fun_fact": "Ejer-notat: Quiet Circuit Deluxe er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Quiet+Circuit+Deluxe+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -4273,7 +4273,7 @@ GAMES_BULK = [
         "year": 2023,
         "awards": "Familievenligt",
         "fun_fact": "Rustic Bazaar Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Rustic+Bazaar+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4282,7 +4282,7 @@ GAMES_BULK = [
         "year": 1989,
         "awards": "Klassiker på hylden",
         "fun_fact": "Hylden med Arctic Convoy Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Arctic+Convoy+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4291,7 +4291,7 @@ GAMES_BULK = [
         "year": 2012,
         "awards": "Niche-titel",
         "fun_fact": "Distant Labyrinth Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Distant+Labyrinth+Legends+board+game",
+        "wiki": "",
         "weight": 3,
     },
     {
@@ -4300,7 +4300,7 @@ GAMES_BULK = [
         "year": 2001,
         "awards": "Populært hos gæster",
         "fun_fact": "Eternal Convoy Deluxe er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Eternal+Convoy+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4309,7 +4309,7 @@ GAMES_BULK = [
         "year": 1994,
         "awards": "Familievenligt",
         "fun_fact": "Hylden med Umber Empire Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Umber+Empire+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4318,7 +4318,7 @@ GAMES_BULK = [
         "year": 2005,
         "awards": "Populært hos gæster",
         "fun_fact": "Hylden med Harbor Temple Deluxe bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Harbor+Temple+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4327,7 +4327,7 @@ GAMES_BULK = [
         "year": 1994,
         "awards": "Café-katalog",
         "fun_fact": "Crimson Market ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Crimson+Market+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4336,7 +4336,7 @@ GAMES_BULK = [
         "year": 2016,
         "awards": "Populært hos gæster",
         "fun_fact": "Gæster scanner ofte Baltic Quarry Deluxe for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Baltic+Quarry+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4345,7 +4345,7 @@ GAMES_BULK = [
         "year": 1986,
         "awards": "Niche-titel",
         "fun_fact": "Velvet Harbor Junior passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Velvet+Harbor+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4354,7 +4354,7 @@ GAMES_BULK = [
         "year": 2000,
         "awards": "Niche-titel",
         "fun_fact": "Mange café-besøgende opdager Distant Guild Remix først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Distant+Guild+Remix+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4363,7 +4363,7 @@ GAMES_BULK = [
         "year": 2022,
         "awards": "Klassiker på hylden",
         "fun_fact": "Hylden med Brave Ridge bliver ofte tømt om lørdagen, når der kommer nye gæster ind.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Brave+Ridge+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4372,7 +4372,7 @@ GAMES_BULK = [
         "year": 1988,
         "awards": "Klassiker på hylden",
         "fun_fact": "Viking Alliance Legends passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Viking+Alliance+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4381,7 +4381,7 @@ GAMES_BULK = [
         "year": 2009,
         "awards": "Niche-titel",
         "fun_fact": "Dragon Voyage passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Dragon+Voyage+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4390,7 +4390,7 @@ GAMES_BULK = [
         "year": 2017,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Ejer-notat: Distant Crown Deluxe er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Distant+Crown+Deluxe+board+game",
+        "wiki": "",
         "weight": 2,
     },
     {
@@ -4399,7 +4399,7 @@ GAMES_BULK = [
         "year": 2014,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Ejer-notat: Storm Wilds Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Storm+Wilds+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4408,7 +4408,7 @@ GAMES_BULK = [
         "year": 2014,
         "awards": "Niche-titel",
         "fun_fact": "Timber Quarry Express ligger typisk i den midterste hylde — nem at overse, men stærk når den først findes.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Timber+Quarry+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4417,7 +4417,7 @@ GAMES_BULK = [
         "year": 2012,
         "awards": "Populært hos gæster",
         "fun_fact": "Gæster scanner ofte Silver Union Junior for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Silver+Union+Junior+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4426,7 +4426,7 @@ GAMES_BULK = [
         "year": 1982,
         "awards": "Niche-titel",
         "fun_fact": "Golden Harbor Deluxe passer godt til en aften, hvor gruppen vil have regler på under 20 minutter.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Golden+Harbor+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4435,7 +4435,7 @@ GAMES_BULK = [
         "year": 2013,
         "awards": "Niche-titel",
         "fun_fact": "Ejer-notat: Grand Republic Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Grand+Republic+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4444,7 +4444,7 @@ GAMES_BULK = [
         "year": 2009,
         "awards": "Niche-titel",
         "fun_fact": "Ejer-notat: Kingdom Territory Legends er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Kingdom+Territory+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4453,7 +4453,7 @@ GAMES_BULK = [
         "year": 1995,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Ejer-notat: Shadow Dynasty II er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Shadow+Dynasty+II+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4462,7 +4462,7 @@ GAMES_BULK = [
         "year": 2006,
         "awards": "Niche-titel",
         "fun_fact": "Mange café-besøgende opdager Timber Wonders først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Timber+Wonders+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4471,7 +4471,7 @@ GAMES_BULK = [
         "year": 2006,
         "awards": "Strategi for entusiaster",
         "fun_fact": "Gæster scanner ofte Jungle Towers Legends for at læse regler, før de tager kassen med hjem til bordet.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jungle+Towers+Legends+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4480,7 +4480,7 @@ GAMES_BULK = [
         "year": 2006,
         "awards": "Niche-titel",
         "fun_fact": "Tidal Parade Express er ofte det spil gæster tager ned, når de vil prøve noget nyt på hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Tidal+Parade+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4489,7 +4489,7 @@ GAMES_BULK = [
         "year": 1977,
         "awards": "Nyhed i sortimentet",
         "fun_fact": "Mange café-besøgende opdager Whisper Guild Deluxe først via QR-koden — ikke via anbefaling ved disken.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Whisper+Guild+Deluxe+board+game",
+        "wiki": "",
         "weight": 1,
     },
     {
@@ -4498,7 +4498,7 @@ GAMES_BULK = [
         "year": 2011,
         "awards": "Hurtigt party-spil",
         "fun_fact": "Ejer-notat: Jade Labyrinth Express er et godt mellemvalg mellem party og strategi.",
-        "wiki": "https://en.wikipedia.org/wiki/Special:Search?search=Jade+Labyrinth+Express+board+game",
+        "wiki": "",
         "weight": 1,
     },
 ]

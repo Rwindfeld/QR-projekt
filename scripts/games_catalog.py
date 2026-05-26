@@ -823,7 +823,7 @@ GAMES = [
         "year": 2019,
         "awards": "Party; skala og gæt",
         "fun_fact": "Én spiller kender et hemmeligt punkt på en skala — resten diskuterer sig frem.",
-        "wiki": "https://en.wikipedia.org/wiki/Wavelength_(party_game)",
+        "wiki": "https://en.wikipedia.org/wiki/Wavelength_(game)",
         "weight": 7,
     },
     {
@@ -868,7 +868,7 @@ GAMES = [
         "year": 2020,
         "awards": "LCG kooperativt; Fantasy Flight",
         "fun_fact": "Spil som helte mod skurke — mange café-gæster vælger deres favorit-Marvel-figur.",
-        "wiki": "https://en.wikipedia.org/wiki/Marvel_Champions",
+        "wiki": "https://en.wikipedia.org/wiki/Marvel_Champions:_The_Card_Game",
         "weight": 6,
     },
     {
@@ -877,7 +877,7 @@ GAMES = [
         "year": 2024,
         "awards": "Party; push your luck med kort",
         "fun_fact": "Saml unikke tal uden at buste — ny hit der ofte kommer på “hvad er det der grønne spil?”-hylden.",
-        "wiki": "https://en.wikipedia.org/wiki/Flip_7",
+        "wiki": "",
         "weight": 8,
     },
     {

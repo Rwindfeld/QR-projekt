@@ -85,11 +85,8 @@ def main() -> None:
         year = random.randint(1975, 2024)
         awards = random.choice(AWARD_POOL)
         fun_fact = random.choice(FUN_FACT_TEMPLATES).format(name=name)
-        wiki = (
-            "https://en.wikipedia.org/wiki/Special:Search?search="
-            + name.replace(" ", "+")
-            + "+board+game"
-        )
+        # Ingen Wikipedia for auto-genererede katalogtitler (findes ikke som artikel)
+        wiki = ""
         # Most bulk titles are rarely scanned; a few slightly more visible
         weight = random.choices([1, 1, 1, 1, 2, 2, 3], weights=[50, 20, 10, 5, 8, 5, 2])[0]
 

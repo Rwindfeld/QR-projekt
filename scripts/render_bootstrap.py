@@ -33,6 +33,12 @@ def bootstrap() -> None:
     # Upsert all games (keeps existing scans)
     cur.execute((ROOT / "seed.sql").read_text(encoding="utf-8"))
 
+    # Fjern gamle søge-links — kun direkte artikler
+    cur.execute(
+        "UPDATE games SET wikipedia_url = NULL "
+        "WHERE wikipedia_url IS NOT NULL AND wikipedia_url LIKE '%Special:%'"
+    )
+
     for slug, url in WIKIPEDIA_BY_SLUG.items():
         cur.execute(
             "UPDATE games SET wikipedia_url = %s WHERE slug = %s",

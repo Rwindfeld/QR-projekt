@@ -22,6 +22,14 @@ def _sql_str(s: str) -> str:
     return s.replace("'", "''")
 
 
+def _is_direct_wikipedia(url: str) -> bool:
+    if not url:
+        return False
+    if "Special:" in url:
+        return False
+    return "/wiki/" in url
+
+
 def main() -> None:
     lines = [
         "-- Auto-generated from scripts/games_catalog.py — do not edit by hand",
@@ -31,6 +39,8 @@ def main() -> None:
     ]
     rows = []
     for g in GAMES:
+        wiki = (g.get("wiki") or "").strip()
+        wiki_sql = f"'{_sql_str(wiki)}'" if _is_direct_wikipedia(wiki) else "NULL"
         rows.append(
             f"(\n"
             f"    '{_sql_str(g['slug'])}',\n"
@@ -38,7 +48,7 @@ def main() -> None:
             f"    {g['year']},\n"
             f"    '{_sql_str(g['awards'])}',\n"
             f"    '{_sql_str(g['fun_fact'])}',\n"
-            f"    '{_sql_str(g['wiki'])}'\n"
+            f"    {wiki_sql}\n"
             f")"
         )
     lines.append(",\n".join(rows))
@@ -53,22 +63,41 @@ def main() -> None:
     (ROOT / "seed.sql").write_text("\n".join(lines), encoding="utf-8")
 
     wiki_lines = [
-        '"""Verified Wikipedia URLs per game slug (auto-generated)."""',
+        '"""Verified Wikipedia article URLs (direct links only — no search fallbacks)."""',
+        "",
+        "from __future__ import annotations",
         "",
         "WIKIPEDIA_BY_SLUG: dict[str, str] = {",
     ]
-    for g in GAMES:
-        wiki_lines.append(f'    "{g["slug"]}": "{g["wiki"]}",')
+    verified = 0
+    for g in GAMES_CORE:
+        wiki = (g.get("wiki") or "").strip()
+        if _is_direct_wikipedia(wiki):
+            wiki_lines.append(f'    "{g["slug"]}": "{wiki}",')
+            verified += 1
     wiki_lines.extend(
         [
             "}",
             "",
             "",
-            "def wikipedia_url_for_slug(slug: str) -> str:",
-            "    return WIKIPEDIA_BY_SLUG.get(",
-            "        slug,",
-            '        f"https://da.wikipedia.org/wiki/Special:Search?search={slug.replace(\'-\', \'+\')}",',
-            "    )",
+            "def is_direct_wikipedia_article(url: str | None) -> bool:",
+            '    """True only for direct /wiki/ article URLs (not Special:Search)."""',
+            "    if not url:",
+            "        return False",
+            '    if "Special:" in url:',
+            "        return False",
+            '    return "/wiki/" in url',
+            "",
+            "",
+            "def wikipedia_url_for_slug(slug: str) -> str | None:",
+            "    url = WIKIPEDIA_BY_SLUG.get(slug)",
+            "    return url if is_direct_wikipedia_article(url) else None",
+            "",
+            "",
+            "def resolve_wikipedia_url(slug: str, db_url: str | None = None) -> str | None:",
+            "    if is_direct_wikipedia_article(db_url):",
+            "        return db_url",
+            "    return wikipedia_url_for_slug(slug)",
             "",
         ]
     )
@@ -81,7 +110,7 @@ def main() -> None:
         json.dumps(weights, indent=2, ensure_ascii=False), encoding="utf-8"
     )
 
-    print(f"OK — {len(GAMES)} games -> seed.sql, wiki_urls.py, data/game_weights.json")
+    print(f"OK — {len(GAMES)} games -> seed.sql; {verified} verified wiki URLs in wiki_urls.py")
 
 
 if __name__ == "__main__":
