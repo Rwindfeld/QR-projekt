@@ -14,7 +14,7 @@ SRC = ROOT / "grafana" / "dashboard.json"
 OUT = ROOT / "grafana" / "dashboard-public.json"
 
 # Set this to match your Grafana Postgres datasource UID (Connections → PostgreSQL → UID in URL/settings)
-POSTGRES_UID = os.environ.get("GRAFANA_POSTGRES_UID", "grafanacloud-postgres-qr")
+POSTGRES_UID = os.environ.get("GRAFANA_POSTGRES_UID", "grafanacloud-postgres-datasource")
 
 MAX_LAV_SCANS = 5
 

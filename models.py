@@ -9,6 +9,7 @@ from typing import Generator, Optional
 
 from sqlalchemy import (
     BigInteger,
+    Boolean,
     DateTime,
     ForeignKey,
     Integer,
@@ -75,6 +76,9 @@ class Scan(Base):
     server_duration_ms: Mapped[Optional[int]] = mapped_column(Integer)
     db_duration_ms: Mapped[Optional[int]] = mapped_column(Integer)
     client_load_ms: Mapped[Optional[int]] = mapped_column(Integer)
+    visitor_token: Mapped[Optional[str]] = mapped_column(String(36))
+    discount_eligible: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
+    discount_pct: Mapped[int] = mapped_column(SmallInteger, default=0, nullable=False)
 
     game: Mapped["Game"] = relationship(back_populates="scans")
 

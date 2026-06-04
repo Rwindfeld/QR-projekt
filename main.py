@@ -25,6 +25,12 @@ from prometheus_fastapi_instrumentator import Instrumentator
 from pydantic import BaseModel, Field
 from sqlalchemy import func, or_, select, update
 
+from discount import (
+    DiscountResult,
+    evaluate_discount,
+    set_visitor_cookie,
+    visitor_token_from_request,
+)
 from models import Game, Scan, get_db, get_game_by_slug, monthly_scan_rank, top_games
 from wiki_urls import resolve_wikipedia_url
 from scripts.render_bootstrap import bootstrap
@@ -127,19 +133,26 @@ def _client_ip(request: Request) -> Optional[str]:
     return None
 
 
-def _record_scan(request: Request, slug: str) -> tuple[Game, int, int, int]:
-    """Insert scan; return game, monthly rank, scan_id, db_duration_ms."""
+def _record_scan(
+    request: Request, slug: str
+) -> tuple[Game, int, int, int, DiscountResult, bool]:
+    """Insert scan; return game, rank, scan_id, db_ms, discount, set_cookie."""
     db_start = time.perf_counter()
+    visitor_token, set_cookie = visitor_token_from_request(request)
     with get_db() as db:
         game = get_game_by_slug(db, slug)
         if not game:
             scan_errors_total.labels(reason="unknown_slug").inc()
             raise HTTPException(status_code=404, detail="Spil ikke fundet")
 
+        discount = evaluate_discount(db, visitor_token, game.id)
         scan = Scan(
             game_id=game.id,
             user_agent=request.headers.get("user-agent"),
             ip_hash=_hash_ip(_client_ip(request)),
+            visitor_token=visitor_token,
+            discount_eligible=discount.eligible,
+            discount_pct=discount.earned_pct if discount.eligible else 0,
         )
         db.add(scan)
         db.flush()
@@ -149,7 +162,7 @@ def _record_scan(request: Request, slug: str) -> tuple[Game, int, int, int]:
         scan.db_duration_ms = db_ms
         scans_total.labels(game=game.slug).inc()
         db.expunge(game)
-        return game, rank, scan_id, db_ms
+        return game, rank, scan_id, db_ms, discount, set_cookie
 
 
 def _save_server_duration(scan_id: int, server_ms: int) -> None:
@@ -163,7 +176,7 @@ def _save_server_duration(scan_id: int, server_ms: int) -> None:
 def scan_game(request: Request, slug: str):
     t0 = time.perf_counter()
     try:
-        game, rank, scan_id, db_ms = _record_scan(request, slug)
+        game, rank, scan_id, db_ms, discount, set_cookie = _record_scan(request, slug)
     except HTTPException:
         raise
     except Exception:
@@ -180,7 +193,7 @@ def scan_game(request: Request, slug: str):
 
     wiki_url = resolve_wikipedia_url(game.slug, game.wikipedia_url)
     wiki_note = " (engelsk)" if wiki_url and "en.wikipedia.org" in wiki_url else ""
-    return templates.TemplateResponse(
+    response = templates.TemplateResponse(
         request,
         "thanks.html",
         {
@@ -192,8 +205,12 @@ def scan_game(request: Request, slug: str):
             "scan_id": scan_id,
             "server_ms": server_ms,
             "db_ms": db_ms,
+            "discount": discount,
         },
     )
+    if set_cookie:
+        set_visitor_cookie(response, discount.visitor_token)
+    return response
 
 
 @app.post("/api/scan-timing/{scan_id}")

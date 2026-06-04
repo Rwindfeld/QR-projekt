@@ -152,38 +152,66 @@ Tilføjer **kun** nye rækker — sletter ikke dine rigtige scans. I Grafana: v�
 
 ## Del 4: Del dashboard offentligt (med live data)
 
-Grafana viser advarslen **"Template variables are not supported"** — derfor virker det **ikke** med `dashboard.json` (den bruger `DS_POSTGRES` og `max_lav_scans`).
+Grafana viser **"Template variables are not supported"** — brug derfor **`dashboard-public.json`**, ikke `dashboard.json`.
 
-### Trin 1 — Find Postgres datasource UID
+**Du behøver ikke finde UID.** Ved import vælger du Postgres-datakilden i en dropdown.
 
-1. Grafana → **Connections** → klik din Postgres (`QR-Render-Postgres`)
-2. I URL eller **Settings** → find **UID** (fx `grafanacloud-abc123` eller `postgres-xyz`)
-3. Kopiér UID
+### Trin 1 — Tjek at Postgres virker
 
-### Trin 2 — Byg public-dashboard (valgfrit, hvis UID skal ændres)
+1. [rfwjensen.grafana.net](https://rfwjensen.grafana.net) → **Explore**
+2. Datakilde: din Postgres (`grafanacloud-postgres-datasource` eller lign.)
+3. Kør:
+
+```sql
+SELECT COUNT(*) FROM scans;
+```
+
+→ Skal vise et tal **større end 0**. Hvis 0: lav et par scans på https://qr-spilcafe.onrender.com/scan/catan
+
+### Trin 2 — Importér public-dashboard
+
+1. **Dashboards** (venstre menu) → **New** → **Import**
+2. **Upload JSON file** → vælg `grafana/dashboard-public.json` fra projektmappen  
+   (eller fra GitHub: repo → `grafana/dashboard-public.json` → Download)
+3. Grafana spørger om **datakilde-mapping** — vælg din **Postgres** (den med Render-host `dpg-...oregon-postgres.render.com`)
+4. Klik **Import**
+
+### Trin 3 — Tjek dashboardet (logget ind)
+
+1. Åbn dashboardet **"QR Spilcafé — offentlig visning"**
+2. Øverst til højre: tidsinterval **Last 180 days** (eller 6 months)
+3. Refresh: **30s** (ikke **Off**)
+4. Paneler skal vise tal og tabeller — **ikke** "No data"
+
+Hvis stadig "No data": klik et panel → **Edit** → under **Query** tjek at datakilde er din Postgres → **Apply** → **Save dashboard**.
+
+### Trin 4 — Opret offentligt link
+
+1. På dashboardet: **Share** (ikon øverst) → **Public dashboard** / **Share externally**
+2. **Enable** (slå deling til)
+3. Slå **Enable time range** til
+4. **Copy external link**
+5. Åbn linket i **privat/incognito** — data skal vises
+
+**Brug ikke** public link fra det gamle dashboard (med variabler). **Revoke** gammelt link hvis det stadig er aktivt.
+
+### Kun hvis import fejler (sjældent): find UID
+
+UID står i **browserens adresselinje**, når du er på Postgres-indstillinger:
+
+```text
+.../connections/datasources/edit/HER-ER-UID
+```
+
+Kopiér teksten efter `/edit/`. Regenerér JSON:
 
 ```powershell
 cd "c:\Users\windf\OneDrive\Documents\QR"
-$env:GRAFANA_POSTGRES_UID="DIN-UID-HER"
+$env:GRAFANA_POSTGRES_UID="UID-fra-URL"
 .\.venv\Scripts\python.exe scripts\build_public_dashboard.py
 ```
 
-### Trin 3 — Import public-dashboard
-
-1. **Dashboards** → **New** → **Import**
-2. Upload **`grafana/dashboard-public.json`**
-3. Vælg **samme Postgres** som datakilde (UID skal matche)
-4. **Import**
-
-### Trin 4 — Aktivér public link
-
-1. Åbn det importerede dashboard
-2. **Share** → **Public dashboard** / **Share externally**
-3. Slå **Enable** til
-4. **Enable time range** + **30s refresh**
-5. **Copy external link** → test i privat/incognito
-
-> **Vigtigt:** Brug **ikke** det normale dashboard-link. Kun **Public dashboard**-linket viser data for gæster uden login.
+Importér `dashboard-public.json` igen.
 
 ---
 

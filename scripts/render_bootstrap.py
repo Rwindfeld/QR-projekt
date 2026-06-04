@@ -29,6 +29,7 @@ def bootstrap() -> None:
 
     cur.execute((ROOT / "schema-render.sql").read_text(encoding="utf-8"))
     cur.execute((ROOT / "schema-timing.sql").read_text(encoding="utf-8"))
+    cur.execute((ROOT / "schema-discount.sql").read_text(encoding="utf-8"))
 
     # Upsert all games (keeps existing scans)
     cur.execute((ROOT / "seed.sql").read_text(encoding="utf-8"))

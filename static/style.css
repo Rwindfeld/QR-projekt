@@ -67,6 +67,54 @@ h1 strong {
   font-size: 1.05rem;
 }
 
+.discount-card {
+  border: 2px dashed var(--accent);
+  border-radius: 0.75rem;
+  padding: 1rem 1.1rem;
+  margin: 1.25rem 0;
+  background: #fff8f0;
+}
+
+.discount-earned {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.discount-total {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.discount-none {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.discount-reason {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.discount-bar {
+  margin: 0.75rem 0 0.35rem;
+  font-size: 0.95rem;
+}
+
+.discount-bar strong {
+  letter-spacing: 0.12em;
+  font-family: ui-monospace, monospace;
+}
+
+.discount-fine {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
 .fun-fact h2,
 .top-games h2 {
   font-size: 1.1rem;

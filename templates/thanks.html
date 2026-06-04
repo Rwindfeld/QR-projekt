@@ -14,6 +14,33 @@
     {{ game.name }} i denne måned.
   </p>
 
+  <section class="discount-card" aria-label="Drikkevarerabat">
+    {% if discount.eligible %}
+    <p class="discount-earned">+{{ discount.earned_pct }} % på drikkevarer!</p>
+    <p class="discount-total">
+      Din samlede rabat i dag: <strong>{{ discount.total_pct }} %</strong>
+      på drikkevarer ({{ discount.games_with_discount_today }} spil).
+    </p>
+    {% else %}
+    <p class="discount-none">Ingen ny rabat denne gang.</p>
+    {% if discount.reason %}
+    <p class="discount-reason">{{ discount.reason }}</p>
+    {% endif %}
+    {% if discount.total_pct > 0 %}
+    <p class="discount-total">
+      Du har stadig <strong>{{ discount.total_pct }} %</strong> rabat i dag fra tidligere spil.
+    </p>
+    {% endif %}
+    {% endif %}
+    <p class="discount-bar">
+      Vis denne side i baren · kode <strong>{{ discount.bar_code }}</strong>
+    </p>
+    <p class="discount-fine">
+      +5 % pr. nyt spil du scanner (max 50 %). Samme spil tæller kun én gang pr. dag
+      og ikke igen inden for 2 minutter.
+    </p>
+  </section>
+
   <section class="fun-fact">
     <h2>Vidste du?</h2>
     <p>{{ game.fun_fact }}</p>
