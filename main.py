@@ -121,6 +121,24 @@ def healthz():
     return {"status": "ok"}
 
 
+@app.get("/healthz/db")
+def healthz_db():
+    """Debug: tjek at rabat-kolonner findes (fjernes evt. senere)."""
+    from sqlalchemy import text
+
+    try:
+        with engine.connect() as conn:
+            cols = conn.execute(
+                text(
+                    "SELECT column_name FROM information_schema.columns "
+                    "WHERE table_name='scans' ORDER BY 1"
+                )
+            ).fetchall()
+        return {"status": "ok", "scan_columns": [c[0] for c in cols]}
+    except Exception as exc:
+        return {"status": "error", "detail": str(exc)}
+
+
 def _hash_ip(ip: Optional[str]) -> Optional[str]:
     if not ip:
         return None
@@ -140,6 +158,7 @@ def _record_scan(
     request: Request, slug: str
 ) -> tuple[Game, int, int, int, DiscountResult, bool]:
     """Insert scan; return game, rank, scan_id, db_ms, discount, set_cookie."""
+    run_migrations(engine)
     db_start = time.perf_counter()
     visitor_token, set_cookie = visitor_token_from_request(request)
     with get_db() as db:
