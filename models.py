@@ -51,6 +51,22 @@ def _normalize_database_url(url: str) -> str:
 
 
 def _database_url() -> str:
+    """Byg URL fra Render host/user/password (ekstern) eller DATABASE_URL."""
+    host = os.getenv("DATABASE_HOST")
+    user = os.getenv("DATABASE_USER")
+    password = os.getenv("DATABASE_PASSWORD")
+    database = os.getenv("DATABASE_NAME")
+    port = os.getenv("DATABASE_PORT", "5432")
+
+    if host and user and password and database:
+        url = (
+            f"postgresql://{quote_plus(unquote_plus(user))}:"
+            f"{quote_plus(unquote_plus(password))}@{host}:{port}/{database}"
+        )
+        if "sslmode=" not in url:
+            url += "?sslmode=require"
+        return url
+
     url = (
         os.getenv("DATABASE_URL")
         or os.getenv("RENDER_DATABASE_URL")

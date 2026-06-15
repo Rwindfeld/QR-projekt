@@ -113,7 +113,7 @@ Brug servicen **qr-spilcafe** — ikke den gamle **qr-cafe** (det var en anden a
 | Problem | Løsning |
 |---------|---------|
 | Deploy fejler | **Logs** → build; tjek `requirements.txt` |
-| 500 på /scan | **Logs** → startup; app kører `bootstrap()` automatisk (gratis tier har ikke preDeploy) |
+| 500 på /scan / "Kunne ikke gemme scanning" | **qr-spilcafe** → **Environment**: sæt `DATABASE_URL` til **External Database URL** fra **qr-db** → **Connections** (ikke den korte interne host). Eller tilføj `DATABASE_HOST`, `DATABASE_USER`, `DATABASE_PASSWORD`, `DATABASE_NAME` fra databasen. Gem → redeploy. Tjek `/healthz/db` |
 | Database | **qr-db** skal være **Available** og linket til web service |
 | Cold start | Normal på gratis plan — vent 30 sek |
 

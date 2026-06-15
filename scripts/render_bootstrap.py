@@ -18,13 +18,12 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def bootstrap() -> None:
     """Idempotent: safe to run on every app startup."""
-    from models import _normalize_database_url
+    from models import DATABASE_URL
 
-    raw = os.environ.get("DATABASE_URL") or os.environ.get("RENDER_DATABASE_URL")
-    if not raw:
-        return
-
-    raw = _normalize_database_url(raw)
+    raw = DATABASE_URL
+    if not raw or "localhost" in raw and not os.environ.get("DATABASE_URL"):
+        if not os.environ.get("DATABASE_URL") and not os.environ.get("DATABASE_HOST"):
+            return
 
     conn = psycopg2.connect(raw)
     conn.autocommit = True

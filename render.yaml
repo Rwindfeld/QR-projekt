@@ -24,6 +24,26 @@ services:
         fromDatabase:
           name: qr-db
           property: connectionString
+      - key: DATABASE_HOST
+        fromDatabase:
+          name: qr-db
+          property: host
+      - key: DATABASE_USER
+        fromDatabase:
+          name: qr-db
+          property: user
+      - key: DATABASE_PASSWORD
+        fromDatabase:
+          name: qr-db
+          property: password
+      - key: DATABASE_NAME
+        fromDatabase:
+          name: qr-db
+          property: database
+      - key: DATABASE_PORT
+        fromDatabase:
+          name: qr-db
+          property: port
       # BASE_URL sættes automatisk fra RENDER_EXTERNAL_URL i main.py
       - key: GRAFANA_ALLOY_TOKEN
         sync: false
