@@ -5,9 +5,14 @@ Creates tables and seeds games if the database is empty.
 from __future__ import annotations
 
 import os
+import sys
 from pathlib import Path
 
 import psycopg2
+
+ROOT = Path(__file__).resolve().parent.parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from db_migrate import run_migrations
 from models import engine
