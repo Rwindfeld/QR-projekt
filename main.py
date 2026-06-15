@@ -9,6 +9,7 @@ import hashlib
 import re
 import os
 import time
+import traceback
 from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 from pathlib import Path
@@ -25,13 +26,14 @@ from prometheus_fastapi_instrumentator import Instrumentator
 from pydantic import BaseModel, Field
 from sqlalchemy import func, or_, select, update
 
+from db_migrate import run_migrations
 from discount import (
     DiscountResult,
     evaluate_discount,
     set_visitor_cookie,
     visitor_token_from_request,
 )
-from models import Game, Scan, get_db, get_game_by_slug, monthly_scan_rank, top_games
+from models import Game, Scan, engine, get_db, get_game_by_slug, monthly_scan_rank, top_games
 from wiki_urls import resolve_wikipedia_url
 from scripts.render_bootstrap import bootstrap
 
@@ -44,6 +46,7 @@ async def lifespan(app: FastAPI):
         bootstrap()
     except Exception as exc:
         print(f"DB bootstrap warning: {exc}")
+        traceback.print_exc()
     yield
 
 
@@ -181,7 +184,15 @@ def scan_game(request: Request, slug: str):
         raise
     except Exception:
         scan_errors_total.labels(reason="db_error").inc()
-        raise HTTPException(status_code=500, detail="Kunne ikke gemme scanning")
+        traceback.print_exc()
+        try:
+            run_migrations(engine)
+            game, rank, scan_id, db_ms, discount, set_cookie = _record_scan(request, slug)
+        except HTTPException:
+            raise
+        except Exception:
+            traceback.print_exc()
+            raise HTTPException(status_code=500, detail="Kunne ikke gemme scanning")
 
     with get_db() as db:
         top5 = top_games(db, days=7, limit=5)

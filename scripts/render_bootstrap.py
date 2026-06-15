@@ -9,6 +9,8 @@ from pathlib import Path
 
 import psycopg2
 
+from db_migrate import run_migrations
+from models import engine
 from wiki_urls import WIKIPEDIA_BY_SLUG
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -29,12 +31,19 @@ def bootstrap() -> None:
 
     cur.execute((ROOT / "schema-render.sql").read_text(encoding="utf-8"))
     cur.execute((ROOT / "schema-timing.sql").read_text(encoding="utf-8"))
-    cur.execute((ROOT / "schema-discount.sql").read_text(encoding="utf-8"))
+    conn.close()
 
-    # Upsert all games (keeps existing scans)
-    cur.execute((ROOT / "seed.sql").read_text(encoding="utf-8"))
+    run_migrations(engine)
 
-    # Fjern gamle søge-links — kun direkte artikler
+    conn = psycopg2.connect(raw)
+    conn.autocommit = True
+    cur = conn.cursor()
+
+    cur.execute("SELECT COUNT(*) FROM games")
+    game_count = cur.fetchone()[0]
+    if game_count < 50:
+        cur.execute((ROOT / "seed.sql").read_text(encoding="utf-8"))
+
     cur.execute(
         "UPDATE games SET wikipedia_url = NULL "
         "WHERE wikipedia_url IS NOT NULL AND wikipedia_url LIKE '%Special:%'"
