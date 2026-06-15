@@ -33,7 +33,7 @@ from discount import (
     set_visitor_cookie,
     visitor_token_from_request,
 )
-from models import Game, Scan, engine, get_db, get_game_by_slug, monthly_scan_rank, top_games
+from models import DATABASE_URL, Game, Scan, engine, get_db, get_game_by_slug, monthly_scan_rank, top_games
 from wiki_urls import resolve_wikipedia_url
 from scripts.render_bootstrap import bootstrap
 
@@ -123,10 +123,12 @@ def healthz():
 
 @app.get("/healthz/db")
 def healthz_db():
-    """Debug: tjek at rabat-kolonner findes (fjernes evt. senere)."""
+    """Debug: tjek DB-forbindelse og kolonner."""
     from sqlalchemy import text
+    from sqlalchemy.engine import make_url
 
     try:
+        safe_host = make_url(DATABASE_URL).host
         with engine.connect() as conn:
             cols = conn.execute(
                 text(
@@ -134,7 +136,11 @@ def healthz_db():
                     "WHERE table_name='scans' ORDER BY 1"
                 )
             ).fetchall()
-        return {"status": "ok", "scan_columns": [c[0] for c in cols]}
+        return {
+            "status": "ok",
+            "db_host": safe_host,
+            "scan_columns": [c[0] for c in cols],
+        }
     except Exception as exc:
         return {"status": "error", "detail": str(exc)}
 

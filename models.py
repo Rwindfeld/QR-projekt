@@ -7,6 +7,8 @@ from contextlib import contextmanager
 from datetime import datetime, timedelta, timezone
 from typing import Generator, Optional
 
+from urllib.parse import quote_plus, unquote_plus
+
 from sqlalchemy import (
     BigInteger,
     Boolean,
@@ -22,17 +24,39 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column, relationship, sessionmaker
 
-def _database_url() -> str:
-    url = os.getenv(
-        "DATABASE_URL",
-        "postgresql://postgres:1590@localhost:5432/QR",
-    )
+def _normalize_database_url(url: str) -> str:
+    """Render-adgangskoder kan indeholde @ — split URL fra højre."""
     if url.startswith("postgres://"):
-        url = url.replace("postgres://", "postgresql://", 1)
-    if "render.com" in url and "sslmode=" not in url:
-        sep = "&" if "?" in url else "?"
-        url = f"{url}{sep}sslmode=require"
-    return url
+        url = "postgresql://" + url[len("postgres://") :]
+    if not url.startswith("postgresql://"):
+        return url
+
+    rest = url[len("postgresql://") :]
+    if "@" not in rest:
+        return url
+
+    userinfo, location = rest.rsplit("@", 1)
+    if ":" not in userinfo:
+        return url
+
+    user, password = userinfo.split(":", 1)
+    user = quote_plus(unquote_plus(user))
+    password = quote_plus(unquote_plus(password))
+    normalized = f"postgresql://{user}:{password}@{location}"
+
+    if ("render.com" in normalized or "dpg-" in location) and "sslmode=" not in normalized:
+        sep = "&" if "?" in normalized else "?"
+        normalized = f"{normalized}{sep}sslmode=require"
+    return normalized
+
+
+def _database_url() -> str:
+    url = (
+        os.getenv("DATABASE_URL")
+        or os.getenv("RENDER_DATABASE_URL")
+        or "postgresql://postgres:1590@localhost:5432/QR"
+    )
+    return _normalize_database_url(url)
 
 
 DATABASE_URL = _database_url()

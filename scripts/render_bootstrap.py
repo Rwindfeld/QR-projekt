@@ -18,12 +18,13 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def bootstrap() -> None:
     """Idempotent: safe to run on every app startup."""
-    raw = os.environ.get("DATABASE_URL")
+    from models import _normalize_database_url
+
+    raw = os.environ.get("DATABASE_URL") or os.environ.get("RENDER_DATABASE_URL")
     if not raw:
         return
 
-    if "render.com" in raw and "sslmode=" not in raw:
-        raw += "&sslmode=require" if "?" in raw else "?sslmode=require"
+    raw = _normalize_database_url(raw)
 
     conn = psycopg2.connect(raw)
     conn.autocommit = True
