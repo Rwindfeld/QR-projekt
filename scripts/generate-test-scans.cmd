@@ -1,6 +1,6 @@
 @echo off
 cd /d "%~dp0.."
-echo Genererer test-scanninger (sidste 6 maneder, ca. 1200 stk.)...
+echo Genererer test-scanninger (sidste 6 maneder, 1000 stk., kl. 12-23)...
 echo VIKTIGT: Grafana bruger RENDER — saet RENDER_DATABASE_URL i .env (ikke kun localhost)
 if not exist ".env" (
   echo Mangler .env fil!

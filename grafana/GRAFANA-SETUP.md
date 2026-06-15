@@ -143,7 +143,7 @@ cd "c:\Users\windf\OneDrive\Documents\QR"
 Eller med custom antal:
 
 ```powershell
-.\.venv\Scripts\python.exe scripts\generate_test_scans.py --months 6 --count 2000
+.\.venv\Scripts\python.exe scripts\generate_test_scans.py --months 6 --count 1000
 ```
 
 Tilføjer **kun** nye rækker — sletter ikke dine rigtige scans. I Grafana: vælg **Last 6 months**.
@@ -227,6 +227,8 @@ Importér `dashboard-public.json` igen.
 ---
 
 ## Arkitektur (til rapport/plakat)
+
+![QR Spilcafé — arkitektur](qr-spilcafe-arkitektur.png)
 
 ```text
 Gæst (QR) → qr-spilcafe.onrender.com → Render Postgres
